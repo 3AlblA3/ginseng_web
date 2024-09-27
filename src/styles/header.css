@@ -1,0 +1,83 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.header__section{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header__section__title{
+    font-weight: 300;
+}
+
+
+.header__logo{
+    height:5rem;
+    padding-right: 1rem;
+}
+
+.header__section__menu, .header__section__phone {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: medium;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.header__section__menu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+
+.header__section__menu:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+.header__section__menu:hover::before {
+    transform: scaleX(1);
+}
+
+.contact{
+    border: solid;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    color: #000;
+    transform: scale(1.2);
+}

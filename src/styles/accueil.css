@@ -1,0 +1,65 @@
+.accueil__section__background{
+    background-image: url("/public/stairs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 80rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.accueil__section__background__title{
+    display: flex;
+    flex-direction: column;
+}
+
+.accueil__section__background__title__container{
+    width: 50%;
+    padding-left: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h4{
+        font-size: 1.5rem;
+    };
+    h2{
+        padding-bottom: 2rem;
+        font-size: 4rem;
+    }
+
+}
+
+.accueil__section__background__description{
+    display: flex;
+    justify-content: center;
+}
+
+.accueil__section__background__description__container{
+    width: 70%;
+    text-align: center;
+    padding-top: 5rem;
+    h3{
+        padding-bottom: 2rem;
+        font-weight: 300;
+        font-size:xx-large;
+    }
+    font-weight: 300;
+
+}
+
+.accueil__section__background__title__link,
+.accueil__section__background__descripton__link{
+    border: solid white;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.accueil__section__background__title__link:hover,
+.accueil__section__background__descripton__link:hover{
+    background-color: white;
+    color: black;
+}
+
+
