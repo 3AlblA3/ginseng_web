@@ -48,18 +48,243 @@
 }
 
 .accueil__section__background__title__link,
-.accueil__section__background__descripton__link{
+.accueil__section__background__descripton__link,
+.accueil__section__casClient__container__text__link
+{
     border: solid white;
     border-radius: 2rem;
     text-decoration: none;
     color: white;
     padding: 1rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
 }
 
-.accueil__section__background__title__link:hover,
-.accueil__section__background__descripton__link:hover{
-    background-color: white;
-    color: black;
+
+.accueil__section__confiance{
+    padding-top: 1rem;
+    text-align: center;
+    h3{
+        font-weight: 400;
+        font-size: 2.5rem;
+    };
+    h4{
+        font-weight: 400;
+        font-size: 1.3rem;
+    }       
 }
+
+.accueil__section__confiance__carousel{
+    height: 20rem;
+}
+
+.accueil__section__accompagnement{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.accueil__section__accompagnement__container__white,
+.accueil__section__accompagnement__container__black{
+    width: 40%;
+    height: 45rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.accueil__section__accompagnement__container__black{
+    background-color: rgb(53, 66, 107);
+}
+
+.accueil__section__accompagnement__container__black__link{
+    color: white;
+    text-decoration: none;
+    padding: 4rem;
+}
+
+.accueil__section__accompagnement__container__white__row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.accueil__section__accompagnement__container__white__row__link__blue,
+.accueil__section__accompagnement__container__white__row__link__white,
+.accueil__section__blog__header__link{
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+    margin-right: 2rem;
+    height: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accueil__section__accompagnement__container__white__row__link__blue,
+.accueil__section__blog__header__link{
+    background-color: rgb(53, 66, 107);
+    color: white;
+    border: solid   rgb(53, 66, 107);
+    &:hover{
+        background-color: transparent;
+        color: black;
+        border: black solid;
+    }
+}
+
+.accueil__section__accompagnement__container__white__row__link__white,
+.accueil__section__contact__container__link{
+    background-color: transparent;
+    color: black;
+    border: solid black;
+    &:hover{
+        background-color: rgb(53, 66, 107);
+        color: white;
+        border: solid   rgb(53, 66, 107);
+    }
+}
+
+.accueil__section__casClient{
+    background-color: orange;
+    height: 30rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    h3{
+        color: white
+    }
+}
+
+.accueil__section__casClient__menu{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    h3{
+        font-weight: 400;
+        font-size: 1.5rem
+    };
+}
+
+.accueil__section__casClient__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.accueil__section__casClient__container__img{
+    background-image: url("/public/ph_1700_1800.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.accueil__section__casClient__container__text{
+    width: 55%;
+    color: white;
+    p{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.accueil__section__blog{
+    height: 20rem;
+    background-color: white;
+}
+
+.accueil__section__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.accueil__section__contact__container{
+    background-color: rgb(53, 66, 107);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
+
+.accueil__section__contact__container__link
+{
+    border: solid white;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover{
+        background-color: transparent;
+        color: black;
+        border: solid black;
+    }
+}
+
+.accueil__section__blog{
+    padding: 5rem;
+    height: 25rem;
+}
+
+.accueil__section__blog__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color: black;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.accueil__section__blog__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.accueil__section__contact__container__text{
+    position: relative;
+    color: black;
+
+}
+.accueil__section__blog__content__container{
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 2rem;
+    height: 20rem;
+    width: 20rem;
+    padding: 2rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover{
+        background-color: rgb(53, 66, 107);
+        .accueil__section__contact__container__text{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+}
+
 
 

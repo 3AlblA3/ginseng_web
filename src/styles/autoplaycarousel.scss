@@ -1,0 +1,60 @@
+// Variables for easy customization
+$card-size: 15rem;
+$card-gap: 2rem;
+$animation-duration: 40s;
+$hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
+               10px 10px 8px rgba(152, 133, 133, 0.392),
+               15px 15px 8px rgba(139, 154, 139, 0.303);
+
+// Carousel container
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 20rem; // Adjust as needed
+}
+
+// Carousel track
+.carousel-track {
+  display: flex;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  gap: $card-gap;
+  animation: slide $animation-duration linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+// Carousel card
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $card-size;
+  height: $card-size;
+  flex-shrink: 0;
+  border-radius: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(0.9);
+    box-shadow: $hover-shadow;
+  }
+
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+}
+
+// Animation keyframes
+@keyframes slide {
+  from { left: 0; }
+  to { left: -100%; }
+}
