@@ -22,6 +22,9 @@ header{
 
 .header__section__title{
     font-weight: 300;
+    @media screen and (max-width: 1100px){
+        display: none;   
+       }
 }
 
 
@@ -30,7 +33,7 @@ header{
     padding-right: 1rem;
 }
 
-.header__section__menu, .header__section__phone {
+.header__section__menu, .header__section__phone{
     position: relative;
     text-decoration: none;
     color: black;
@@ -40,6 +43,9 @@ header{
     font-size: medium;
     transition: transform 0.3s ease;
     display: inline-block;
+    @media screen and (max-width: 800px){
+     display: none;   
+    }
 }
 
 .header__section__menu::before {
@@ -80,4 +86,78 @@ header{
 .contact:hover {
     color: #000;
     transform: scale(1.2);
+}
+
+/* Gestion menu deroulant mobile */
+
+.header__section__menu__mobile__img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.header__section__deroulant{
+    display: none;
+    @media screen and (max-width: 1100px){
+        display: contents;
+    }
+}
+
+.header__section__deroulant__sous {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 2px var(--grey);
+    background-color: white;
+    position: absolute;
+    top: 7rem;
+    right: 0rem;
+    width: 40%;
+    z-index: 3;
+    padding-left: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+  
+  .header__section__deroulant.open .header__section__deroulant__sous {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* You can keep the keyframes for additional effects if needed */
+  @keyframes deroulant {
+    from { 
+      opacity: 0;
+      transform: translateY(-5rem);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+  
+  /* Optional: Animate the menu icon */
+  .header__section__menu__mobile__img {
+    transition: transform 0.3s ease;
+  }
+  
+  .header__section__deroulant.open .header__section__menu__mobile__img {
+    transform: rotate(90deg);
+  }
+
+  li{
+    list-style-type: none;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.header__section__deroulant__sous__link{
+    color: black;
+    &:hover{
+        text-decoration: underline;
+    }
 }

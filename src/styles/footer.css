@@ -11,6 +11,9 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @media screen and (max-width: 1100px){
+        flex-direction: column;   
+    }
 }
 
 .footer__down{
@@ -27,6 +30,10 @@ footer{
 .footer__down__section{
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1100px){
+        flex-direction: row;  
+        text-align: center; 
+    }
 }
 
 .footer__up__section{
@@ -37,6 +44,10 @@ footer{
         padding-bottom: 1rem;
         color: white;
         text-decoration: none;
+        @media screen and (max-width: 1100px){
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;     
+        }
     }
 }
 

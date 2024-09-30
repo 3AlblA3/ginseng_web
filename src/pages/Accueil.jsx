@@ -5,6 +5,33 @@ import AutoplayCarousel from '../components/AutoplayCarousel';
 
 function Accueil() {
 
+  const [selectedCategory, setSelectedCategory] = useState('Etat et organismes publics');
+
+  // définitions des variables des menus
+
+  const categories = [
+    'Etat et organismes publics',
+    'Fédérations ou interprofession',
+    'Edition'
+  ];
+
+  // Définition des variables des cas clients
+
+  const casClients = {
+    'Etat et organismes publics': {
+      image: 'ph_300_200.jpg',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    },
+    'Fédérations ou interprofession': {
+      image: 'ph_300_200_1.jpg',
+      description: 'Nam quod beatae nihil voluptatum debitis cupiditate magnam...',
+    },
+    'Edition': {
+      image: 'ph_300_200_2.jpg',
+      description: 'Exercitationem distinctio assumenda placeat ut dolores illo est...',
+    },
+  };
+
   return (
     <>
       <section>
@@ -100,20 +127,38 @@ function Accueil() {
         </div>
       </section>
       <section className='accueil__section__casClient'>
-        <h3>Découvrez nos cas clients</h3>
-        <div className='accueil__section__casClient__menu'>
-          <h3>Etat et organismes publics</h3>
-          <h3>Fédérations ou interprofession</h3>
-          <h3>Edition</h3>
-        </div>
-        <div className='accueil__section__casClient__container'>
-          <div className='accueil__section__casClient__container__img'></div>
-          <div  className='accueil__section__casClient__container__text'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod beatae nihil voluptatum debitis cupiditate magnam exercitationem distinctio assumenda placeat ut dolores illo est soluta vero vitae, at eveniet illum.</p>
-            <Link to='/cas' className='accueil__section__casClient__container__text__link'>Voir le cas client</Link>
+      <h3>Découvrez nos cas clients</h3>
+      <div className='accueil__section__casClient__menu'>
+        {/* Gestion du menu */}
+        {categories.map((category) => (
+          <h3 
+            key={category}
+            onClick={() => setSelectedCategory(category)}
+            className={selectedCategory === category ? 'active' : ''}>
+            {category}
+          </h3>
+        ))}
+      </div>
+      <div className='accueil__section__casClient__container'>
+        {/* Affichage des cas clients dépendamments des contenus */}
+        {categories.map((category) => (
+          <div 
+            key={category} 
+            className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
+            <img 
+              src={casClients[category].image} 
+              className='accueil__section__casClient__container__img'
+              alt={category}/>
+            <div className='accueil__section__casClient__container__text'>
+              <p>{casClients[category].description}</p>
+              <Link to='/cas' className='accueil__section__casClient__container__text__link'>
+                Voir le cas client
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </section>
       <section className='accueil__section__blog'> 
         <div className='accueil__section__blog__header'>
           <h2>Découvrez nos articles de blog</h2>
