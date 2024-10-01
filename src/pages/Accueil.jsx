@@ -40,7 +40,7 @@ function Accueil() {
             <div className='accueil__section__background__title__container'>
               <h4>Pour répondre à tous vos objectifs</h4>
               <h2>Ginseng Web vous accompagne dans vos projets digitaux</h2>
-              <Link to="/methodologie" className="accueil__section__background__title__link">Notre méthodologie</Link>
+              <Link to="/agence" className="accueil__section__background__title__link">Notre agence</Link>
             </div>
           </div>
           <div className='accueil__section__background__description'>
@@ -48,7 +48,7 @@ function Accueil() {
               <h3>
               Nous sommes une agence web à taille humaine, spécialisée dans l’accompagnement digital. Nous vous aidons à imaginer (amoe refonte de site) et réaliser (amoa) votre projet web.
               </h3>
-              <Link to="/" className="accueil__section__background__descripton__link">Pourquoi nous choisir?</Link>
+              <Link to="/accompagnement" className="accueil__section__background__descripton__link">Pourquoi nous choisir?</Link>
             </div>
           </div>
         </div>
@@ -70,7 +70,6 @@ function Accueil() {
           </p>
           <div className='accueil__section__accompagnement__container__white__row'>
             <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
           </div>
           <div className='accueil__section__accompagnement__container__white__bubble'>
             <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
@@ -119,7 +118,6 @@ function Accueil() {
           </p>
           <div className='accueil__section__accompagnement__container__white__row'>
             <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
           </div>
           <div className='accueil__section__accompagnement__container__white__bubble'>
             <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
@@ -169,6 +167,18 @@ function Accueil() {
             <div className='accueil__section__blog__content__container__text'>
               <p>Questions sur le web</p>
               <h3>Refonte de site web: pourquoi faire un cahier des charges?</h3>
+            </div>
+          </div>
+          <div className='accueil__section__blog__content__container'>
+            <div className='accueil__section__blog__content__container__text'>
+              <p>Questions sur le web</p>
+              <h3>Quelles technologie pour votre projet?</h3>
+            </div>
+          </div>
+          <div className='accueil__section__blog__content__container'>
+            <div className='accueil__section__blog__content__container__text'>
+              <p>Questions sur le web</p>
+              <h3>Quel prix pour un site web?</h3>
             </div>
           </div>
         </div>
