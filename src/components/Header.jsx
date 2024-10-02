@@ -47,7 +47,7 @@ function Header() {
         
         <header>
           <section className="header__section">
-            <Link to="/"><img src="Ginseng_logo.png" alt="logo ginseng web" className="header__logo"/></Link>
+            <Link to="/"><img src="logo_blue_only.PNG" alt="logo ginseng web" className="header__logo"/></Link>
             <h1 className="header__section__title">Ginseng Web</h1>
           </section>
           <div className="header__desktop">
@@ -56,9 +56,9 @@ function Header() {
               <h3 className="header__section__menu__deroulant__p" onClick={toggleAgencyMenu}>L'agence</h3>
               <ul className="header__section__menu__deroulant__p__sous">
                 <div className="header__section__menu__deroulant__p__sous__div">
-                  <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">L'agence - présentations</Link></li>
-                  <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Les témoignages</Link></li>
-                  <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tarifs</Link></li>
+                  <li><Link to="/agence_presentation" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">L'agence - présentations</Link></li>
+                  <li><Link to="/agence_temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Les témoignages</Link></li>
+                  <li><Link to="/agence_tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tarifs</Link></li>
                 </div>
               </ul>
             </div>
@@ -140,9 +140,9 @@ function Header() {
                  <h3 className="mobile__menu__content__p" onClick={() => toggleMenu('agency')}>L'agence</h3>
                  {activeMenu === 'agency' && (
                    <ul className="mobile__menu__content__p__sous">
-                     <li><Link to="/agence">L'agence - présentations</Link></li>
-                     <li><Link to="/temoignages"> Les témoignages</Link></li>
-                     <li><Link to="/tarifs">tarifs</Link></li>
+                     <li><Link to="/agence_presentation">L'agence - présentations</Link></li>
+                     <li><Link to="/agence_temoignages"> Les témoignages</Link></li>
+                     <li><Link to="/agence_tarifs">tarifs</Link></li>
                    </ul>
                  )}
                </div>

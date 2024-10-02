@@ -10,8 +10,6 @@ header{
     font-family: 'Roboto', sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     width: 100%;
     top: 0rem;
     z-index: 5;
@@ -46,7 +44,7 @@ header{
 }
 
 .header__logo{
-    height:5rem;
+    height:3rem;
     padding-right: 1rem;
 }
 
@@ -103,7 +101,7 @@ header{
 
   .header__section__menu__deroulant__p__sous {
     position: absolute;
-    top: 100%;
+    top: 3rem;
     left: 0;
     background-color: white;
     border: solid #ccc;
