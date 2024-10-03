@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import '../styles/AgencePresentation.css'
+import './agencePresentation.css'
 
 
 function AgencePresentation () {
@@ -11,24 +11,28 @@ function AgencePresentation () {
             <h2>Un partenaire engagé à vos côtés pour faire grandir votre entreprise</h2>
         </section>
         <section className='content'>
-            <article className='content__article'>
-                <h3>Une agence à taille humaine, pour de vrai</h3>
-                <p>À chaque étape de la croissance de votre entreprise, vous avez besoin d’actions et de stratégies spécifiques. C’est là que Ginseng Web intervient à vos côtés. Nous sommes une agence de webmarketing et de développement digital à votre service. Vous pouvez compter sur une équipe d’experts pour vous accompagner à accroitre les performances de votre stratégie digitale : Acquisition, Expérience Utilisateur et Data Marketing.</p>
-                <p>Fondée en 2018, Ginseng Web est d’abord une agence de développement web puis, sous l’impulsion de clients toujours plus challenger et avec la validation de l’ensemble de l’équipe, l’agence a évolué au fil des années vers le conseil et l’accompagnement.</p>
-                <p>Nous sommes une agence à taille humaine : vos interlocuteurs sont fixes et vous connaissent bien. Nous constituons pour chaque projet une équipe dédiée (qui vous suivra du début à la fin du projet) avec un chef de projet qui sera votre contact privilégié.</p>
-            </article>
-            <article className='content__article'>
-                <img className='content__article__img' src="https://picsum.photos/500/700" alt="image" />
-            </article>
-            <article className='content__article'>
-                <img className='content__article__img' src="https://picsum.photos/500/700" alt="image" />
-            </article>
-            <article className='content__article'>
-                <h3>Une équipe qui vous suit tout au long du projet</h3>
-                <p>Nous avons une approche éthique et humaine du digital. Un travail à 4 mains où l’utilisateur est toujours au cœur de notre démarche.</p>
-                <p>Nous pouvons également solliciter notre réseau de consultants externes pour répondre à toutes vos problématiques : techniques, éditoriales, graphiques, de référencement naturel, ergonomiques… lorsque votre projet nécessite une expertise plus poussée que la nôtre dans un domaine particulier. Toutefois, nous assurons toujours la présence d’un membre de Ginseng Web à chaque étape de votre projet.</p>
-                <p>Chaque projet étant unique, la présence d'un référent permet d'adapter les solutions proposées aux besoins spécifiques de chaque client. Cette continuité reflète notamment ce qui nous passionne dans notre travail : la relation humaine qui contribue à renforcer la confiance et à fidéliser nos clients.</p>
-            </article>
+            <div className='accueil__section__accompagnement__row'>
+                <article className='accueil__section__accompagnement__container__white'>
+                    <h3>Une agence à taille humaine, pour de vrai</h3>
+                    <p>À chaque étape de la croissance de votre entreprise, vous avez besoin d’actions et de stratégies spécifiques. C’est là que Ginseng Web intervient à vos côtés. Nous sommes une agence de webmarketing et de développement digital à votre service. Vous pouvez compter sur une équipe d’experts pour vous accompagner à accroitre les performances de votre stratégie digitale : Acquisition, Expérience Utilisateur et Data Marketing.</p>
+                    <p>Fondée en 2018, Ginseng Web est d’abord une agence de développement web puis, sous l’impulsion de clients toujours plus challenger et avec la validation de l’ensemble de l’équipe, l’agence a évolué au fil des années vers le conseil et l’accompagnement.</p>
+                    <p>Nous sommes une agence à taille humaine : vos interlocuteurs sont fixes et vous connaissent bien. Nous constituons pour chaque projet une équipe dédiée (qui vous suivra du début à la fin du projet) avec un chef de projet qui sera votre contact privilégié.</p>
+                </article>
+                <article className='content__article'>
+                    <img className='content__article__img' src="https://picsum.photos/500/500" alt="image" />
+                </article>
+            </div>
+            <div className='accueil__section__accompagnement__row'>
+                <article className='content__article'>
+                    <img className='content__article__img' src="https://picsum.photos/500/500" alt="image" />
+                </article>
+                <article className='accueil__section__accompagnement__container__white'>
+                    <h3>Une équipe qui vous suit tout au long du projet</h3>
+                    <p>Nous avons une approche éthique et humaine du digital. Un travail à 4 mains où l’utilisateur est toujours au cœur de notre démarche.</p>
+                    <p>Nous pouvons également solliciter notre réseau de consultants externes pour répondre à toutes vos problématiques : techniques, éditoriales, graphiques, de référencement naturel, ergonomiques… lorsque votre projet nécessite une expertise plus poussée que la nôtre dans un domaine particulier. Toutefois, nous assurons toujours la présence d’un membre de Ginseng Web à chaque étape de votre projet.</p>
+                    <p>Chaque projet étant unique, la présence d'un référent permet d'adapter les solutions proposées aux besoins spécifiques de chaque client. Cette continuité reflète notamment ce qui nous passionne dans notre travail : la relation humaine qui contribue à renforcer la confiance et à fidéliser nos clients.</p>
+                </article>
+            </div>
         </section>
         <section className='banner__row'>
             <div className='banner__row__container'>
@@ -41,28 +45,32 @@ function AgencePresentation () {
             </div>
         </section>
         <section className='content'>
-            <article className='content__article'>
-                <h3>Du developpement au conseil</h3>
-                <div className='content__article__bubble'>
-                    <img src="https://picsum.photos/100/150" alt="img manu"/>
-                    <p>Hello, moi c’est Emmanuel Camara, le co-fondateur de Ginseng Web, je vous parle ici de notre histoire.</p>
-                </div>
+            <div className='accueil__section__accompagnement__row'>
+                <article className='accueil__section__accompagnement__container__white'>
+                    <h3>Du developpement au conseil</h3>
+                    <div className='content__article__bubble'>
+                        <img src="https://picsum.photos/100/150" alt="img manu"/>
+                        <p>Hello, moi c’est Emmanuel Camara, le co-fondateur de Ginseng Web, je vous parle ici de notre histoire.</p>
+                    </div>
+                </article>
+                <article className='content__article'>
+                    <p>En tant que co-fondateur de l’agence Ginseng Web, j’ai pris la décision il y a quelques années de réorienter notre activité vers le conseil. Cette évolution s’est imposée à moi après plusieurs années passées à créer et à refondre des sites internet. J’ai alors constaté un décalage entre l’importance que nous accordions à la phase de conception et les attentes réelles de nos clients en termes de budget et de délai.</p>
+                    <p>Ancien dirigeant dans les télécoms, je suis convaincu de l'importance de concilier vision commerciale et expertise technique. En effet, pour réussir dans le secteur du numérique, il est essentiel de comprendre les enjeux commerciaux de nos clients et d'adapter nos offres en conséquence.</p>
+                    <p>Pour moi, il était donc impensable de faire l’impasse sur les fondamentaux du web : la définition des cibles, la construction d’interfaces intuitives et l’expérience utilisateur. C’est pourquoi j’ai souhaité consacrer l’ensemble de mon énergie à accompagner nos clients dans ces domaines.</p>
+                    <p>Après avoir mené avec succès quelques missions d’accompagnement, notamment pour le groupement GASEL, j’ai décidé d’impliquer toute l’équipe Ginseng Web dans cette nouvelle orientation. Grâce à une méthodologie éprouvée et à une expertise solide acquises au fil des années, nous avons pu convaincre nos clients de nous faire confiance pour des projets de conseil plus stratégiques. Le soutien de ces premiers clients a été déterminant dans cette transition.</p>
+                </article>
+            </div>
+            <article className='content__temoignage'>
+                <h3>Témoignage</h3>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti provident perferendis ratione ad illo dicta accusantium ducimus quam alias, deserunt explicabo exercitationem? Ea illo ad, perferendis praesentium iusto soluta?"</p>
+                <h4>Marie-Hélène C. Directrice adjointe</h4>
+                <button>Voir la référence</button>
             </article>
-            <article className='content__article'>
-                <p>En tant que co-fondateur de l’agence Ginseng Web, j’ai pris la décision il y a quelques années de réorienter notre activité vers le conseil. Cette évolution s’est imposée à moi après plusieurs années passées à créer et à refondre des sites internet. J’ai alors constaté un décalage entre l’importance que nous accordions à la phase de conception et les attentes réelles de nos clients en termes de budget et de délai.</p>
-                <p>Ancien dirigeant dans les télécoms, je suis convaincu de l'importance de concilier vision commerciale et expertise technique. En effet, pour réussir dans le secteur du numérique, il est essentiel de comprendre les enjeux commerciaux de nos clients et d'adapter nos offres en conséquence.</p>
-                <p>Pour moi, il était donc impensable de faire l’impasse sur les fondamentaux du web : la définition des cibles, la construction d’interfaces intuitives et l’expérience utilisateur. C’est pourquoi j’ai souhaité consacrer l’ensemble de mon énergie à accompagner nos clients dans ces domaines.</p>
-                <p>Après avoir mené avec succès quelques missions d’accompagnement, notamment pour le groupement GASEL, j’ai décidé d’impliquer toute l’équipe Ginseng Web dans cette nouvelle orientation. Grâce à une méthodologie éprouvée et à une expertise solide acquises au fil des années, nous avons pu convaincre nos clients de nous faire confiance pour des projets de conseil plus stratégiques. Le soutien de ces premiers clients a été déterminant dans cette transition.</p>
-            </article>
-            <article className='content__article'>
-                <div className='content__article__temoignage'>
-                    <p>Témoignage 1</p>
-                </div>
-            </article>
-            <article className='content__article'>
-                <div className='content__article__temoignage'>
-                    <p>Témoignage 2</p>
-                </div>
+            <article className='content__temoignage'>
+                <h3>Témoignage</h3>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti provident perferendis ratione ad illo dicta accusantium ducimus quam alias, deserunt explicabo exercitationem? Ea illo ad, perferendis praesentium iusto soluta?"</p>
+                <h4>Marie-Hélène C. Directrice adjointe</h4>
+                <button>Voir la référence</button>
             </article>
         </section>
         <section className='everest'>

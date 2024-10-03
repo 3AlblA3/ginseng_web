@@ -1,0 +1,47 @@
+.content__block{
+    padding: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    h3{font-size: 2rem;
+    width: 50%;};
+    h4{
+        font-size: 1.5rem;
+    };
+    h5{
+        font-size: 2rem;
+        font-weight: 400;
+    };
+    p{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem
+    };
+}
+
+.content__block__img{
+    height: auto;
+    width: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    img{
+        width: 100%;
+    }
+}
+
+.content__block__insight{
+    background-color: #C354FF;
+    color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    h3{
+        font-size: 1.5rem;
+    }
+}
+
+.question{
+    font-size: 1.2rem;
+    border-top: solid  white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    font-weight: 500;
+}

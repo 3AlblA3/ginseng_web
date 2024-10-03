@@ -67,18 +67,18 @@ function Header() {
                 <ul className="header__section__menu__deroulant__p__sous">
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Avant le projet</h3>
-                    <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
-                    <li><Link to="/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
-                    <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
-                    <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
-                    <li><Link to="/cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
+                    <li><Link to="/accompagnement_analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
+                    <li><Link to="/accompagnement_accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
+                    <li><Link to="/accompagnement_definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
+                    <li><Link to="/accompagnement_cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
+                    <li><Link to="/accompagnement_cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Pendant le Projet</h3>
-                    <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
-                    <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
+                    <li><Link to="/accompagnement_supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
+                    <li><Link to="/accompagnement_AccompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
+                    <li><Link to="/accompagnement_accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
+                    <li><Link to="/accompagnement_accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
                   </div>
                 </ul>
             </div>
@@ -152,18 +152,18 @@ function Header() {
                    <ul className="mobile__menu__content__p__sous">
                      <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Avant le projet</h3>
-                    <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
-                    <li><Link to="/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
-                    <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
-                    <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
-                    <li><Link to="/cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
+                    <li><Link to="/accompagnement_analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
+                    <li><Link to="/accompagnement_accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
+                    <li><Link to="/accompagnement_definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
+                    <li><Link to="/accompagnement_cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
+                    <li><Link to="/accompagnement_cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Pendant le Projet</h3>
-                    <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
-                    <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
+                    <li><Link to="/accompagnement_supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
+                    <li><Link to="/accompagnement_accompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
+                    <li><Link to="/accompagnement_accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
+                    <li><Link to="/accompagnement_accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
                   </div>
                    </ul>
                  )}

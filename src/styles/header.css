@@ -107,7 +107,7 @@ header{
     border: solid #ccc;
     border-radius: 1rem;
     width: auto;
-    padding: 2rem;
+    padding: 1rem;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -123,7 +123,8 @@ header{
   }
 
 .header__section__menu__deroulant__p__sous__div{
-    width: 20rem
+    width: 20rem;
+    padding:1rem
 }
 
 .header__section__menu__deroulant__p__sous__link{
@@ -135,9 +136,7 @@ li{
     list-style-type: none;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-    &:hover{
-        text-decoration: underline;
-    }
+
 }
 
 

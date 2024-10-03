@@ -1,6 +1,6 @@
 :root{
     --white: white;
-    --blue: rgb(38, 42, 58);
+    --blue: #131935;
     --darkBlue: rgb(30, 33, 43);
     --grey: grey;
 }
@@ -47,7 +47,6 @@
     @media screen and (max-width: 1100px){
         width: 80%;
     }
-
 }
 
 .accueil__section__background__description{
@@ -68,13 +67,11 @@
         }
     }
     font-weight: 300;
-
 }
 
 .accueil__section__background__title__link,
 .accueil__section__background__descripton__link,
-.accueil__section__casClient__container__text__link
-{
+.accueil__section__casClient__container__text__link{
     border: solid var(--white);
     border-radius: 2rem;
     text-decoration: none;
@@ -113,7 +110,6 @@
     @media screen and (max-width: 1100px){
         height: 15rem;
     }
-
 }
 
     .accueil__section__accompagnement{
