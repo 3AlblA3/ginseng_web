@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header'; 
@@ -18,7 +18,6 @@ import './styles/App.css'
 
 function App() {
   return (
-  <>
   <BrowserRouter basename="/ginseng_web">
     <Header />
     <main>
@@ -32,13 +31,11 @@ function App() {
         <Route path="/accompagnement_cadrageProjet" element={<CadrageProjet />} />
         <Route path="/accompagnement_cahierCharges" element={<CahierCharges />} />
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
-        <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />*
-
+        <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
       </Routes>
     </main>
     <Footer />
   </BrowserRouter>
-  </>
   );
 }
 
