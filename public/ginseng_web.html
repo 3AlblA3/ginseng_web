@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="fr" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./ginseng_web_files/client"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./ginseng_web_files/css2" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GinsengWeb</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/header.css">header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.header__section{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header__section__title{
+    font-weight: 300;
+}
+
+
+.header__logo{
+    height:5rem;
+    padding-right: 1rem;
+}
+
+.header__section__menu, .header__section__phone {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: medium;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.header__section__menu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+
+.header__section__menu:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+.header__section__menu:hover::before {
+    transform: scaleX(1);
+}
+
+.contact{
+    border: solid;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-weight: 400;
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact:hover {
+    color: #000;
+    transform: scale(1.2);
+}</style><style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/footer.css">footer{
+    background: linear-gradient(#e66465, #c62b2b);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+}
+
+.footer__up, .footer__down,
+.footer__down__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer__down{
+    background-color: #c62b2b;
+    margin-top: 2rem;
+    .footer__down__section__link{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer__down__section{
+    display: flex;
+    align-items: center;
+}
+
+.footer__up__section{
+    display: flex;
+    flex-direction: column;
+    .footer__up__section__link{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer__up__section__link :hover, .footer__up__section__link :hover {
+    text-decoration: underline;
+}
+
+.footer__up__section__row{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__up__section__title__logo{
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+.footer__up__section__row__img{
+    height: 2rem;
+    padding-right: 1rem;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/accueil.css">.accueil__section__background{
+    background-image: url("/public/stairs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 80rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.accueil__section__background__title{
+    display: flex;
+    flex-direction: column;
+}
+
+.accueil__section__background__title__container{
+    width: 50%;
+    padding-left: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h4{
+        font-size: 1.5rem;
+    };
+    h2{
+        padding-bottom: 2rem;
+        font-size: 4rem;
+    }
+
+}
+
+.accueil__section__background__description{
+    display: flex;
+    justify-content: center;
+}
+
+.accueil__section__background__description__container{
+    width: 70%;
+    text-align: center;
+    padding-top: 5rem;
+    h3{
+        padding-bottom: 2rem;
+        font-weight: 300;
+        font-size:xx-large;
+    }
+    font-weight: 300;
+
+}
+
+.accueil__section__background__title__link,
+.accueil__section__background__descripton__link{
+    border: solid white;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accueil__section__background__title__link:hover,
+.accueil__section__background__descripton__link:hover{
+    background-color: white;
+    color: black;
+}
+
+.accueil__section__confiance{
+    text-align: center;
+    h3{
+        font-weight: 400;
+        font-size: 3rem
+    };
+    h4{
+        font-weight: 300
+    }       
+}
+
+.accueil__section__confiance__carousel{
+    height: 20rem;
+}
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/autoplaycarousel.scss">.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+
+.carousel-track {
+  display: flex;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 200%;
+  gap: 1rem;
+  animation: slide 40s linear infinite;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  flex-shrink: 0;
+  border-radius: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carousel-card:hover {
+  transform: scale(0.9);
+  box-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362), 10px 10px 8px rgba(152, 133, 133, 0.392), 15px 15px 8px rgba(139, 154, 139, 0.303);
+}
+.carousel-card > img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/App.css">body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/albl3/Documents/dossier_pro/ginseng_web/src/styles/index.css">:root {
+  background-color: white;  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+
+
+}</style></head>
+  <body>
+    <div id="root"><header><section class="header__section"><a href="http://localhost:5173/"><img src="./Ginseng Web_files/Ginseng_logo.png" alt="logo ginseng web" class="header__logo"></a><h1 class="header__section__title">Ginseng Web</h1></section><section class="header__section"><a class="header__section__menu" href="http://localhost:5173/agence" style="text-decoration: none;">L'agence</a><a class="header__section__menu" href="http://localhost:5173/accompagnement" style="text-decoration: none;">Accompagnement digital</a><a class="header__section__menu" href="http://localhost:5173/Expertises" style="text-decoration: none;">Expertises</a><a class="header__section__menu" href="http://localhost:5173/casClients" style="text-decoration: none;">Cas clients</a><a class="header__section__menu" href="http://localhost:5173/blog" style="text-decoration: none;">Blog</a></section><section class="header__section"><h3 class="header__section__phone">01 86 52 22 99</h3><a href="http://localhost:5173/contact" style="text-decoration: none;"><h3 class="contact">Contact</h3></a></section></header><main><section><div class="accueil__section__background"><div class="accueil__section__background__title"><div class="accueil__section__background__title__container"><h4>Pour répondre à tous vos objectifs</h4><h2>Ginseng Web vous accompagne dans vos projets digitaux</h2><a class="accueil__section__background__title__link" href="http://localhost:5173/methodologie">Notre méthodologie</a></div></div><div class="accueil__section__background__description"><div class="accueil__section__background__description__container"><h3>Nous sommes une agence web à taille humaine, spécialisée dans l’accompagnement digital. Nous vous aidons à imaginer (amoe refonte de site) et réaliser (amoa) votre projet web.</h3><a class="accueil__section__background__descripton__link" href="http://localhost:5173/">Pourquoi nous choisir?</a></div></div></div></section><section><div class="accueil__section__confiance"><h4>Nos différents clients</h4><h3>Ils nous font confiance...</h3><div class="accueil__section__confiance__carousel"><div class="carousel-container"><div class="carousel-track"><div class="carousel-card"><img src="./Ginseng Web_files/237-200x300.jpg" alt="Text 1"></div><div class="carousel-card"><img src="./Ginseng Web_files/238-200x300.jpg" alt="Text 2"></div><div class="carousel-card"><img src="./Ginseng Web_files/239-200x300.jpg" alt="Text 3"></div><div class="carousel-card"><img src="./Ginseng Web_files/240-200x300.jpg" alt="Text 4"></div><div class="carousel-card"><img src="./Ginseng Web_files/241-200x300.jpg" alt="Text 5"></div><div class="carousel-card"><img src="./Ginseng Web_files/42-200x300.jpg" alt="Text 6"></div><div class="carousel-card"><img src="./Ginseng Web_files/243-200x300.jpg" alt="Text 7"></div><div class="carousel-card"><img src="./Ginseng Web_files/237-200x300.jpg" alt="Text 1"></div><div class="carousel-card"><img src="./Ginseng Web_files/238-200x300.jpg" alt="Text 2"></div><div class="carousel-card"><img src="./Ginseng Web_files/239-200x300.jpg" alt="Text 3"></div><div class="carousel-card"><img src="./Ginseng Web_files/240-200x300.jpg" alt="Text 4"></div><div class="carousel-card"><img src="./Ginseng Web_files/241-200x300.jpg" alt="Text 5"></div><div class="carousel-card"><img src="./Ginseng Web_files/42-200x300.jpg" alt="Text 6"></div><div class="carousel-card"><img src="./Ginseng Web_files/243-200x300.jpg" alt="Text 7"></div></div></div></div></div></section></main><footer><div class="footer__up"><section class="footer__up__section"><div class="footer__up__section__row"><img src="./Ginseng Web_files/Ginseng_logo.png" alt="logo ginseng web" class="footer__up__section__title__logo"><h3 class="footer__up__section__title__h3">Ginseng Web</h3></div><p>43 rue de Beaubourg 75003 Paris <br>M° Rambuteau (ligne 11) ou Les Halles</p><p>01 88 99 56 05</p><p>Contact</p><div class="footer__up__section__row"><img src="./Ginseng Web_files/linkedin.png" alt="logo linkedin" class="footer__up__section__row__img"><img src="./Ginseng Web_files/gmail.png" alt="logo gmail" class="footer__up__section__row__img"></div></section><section class="footer__up__section"><h3>Agence</h3><a class="footer__up__section__link" href="http://localhost:5173/agence">L'agence</a><a class="footer__up__section__link" href="http://localhost:5173/nousChoisir">Pourquoi nous choisir</a><a class="footer__up__section__link" href="http://localhost:5173/methodologie">Notre méthodologie</a><a class="footer__up__section__link" href="http://localhost:5173/blog">Blog</a></section><section class="footer__up__section"><h3>Cas Clients</h3><a class="footer__up__section__link" href="http://localhost:5173/">Fédérations et interprofessions</a><a class="footer__up__section__link" href="http://localhost:5173/">Associations</a><a class="footer__up__section__link" href="http://localhost:5173/">Etat et organismes publics</a><a class="footer__up__section__link" href="http://localhost:5173/">Edition</a><a class="footer__up__section__link" href="http://localhost:5173/">Entreprises privées</a></section></div><div class="footer__down"><section class="footer__down__section"><p>2024 Ginseng Web</p></section><section class="footer__down__section"><a class="footer__down__section__link" href="http://localhost:5173/mentions">Mentions Légales</a><p>|</p><a class="footer__down__section__link" href="http://localhost:5173/conditions">Conditions générales</a><p>|</p><a class="footer__down__section__link" href="http://localhost:5173/mentions">Plan du site</a></section></div></footer></div>
+    <script type="module" src="./Ginseng Web_files/main.jsx"></script>
+  
+
+</body></html>
