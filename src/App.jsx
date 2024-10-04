@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header'; 
 import Footer from './components/Footer';
 import Accueil from './pages/Accueil';
@@ -18,6 +19,7 @@ import './styles/App.css'
 function App() {
   return (
   <>
+  <BrowserRouter basename="/ginseng_web">
     <Header />
     <main>
       <Routes>
@@ -34,8 +36,8 @@ function App() {
 
       </Routes>
     </main>
-  
     <Footer />
+  </BrowserRouter>
   </>
   );
 }
