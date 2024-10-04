@@ -7,6 +7,7 @@ import Accueil from './pages/Accueil';
 import AgencePresentation from './pages/agence/AgencePresentation';
 import Temoignages from './pages/agence/temoignages';
 import Tarifs from './pages/agence/tarifs';
+import Contact from './pages/Contact';
 import AnalyseExistant from './pages/accompagnement/analyseExistant';
 import AccompagnementTechnique from './pages/accompagnement/accompagnementTechnique';
 import CadrageProjet from './pages/accompagnement/cadrageProjet';
@@ -32,6 +33,8 @@ function App() {
         <Route path="/accompagnement_cahierCharges" element={<CahierCharges />} />
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
         <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </main>
     <Footer />

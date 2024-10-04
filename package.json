@@ -12,13 +12,13 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "clean": "gh-pages-clean"
-
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "dotenv": "^16.4.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-router-dom": "^6.26.2",
     "react-slick": "^0.30.2",
     "slick": "^1.12.2",
@@ -38,5 +38,4 @@
     "sass-embedded": "^1.79.3",
     "vite": "^5.4.1"
   }
-  
 }

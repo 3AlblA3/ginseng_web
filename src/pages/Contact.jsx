@@ -1,9 +1,22 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import dotenv from 'dotenv';
-dotenv.config();
+import '../styles/contact.css';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function Contact() {
+
+    //set captcha
+
+    const [captchaValue, setCaptchaValue] = useState(null);
+    const recaptchaRef = useRef();
+
+    const handleCaptchaChange = (value) => {
+        setCaptchaValue(value);
+    };
+
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
 
     //set all values
 
@@ -26,22 +39,28 @@ function Contact() {
 
     const validateForm = () => {
         const errors = {};
-        const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/;
+        const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ-]+$/;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!nameRegex.test(nom)) errors.nom = 'Le nom ne doit contenir que des lettres.';
-        if (!nameRegex.test(prenom)) errors.prenom = 'Le prénom ne doit contenir que des lettres.';
+        const phoneRegex = /^[0-9]{10}$/;  // Assumes a 10-digit phone number
+      
+        if (!nameRegex.test(nom)) errors.nom = 'Le nom ne doit contenir que des lettres et des tirets.';
+        if (!nameRegex.test(prenom)) errors.prenom = 'Le prénom ne doit contenir que des lettres et des tirets.';
         if (!emailRegex.test(email)) errors.email = 'Veuillez entrer une adresse e-mail valide.';
         if (!projet.trim()) errors.projet = 'Veuillez détailler votre projet.';
-
+        if (telephone && !phoneRegex.test(telephone)) errors.telephone = 'Veuillez entrer un numéro de téléphone valide (10 chiffres).';
+      
         setFormErrors(errors);
         return Object.keys(errors).length === 0;
-    };
-
+      };
     //Envoie du formulaire par mail
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!captchaValue) {
+            alert("Please complete the CAPTCHA");
+            return;
+        }
 
         if (!validateForm()) {
             return;
@@ -50,11 +69,11 @@ function Contact() {
         setIsLoading(true);
 
         emailjs.sendForm(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
             form.current,
-            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
+            import.meta.env.VITE_API_KEY
+          )
             .then((result) => {
                 console.log('Email sent successfully:', result.text);
                 alert('Votre message a été envoyé avec succès!');
@@ -69,6 +88,8 @@ function Contact() {
                 setLien('');
                 setSociete('');
                 setRole('');
+                recaptchaRef.current.reset(); // Reset CAPTCHA
+                setCaptchaValue(null);
             }, (error) => {
                 console.log('Failed to send email:', error.text);
                 alert('Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.');
@@ -89,7 +110,7 @@ function Contact() {
                     <h3>Une idée de projet?</h3>
                     <h5>Nous serons ravis de vous accompagner dans la rédaction d'un cahier des charges (AMOE), pour le suivi et le développement de votre projet web (AMOA) ou pour la réalisation d'un audit.</h5>
                 </div>
-                <form ref={form} onSubmit={sendEmail} id='form'>
+                <form ref={form} onSubmit={sendEmail} id='form' className='form__container'>
                     <div className='form__row'>
                         <div className='form__row__group'>
                             <label htmlFor="typeProjet">Que pouvons-nous faire pour vous ?*</label>
@@ -115,28 +136,33 @@ function Contact() {
                             </select>
                         </div>
                     </div>
-                    <label htmlFor="projet">Détaillez nous votre projet*</label>
-                    <textarea id='projet' name='projet' value={projet} onChange={(e) => setProjet(e.target.value)} required/>
-                    {formErrors.projet && <span className="error">{formErrors.projet}</span>}
+                        <label htmlFor="projet">Détaillez nous votre projet*</label>
+                        <textarea id='projet' name='projet' value={projet} onChange={(e) => setProjet(e.target.value)} required/>
+                        {formErrors.projet && <span className="error">{formErrors.projet}</span>}
                     <div className='form__row'>
                         <div className='form__row__group'>
-                            <label htmlFor="prenom">Votre prénom</label>
+                            <label htmlFor="prenom">Votre prénom*</label>
                             <input type="text" name='prenom' id='prenom' value={prenom} onChange={(e) => setPrenom(e.target.value)} required/>
                             {formErrors.prenom && <span className="error">{formErrors.prenom}</span>}
                         </div>
                         <div className='form__row__group'>
-                            <label htmlFor="nom">Votre nom</label>
+                            <label htmlFor="nom">Votre nom*</label>
                             <input type="text" name='nom' id='nom' value={nom} onChange={(e) => setNom(e.target.value)} required />
                             {formErrors.nom && <span className="error">{formErrors.nom}</span>}
                         </div>
                     </div>
-                    <label htmlFor="email">Votre adresse mail</label>
-                    <input type="email" id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
-                    {formErrors.email && <span className="error">{formErrors.email}</span>}
+                        <label htmlFor="email">Votre adresse mail*</label>
+                        <input type="email" id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                        {formErrors.email && <span className="error">{formErrors.email}</span>}
                     <div className='form__row'>
                         <div className='form__row__group'>
                             <label htmlFor="telephone">Votre numéro de téléphone</label>
-                            <input type="tel" name='telephone' id='telephone' value={telephone} onChange={(e) => setTelephone(e.target.value)}/>
+                            <input type="tel" name='telephone' id='telephone' value={telephone} onChange={(e) => {
+                                const re = /^[0-9+\-\s()]*$/;
+                                if (re.test(e.target.value)) {
+                                    setTelephone(e.target.value);
+                                    }
+                                }}/>
                         </div>
                         <div className='form__row__group'>
                             <label htmlFor="lien">Lien vers votre site existant</label>
@@ -153,6 +179,11 @@ function Contact() {
                             <input type="text" name='role' id='role' value={role} onChange={(e) => setRole(e.target.value)}/>
                         </div>
                     </div>
+                    <ReCAPTCHA 
+  ref={recaptchaRef} 
+  sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+  onChange={handleCaptchaChange}
+/>
                     <button type='submit' disabled={isLoading}>
                         {isLoading ? 'Envoi en cours...' : 'Envoyez votre message à Ginseng Web'}
                     </button>

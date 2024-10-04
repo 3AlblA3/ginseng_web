@@ -47,8 +47,8 @@ function Header() {
         
         <header>
           <section className="header__section">
-            <Link to="/"><img src="logo_blue_only.PNG" alt="logo ginseng web" className="header__logo"/></Link>
-            <h1 className="header__section__title">Ginseng Web</h1>
+            <Link to="/" className="header__section__title"><img src="logo_blue_only.PNG" alt="logo ginseng web" className="header__logo"/>
+            <h1>Ginseng Web</h1></Link>
           </section>
           <div className="header__desktop">
           <section className="header__section">

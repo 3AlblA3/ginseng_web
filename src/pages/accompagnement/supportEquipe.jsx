@@ -6,19 +6,49 @@ function SupportEquipe () {
     return(
         <>
         <section className='banner'>
-            <h4>Avant le projet</h4>
-            <h2>Rédaction du cahier des charges (CCTP)</h2>
+            <h4>Pendant le projet - AMOA</h4>
+            <h2>Support de l'équipe projet : accompagnement durant toutes les phases de réalisation</h2>
         </section>
         <section className='content__block'>
-            <p>C’est à travers le travail sur l’arborescence, les gabarits et les contenus que votre projet commence à prendre vie, se transformant peu à peu en une réalité tangible. On voit le site se dessiner, prêt à accueillir ses utilisateurs.</p>
-            <h3>Cahier des charges : un document clé, mais souvent un casse-tête à rédiger</h3>
-            <p>La création d’un cahier des clauses techniques particulières (CCTP), ou cahier des charges, est un passage incontournable pour démarrer un projet de refonte/création de site web ou de développement d’une application mobile. Pourtant, cet exercice peut rapidement s'avérer complexe et exigeant.</p>
-            <p>Parce que vos équipes se retrouvent souvent face à des aspects techniques et stratégiques qui dépassent leur domaine d’expertise, ou simplement parce qu’elles manquent de temps pour s’y consacrer pleinement. La rédaction d’un CCTP nécessite de consulter de nombreux départements, de recueillir les attentes de chacun, de comprendre les besoins des utilisateurs finaux, puis de traduire toutes ces informations en un document clair et cohérent. Cela demande une analyse approfondie, une synthèse rigoureuse, et beaucoup de temps, ce qui en fait une étape particulièrement chronophage.</p>
+            <p>L’un des principes premier de l’AMOA est de pouvoir compter à tout moment sur l’accompagnement de notre équipe pour fluidifier au maximum le déroulement du projet et les échanges avec le prestataire que vous aurez sélectionné.</p>
+            <h3>L’assistance à la maîtrise d’ouvrage (AMOA) pour vous accompagner pendant la réalisation du projet</h3>
+        </section>
+        <section>
+            <div className='accueil__section__accompagnement__row'>
+                <article className='accueil__section__accompagnement__container__white'>
+                    <h3>Disposer d’une ressource experte supplémentaire au sein de votre équipe</h3>
+                    <p>Pendant le projet, notre rôle d’Assistant à Maîtrise d’Ouvrage (AMOA) consiste à faire le lien fonctionnel entre le maître d’ouvrage (vous) et le maître d’œuvre (l’équipe de production du prestataire : chef de projet, graphistes, développeurs…).</p>
+                    <p>Ainsi nous sommes un support de votre équipe projet dans toutes les phases de ce dernier, jusqu’à la mise en ligne du site Internet ou de l’application, et même au-delà, ce qui vous permet de disposer d’une ressource experte supplémentaire au sein de votre équipe.</p>
+                    <p>Quand on parle de ressource supplémentaire, il faut avoir en tête que cette ressource sera dédiée à votre projet et n’aura donc pas d’autres tâches (plus urgentes) à accomplir. Et bien sûr cette ressource est présente lors de l’accompagnement opérationnel (développement et recette du site).</p>
+                </article>
+                <article className='content__article'>
+                    <img src="miro.png" alt="" />
+                </article>
+            </div>
+        </section>  
+        <section className='content__block'>  
+            <h3>Porter avec vous un projet ambitieux</h3>
+            <p>Les projets digitaux sont des projets ambitieux, tant sur le plan technique que sur le plan éditorial et graphique. Ils demandent un investissement important des équipes internes. Bénéficier d’une AMO sur le suivi du projet permet d’alléger la charge de l’équipe pilote, tout en leur faisant bénéficier de nos expertises : techniques / éditoriales / ergonomiques.</p>
+            <h3>Continuer à vous accompagner à la suite de l’AMOE</h3>
+            <p>Souvent nous continuons d’accompagner en AMOA des clients que nous avons eu le plaisir d’accompagner en AMOE (lors de la phase amont du projet – recueil des besoins et rédaction du cahier des charges technique et fonctionnel). Cet accompagnement de l’équipe pilote du projet sur les différentes étapes en amont (ateliers, rédaction du cahier des charges…) nous a permis d’acquérir une bonne connaissance des différents acteurs et une perception fine du projet souhaité et de développer une relation de confiance, basée sur la coopération et la communication, des valeurs clés dans la réussite d’un projet.</p>
+            <p>Nous sommes présents à l’ensemble des réunions et partageons avec vous les bonnes pratiques, notamment lors de la conception de gabarit UX et des maquettes, mais sommes également la pour avertir sur les potentiels risques de débordement du projet.</p>
+            <p>Et c’est aussi pour nous une immense source de fierté et de joie que de pouvoir suivre un projet que l’on a conçu avec vous. C’est ce qui nous fait vibrer et nous donne envie de nous investir : voir un jour le site en ligne ou l’application lancée sur les stores.</p>
+            <div className='content__block__temoignage'>
+                <h3>Témoignage</h3>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti provident perferendis ratione ad illo dicta accusantium ducimus quam alias, deserunt explicabo exercitationem? Ea illo ad, perferendis praesentium iusto soluta?"</p>
+                <h4>Marie-Hélène C. Directrice adjointe</h4>
+                <button>Voir la référence</button>
+            </div>
+            <h3>La valeur ajoutée de l’AMOA durant la réalisation de vos projets digitaux</h3>
+            <h5>Vous faire bénéficier de notre expertise tout au long du projet</h5>
+            <ul>
+                <li>Nous assistons à l’ensemble des réunions du projet : suivi du projet, comités de pilotage, ateliers… Et nous tenons à jour un document navette nous permettant de conserver un historique du projet et des décisions prises ou en attente.</li>
+                <li>Nous sommes force de proposition : notre expertise dans le développement de projets numériques nous permet de trouver des solutions en amont pour éviter les blocages (nous avons ainsi pu dans certains projets proposer une solution de recherche non envisagée ou encore permis de fluidifier le parcours utilisateurs en supprimant quelques étapes).</li>
+                <li>Nous traduisons l’expression de besoins et les contraintes techniques possibles afin d’assurer la qualité du site internet produit ou de l’application ou d’un intranet.</li>
+            </ul>
             <div className='content__block__img'>
                 <img src="banner_ph.png" alt="banner placeholder"/>
             </div>
-            <p>Le placement de chaque élément, le choix des termes, et le nombre de rubriques sont autant de facteurs déterminants pour que vos utilisateurs, définis à travers vos personae, puissent naviguer aisément sur le site. Chaque décision, aussi subtile soit-elle, influence directement l’expérience de vos visiteurs.</p>
-            <p>L’analyse de l’existant et l’audit de référencement web apportent également des éclairages précieux pour façonner une arborescence qui soit non seulement intuitive, mais aussi optimisée pour les moteurs de recherche. Un dispositif de navigation ne se limite pas au simple menu principal. Il inclut une série d’éléments qu’il faut soigneusement intégrer lors de la création de l’arborescence : le menu principal et ses sous-rubriques déroulantes, bien sûr, mais aussi un menu de navigation secondaire (souvent placé en haut de page), un menu contextuel (présent à l’intérieur des pages) et le footer, ce pied de page qui accompagne vos utilisateurs sur toutes les sections du site. Chacun de ces éléments joue un rôle crucial dans l’expérience utilisateur globale.</p>
         </section>
         <section className='content'>
             <div className='accueil__section__accompagnement__row'>
@@ -26,9 +56,7 @@ function SupportEquipe () {
                     <img src="miro.png" alt="miro"/>
                 </article>
                 <article className='accueil__section__accompagnement__container__white'>
-                    <h3>Construire ensemble l’arborescence de votre projet</h3>
-                    <p>L'arborescence est la clé de l'organisation de votre site, et cette organisation doit avant tout être pensée du point de vue de vos utilisateurs, non de celui de l’équipe projet. C'est pourquoi nous recommandons de travailler sur l'architecture du site une fois que les personae ont été créés, sur la base du recueil des besoins et de vos connaissances. Ce travail fondamental doit être réalisé avant la conception des gabarits ergonomiques et se nourrir des études préliminaires, notamment l’analyse des sites concurrents.</p>
-                    <p>Une fois finalisée, l’arborescence est formalisée de manière schématique, ce qui permet de la partager facilement, notamment lors de l’appel d’offres, et d’assurer que tout le monde soit aligné sur la structure du futur site.</p>
+                    <h3>Assurer des gabarits et des maquettes en conformité avec l’expression de besoin</h3>
                 </article>
             </div>
         </section>
