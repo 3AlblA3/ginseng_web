@@ -30,7 +30,8 @@ function App() {
         <Route path="/accompagnement_cadrageProjet" element={<CadrageProjet />} />
         <Route path="/accompagnement_cahierCharges" element={<CahierCharges />} />
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
-        <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
+        <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />*
+
       </Routes>
     </main>
   
