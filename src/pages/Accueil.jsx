@@ -77,44 +77,47 @@ function Accueil() {
             </div>
           </div>
           <div className='accueil__section__accompagnement__black__wrapper'>
-            <div className='accueil__section__accompagnement__container__black'>
+            <div class="accueil__section__accompagnement__container__black__content">
               <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Analyse de l'existant</h3>
-                <p>Recenser les fonctionnalités et les enjeux techniques</p>
+                <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Accompagnement technique</h3>
-                <p>Initier les bases du cahier des charges fonctionnel</p>
+                <span><p>Initier les bases du cahier des charges fonctionnel</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Cadrage du projet</h3>
-                <p>De l'arborescence du site internet à la formation des utilisateurs</p>
+                <span><p>De l'arborescence du site internet à la formation des utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Rédaction cahier des charges (CCTP) et lancement de l'appel d'offres</h3>
-                <p>Etablir le document clef de votre appel d'offres</p>
+                <span><p>Etablir le document clef de votre appel d'offres</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
+            </div>
+            <div className='accueil__section__accompagnement__container__black'>
             </div>
           </div>
         </div>
         <div className='accueil__section__accompagnement__row'>
           <div className='accueil__section__accompagnement__black__wrapper'>
-            <div className='accueil__section__accompagnement__container__black'>
+            <div className='accueil__section__accompagnement__container__black'></div>
+            <div class="accueil__section__accompagnement__container__black__content">
               <Link to='/projet' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Support de l'équipe projet</h3>
-                <p>Accompagnement durant toutes les phases de réalisation</p>
+                <span><p>Accompagnement durant toutes les phases de réalisation</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Accompagnement UX-UI</h3>
-                <p>Matérialiser les parcours utilisateurs</p>
+                <span><p>Matérialiser les parcours utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Accompagnement opérationnel</h3>
-                <p>Du développement du site web aux tests</p>
+                <span><p>Du développement du site web aux tests</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
               <Link to='/' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Accompagnement TMA</h3>
-                <p>Etre présent durant la maintenance de votre site internet</p>
+                <span><p>Etre présent durant la maintenance de votre site internet</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
             </div>
           </div>
@@ -162,39 +165,44 @@ function Accueil() {
         ))}
       </div>
     </section>
-      <section className='accueil__section__blog'> 
-        <div className='accueil__section__blog__header'>
-          <h2>Découvrez nos articles de blog</h2>
-          <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
+    <section className='accueil__section__projet'>
+        <h3>Découvrez nos méthodes d'accompagnements</h3>
+        <div className='accueil__section__projet__container'>
+          
         </div>
-        <div className='accueil__section__blog__content'>
-          <div className='accueil__section__blog__content__container'>
-            <div className='accueil__section__blog__content__container__text'>
-              <p>Questions sur le web</p>
-              <h3>Refonte de site web: pourquoi faire un cahier des charges?</h3>
-            </div>
-          </div>
-          <div className='accueil__section__blog__content__container'>
-            <div className='accueil__section__blog__content__container__text'>
-              <p>Questions sur le web</p>
-              <h3>Quelles technologie pour votre projet?</h3>
-            </div>
-          </div>
-          <div className='accueil__section__blog__content__container'>
-            <div className='accueil__section__blog__content__container__text'>
-              <p>Questions sur le web</p>
-              <h3>Quel prix pour un site web?</h3>
-            </div>
+      </section>
+    <section className='accueil__section__blog'> 
+      <div className='accueil__section__blog__header'>
+        <h2>Découvrez nos articles de blog</h2>
+        <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
+      </div>
+      <div className='accueil__section__blog__content'>
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Refonte de site web: pourquoi faire un cahier des charges?</h3>
           </div>
         </div>
-            
-      </section >
-      <section className='accueil__section__contact'>   
-        <div className='accueil__section__contact__container'>
-          <h3>Les beaux projets commencents toujours par un premier échange</h3>
-          <Link to='/contact' className='accueil__section__contact__container__link'>Nous contacter</Link>
-        </div>  
-      </section >
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Quelles technologie pour votre projet?</h3>
+          </div>
+        </div>
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Quel prix pour un site web?</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='accueil__section__contact'>   
+      <div className='accueil__section__contact__container'>
+        <h3>Les beaux projets commencents toujours par un premier échange</h3>
+        <Link to='/contact' className='accueil__section__contact__container__link'>Nous contacter</Link>
+      </div>  
+    </section >
     </>
   );
 }

@@ -19,7 +19,7 @@ import './styles/App.css'
 
 function App() {
   return (
-  <BrowserRouter basename="/ginseng_web">
+  <BrowserRouter basename="/ginseng_web/">
     <Header />
     <main>
       <Routes>
