@@ -32,6 +32,27 @@ function Accueil() {
     },
   };
 
+  const [activeQuestion, setActiveQuestion] = useState(null);
+
+          
+  // Sample audit data
+  const questions = [
+    { title: "Combien de temps dure la phase d'immersion", content:(<>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas perspiciatis officiis vero, amet, earum iure inventore tempora fugiat dicta porro, perferendis est reiciendis corporis! Excepturi officia perferendis quia explicabo?</p>
+      </>
+    )},
+    { title: 'Est-ce obligatoire de faire tout les audits?', content: (<>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, quaerat velit aut aliquam quas amet blanditiis sint accusamus. Voluptates ut voluptatum quae, molestias dolor ipsa quidem reprehenderit at fugiat mollitia?</p>
+      </>) },
+    { title: 'Quels sont les outils que vous utilisez, y-a-t-il des frais supplémentaires associés?', content: (<>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates temporibus deleniti, aspernatur atque mollitia repellendus nihil minima. Magnam consectetur nemo voluptatibus aliquid in est et, cum, commodi officiis suscipit voluptatum.</p>
+  </>) }
+  ];
+
+  const toggleQuestion= (index) => {
+    setActiveQuestion(activeQuestion === index ? null : index);
+  };
+
   return (
     <>
       <section>
@@ -166,9 +187,101 @@ function Accueil() {
       </div>
     </section>
     <section className='accueil__section__projet'>
-        <h3>Découvrez nos méthodes d'accompagnements</h3>
         <div className='accueil__section__projet__container'>
-          
+          <h3>Découvrez nos méthodes d'accompagnements</h3>
+          <div className='accueil__section__projet__container__imgs'>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_analyseExistant" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="analyse_existant.png" alt="" />
+              </Link>  
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Analyse de l'existant</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_accompagnementTechnique" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="accueil.png" alt=""/>
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Accompagnement technique</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_definitionCibles" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="equipe_presentation.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Definition des cibles</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_cadrageProjet" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="graph.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Cadrage du projet</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_cahierCharge" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="ph_2.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Cahier des charges</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="ph_3.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Support de l'équipe projet</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="ph_4.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Accompagnement UX-UI</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="ph_4.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Accompagnement opérationnel</p>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__content'>
+              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                <img src="ph_4.png" alt="" />
+              </Link>
+              <div className='accueil__section__projet__container__imgs__hover-content'>
+                <p>Accompagnement post-projet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='content__block__row'>
+        <div className="content__block__audits">
+          <h3>Vous avez d'autres questions?</h3>
+          {questions.map((question, index) => (
+            <div key={index}>
+              <div className="content__block__audits__row__title" onClick={() => toggleQuestion(index)}>
+                <div className="content__block__audits__row__number">
+                  {(index + 1).toString().padStart(2, '0')}
+                </div>
+                <p>{question.title}</p>
+                <span>{activeQuestion === index ? '▲' : '▼'}</span>
+              </div>  
+              <div className={`content__block__audits__row__content ${activeQuestion === index ? 'active' : ''}`}>
+                {question.content}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     <section className='accueil__section__blog'> 

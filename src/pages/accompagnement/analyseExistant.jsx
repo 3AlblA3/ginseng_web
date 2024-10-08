@@ -98,15 +98,16 @@ function AnalyseExistant() {
         </section>
         <section className='content__block__row'>
         <div className="content__block__audits">
+          <h3>Audits et analyses: explorer et orienter pour mieux répondre aux attentes de vos utilisateurs</h3>
           {audits.map((audit, index) => (
-            <div key={index} className="content__block__audits__row">
-              <div 
-                className="content__block__audits__row__title"
-                onClick={() => toggleAudit(index)}
-              >
-                {audit.title}
+            <div key={index}>
+              <div className="content__block__audits__row__title" onClick={() => toggleAudit(index)}>
+                <div className="content__block__audits__row__number">
+                  {(index + 1).toString().padStart(2, '0')}
+                </div>
+                <p>{audit.title}</p>
                 <span>{activeAudit === index ? '▲' : '▼'}</span>
-              </div>
+              </div>  
               <div className={`content__block__audits__row__content ${activeAudit === index ? 'active' : ''}`}>
                 {audit.content}
               </div>
@@ -114,7 +115,56 @@ function AnalyseExistant() {
           ))}
         </div>
       </section>
-
+      <section className='content__block__row'>
+        <div className='banner__column'>
+        <h3>Pioneering projects for Intelligent solutions</h3>
+        <div className='banner__column__img'>
+          <div className='banner__column__img__bubble'>
+            <p>DeepVision: Enhancing image recognition with neural networks</p>
+          </div>
+        </div>
+        <div className='banner__column__img'>
+          <div className='banner__column__img__bubble'>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section className='accueil__section__blog'> 
+      <div className='accueil__section__blog__header'>
+        <div className='accueil__section__blog__header__title'>
+          <h4>Avant le projet</h4>
+          <h3>Découvrez nos articles de blog</h3>
+        </div>
+        <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
+      </div>
+      <div className='accueil__section__blog__content'>
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Refonte de site web: pourquoi faire un cahier des charges?</h3>
+          </div>
+        </div>
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Quelles technologie pour votre projet?</h3>
+          </div>
+        </div>
+        <div className='accueil__section__blog__content__container'>
+          <div className='accueil__section__blog__content__container__text'>
+            <p>Questions sur le web</p>
+            <h3>Quel prix pour un site web?</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='accueil__section__contact'>   
+      <div className='accueil__section__contact__container'>
+        <h3>Les beaux projets commencents toujours par un premier échange</h3>
+        <Link to='/contact' className='accueil__section__contact__container__link'>Nous contacter</Link>
+      </div>  
+    </section >
         </>
     )
 }

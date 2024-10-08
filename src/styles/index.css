@@ -3,6 +3,12 @@
   font-family: 'Comfortaa', sans-serif;
   margin: 0;
   padding: 0;
+  --white: white;
+  --blue: #131935;
+  --darkBlue: rgb(30, 33, 43);
+  --grey: grey;
+  --lightBlue: rgb(230, 240, 245);
+  font-weight: 500
   
 };
 
