@@ -71,7 +71,7 @@ function AnalyseExistant() {
             </div>
             <div className='content__block__row__container__percentage'>
                 <h3>10%</h3>
-                <p>Temps investi dans la phase d'immersion</p>
+                <p>Temps investi dans la phase d'immersion.</p>
                 <h3>80%</h3>
                 <p>Taux de réussite des projets avec une immersion réussie, contre 50 % sans bonne phase d'immersion.</p>
             </div>

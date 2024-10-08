@@ -265,15 +265,12 @@ function Accueil() {
           </div>
         </div>
       </section>
-      <section className='content__block__row'>
-        <div className="content__block__audits">
+      <section className='content__question'>
+        <div className="content__question__container">
           <h3>Vous avez d'autres questions?</h3>
           {questions.map((question, index) => (
             <div key={index}>
               <div className="content__block__audits__row__title" onClick={() => toggleQuestion(index)}>
-                <div className="content__block__audits__row__number">
-                  {(index + 1).toString().padStart(2, '0')}
-                </div>
                 <p>{question.title}</p>
                 <span>{activeQuestion === index ? '▲' : '▼'}</span>
               </div>  
