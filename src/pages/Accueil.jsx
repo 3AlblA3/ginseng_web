@@ -85,7 +85,7 @@ function Accueil() {
       </section>
       <section className='accueil__section__accompagnement'>
         <div className='accueil__section__accompagnement__row'>
-          <div className='accueil__section__accompagnement__container__white'>
+          <article className='accueil__section__accompagnement__container__white'>
             <h4>Avant le projet (AMOE)</h4>
             <h3>On vous aide à définir votre besoin</h3>
             <p>Pour rédiger un cahier des charges d’une refonte web (ou autre projet) plusieurs étapes d’échanges entre vous et nous sont nécessaires.
@@ -96,9 +96,9 @@ function Accueil() {
             <div className='accueil__section__accompagnement__container__white__bubble'>
               <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
             </div>
-          </div>
+          </article>
           <div className='accueil__section__accompagnement__black__wrapper'>
-            <div class="accueil__section__accompagnement__container__black__content">
+            <article class="accueil__section__accompagnement__container__black__content">
               <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Analyse de l'existant</h3>
                 <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
@@ -115,7 +115,7 @@ function Accueil() {
                 <h3>Rédaction cahier des charges (CCTP) et lancement de l'appel d'offres</h3>
                 <span><p>Etablir le document clef de votre appel d'offres</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
-            </div>
+            </article>
             <div className='accueil__section__accompagnement__container__black'>
             </div>
           </div>
@@ -123,7 +123,7 @@ function Accueil() {
         <div className='accueil__section__accompagnement__row'>
           <div className='accueil__section__accompagnement__black__wrapper'>
             <div className='accueil__section__accompagnement__container__black'></div>
-            <div class="accueil__section__accompagnement__container__black__content">
+            <article class="accueil__section__accompagnement__container__black__content">
               <Link to='/projet' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Support de l'équipe projet</h3>
                 <span><p>Accompagnement durant toutes les phases de réalisation</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
@@ -140,9 +140,9 @@ function Accueil() {
                 <h3>Accompagnement TMA</h3>
                 <span><p>Etre présent durant la maintenance de votre site internet</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
               </Link>
-            </div>
+            </article>
           </div>
-          <div className='accueil__section__accompagnement__container__white'>
+          <article className='accueil__section__accompagnement__container__white'>
             <h4>Pendant le projet (AMOA)</h4>
             <h3>On vous accompagne tout au long du projet et même après</h3>
             <p>Nous serons présents sur l’ensemble des réunions pour vous apporter nos conseils d’expert et veiller au respect du cahier des charges web ou CCTP
@@ -150,7 +150,7 @@ function Accueil() {
             <div className='accueil__section__accompagnement__container__white__row'>
               <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <section className='accueil__section__casClient'>
@@ -283,7 +283,7 @@ function Accueil() {
       </section>
     <section className='accueil__section__blog'> 
       <div className='accueil__section__blog__header'>
-        <h2>Découvrez nos articles de blog</h2>
+        <h3>Découvrez nos articles de blog</h3>
         <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
       </div>
       <div className='accueil__section__blog__content'>

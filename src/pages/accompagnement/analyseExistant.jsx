@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';import { Link } from "react-router-dom";
 import './analyseExistant.css'
 
 function AnalyseExistant() {
 
-            const [activeAudit, setActiveAudit] = useState(null);
+  const [activeAudit, setActiveAudit] = useState(null);
 
           
             // Sample audit data
@@ -117,17 +116,19 @@ function AnalyseExistant() {
       </section>
       <section className='content__block__row'>
         <div className='banner__column'>
-        <h3>Pioneering projects for Intelligent solutions</h3>
-        <div className='banner__column__img'>
-          <div className='banner__column__img__bubble'>
-            <p>DeepVision: Enhancing image recognition with neural networks</p>
+          <h3>Pioneering projects for Intelligent solutions</h3>
+          <div className='banner__column__img__container'>
+            <div className='banner__column__img__sticky'>
+              <div className='banner__column__img__bubble'>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div className='banner__column__img'>
+              <div className='banner__column__img__bubble'>
+                <p>DeepVision: Enhancing image recognition with neural networks</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className='banner__column__img'>
-          <div className='banner__column__img__bubble'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
         </div>
       </section>
       <section className='accueil__section__blog'> 

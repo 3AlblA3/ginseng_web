@@ -5,40 +5,44 @@ import './definitionCible.jsx'
 function DefinitonCible () {
     return(
         <>
-        <section className='banner'>
-            <h4>Avant le projet</h4>
-            <h2>Définition des cibles : comprendre les objectifs des utilisateurs</h2>
+        <section className='banner__intro'>
+            <div className='banner__intro__container'>
+                <h4>Avant le projet</h4>
+                <h2>Définition des cibles : comprendre les objectifs des utilisateurs</h2>
+            </div>
         </section>
-        <section className='content__block'>
-            <p>Avez-vous déjà entendu parler de l'UX (expérience utilisateur), d'ergonomie ou de conception centrée sur l'utilisateur ? Ces concepts, en réalité, reposent tous sur une idée simple mais puissante : un site web ou une application doit être pensé avant tout pour l'utilisateur final, celui qui va réellement s'en servir.</p>
-            <h3>Comprendre ses cibles grâce à la méthode des personae</h3>
-            <h5>Pourquoi est-il crucial de définir ses cibles ?</h5>
-            <p>Que ce soit pour consulter des informations, se documenter sur un sujet spécifique, trouver un guide pratique ou encore être accompagné dans une démarche, un projet numérique s’adresse à des publics aux besoins variés et aux attentes souvent très différentes.</p>
-            <p>En construisant des personae, on partage une vision claire et collective des objectifs des utilisateurs. Prenons un exemple concret : une personne cherchant une convention collective aura des attentes très différentes d'un passionné de sport automobile qui cherche à suivre une course en direct. C’est ce genre de nuances que la création des personae permet de saisir, afin d’offrir une expérience adaptée à chaque utilisateur.</p>
+        <section className='content__block__column'>
+            <div className='content__block__row__container__text'>
+                <p>Avez-vous déjà entendu parler de l'UX (expérience utilisateur), d'ergonomie ou de conception centrée sur l'utilisateur ? Ces concepts, en réalité, reposent tous sur une idée simple mais puissante : un site web ou une application doit être pensé avant tout pour l'utilisateur final, celui qui va réellement s'en servir.</p>
+                <h3>Comprendre ses cibles grâce à la méthode des personae</h3>
+                <h5>Pourquoi est-il crucial de définir ses cibles ?</h5>
+                <p>Que ce soit pour consulter des informations, se documenter sur un sujet spécifique, trouver un guide pratique ou encore être accompagné dans une démarche, un projet numérique s’adresse à des publics aux besoins variés et aux attentes souvent très différentes.</p>
+                <p>En construisant des personae, on partage une vision claire et collective des objectifs des utilisateurs. Prenons un exemple concret : une personne cherchant une convention collective aura des attentes très différentes d'un passionné de sport automobile qui cherche à suivre une course en direct. C’est ce genre de nuances que la création des personae permet de saisir, afin d’offrir une expérience adaptée à chaque utilisateur.</p>
+            </div>
             <div className='content__block__img'>
                 <img src="id_ph.png" alt="id placeholder" />
             </div>
-            <p>Il est essentiel que les cibles identifiées soient validées collectivement par l'équipe projet et les décideurs clés. Cette validation garantit que tout le monde partage une même vision des utilisateurs finaux.</p>
-            <p>Dès le début de nos missions, nous travaillons avec vous pour esquisser une première version de ces cibles. Puis, au fil des étapes de recueil des besoins et lors d’un atelier de co-conception, nous affinons cette ébauche. À partir de ces échanges, nous créons des fiches personae détaillées, synthétisant les profils des utilisateurs.</p>
-            <p>Pour concevoir ces personae, nous nous appuyons sur votre expertise terrain, l’analyse de l’existant et les résultats des phases de recueil des besoins et de l’analyse des statistiques. C’est cette combinaison d’informations qui permet de dessiner des profils utilisateurs pertinents et ancrés dans la réalité.</p>
+            <div className='content__block__row__container__text'>
+                <p>Il est essentiel que les cibles identifiées soient validées collectivement par l'équipe projet et les décideurs clés. Cette validation garantit que tout le monde partage une même vision des utilisateurs finaux.</p>
+                <p>Dès le début de nos missions, nous travaillons avec vous pour esquisser une première version de ces cibles. Puis, au fil des étapes de recueil des besoins et lors d’un atelier de co-conception, nous affinons cette ébauche. À partir de ces échanges, nous créons des fiches personae détaillées, synthétisant les profils des utilisateurs.</p>
+                <p>Pour concevoir ces personae, nous nous appuyons sur votre expertise terrain, l’analyse de l’existant et les résultats des phases de recueil des besoins et de l’analyse des statistiques. C’est cette combinaison d’informations qui permet de dessiner des profils utilisateurs pertinents et ancrés dans la réalité.</p>
+            </div>
         </section>
-        <section className='content'>
-            <div className='accueil__section__accompagnement__row'>
-                <article className='accueil__section__accompagnement__container__white'>
+        <section className='content__block__row'>
+                <article className='content__block__row__container__sticky'>
                     <h3>Qu’est-ce que les personae ?</h3>
                     <div className='content__article__bubble'>
                         <img src="https://picsum.photos/100/150" alt="img manu"/>
                         <p>Vous voulez en savoir plus sur sur notre méthode de construction des personae ?</p>
                     </div>
                 </article>
-                <article className='content__article'>
+                <article className='content__block__row__container__text'>
                     <p>La création des personae est réalisée en co-construction entre nos 2 équipes.</p>
                     <p><strong>Les personae, ce sont des représentations fictives d’utilisateurs réels</strong>. Basés sur des données concrètes, ils permettent de modéliser les comportements des utilisateurs cibles de votre projet, qu’il s’agisse d’un site web, d’une application mobile, d’un intranet ou encore d’un outil métier.</p>
                     <p>Chaque persona est doté d’un prénom, d’un métier, d’une histoire et de besoins spécifiques. Cette personnalisation les rend tangibles pour l’équipe projet :</p>      
                     <p>« Est-ce que Laura trouve facilement l’information qu’il cherche ? Laura, qui est pressée, peut-elle obtenir une réponse rapide à sa question, ou est-elle bloquée par le site ? »</p>  
                     <p>Le cœur du travail autour des personae est de permettre à l’équipe de se glisser dans la peau de l’utilisateur final, dès les premières phases de conception et de développement. Cela permet de prioriser les cibles, de distinguer les besoins principaux des besoins secondaires, et de comprendre les objectifs des utilisateurs. De cette manière, l’arborescence et l’ergonomie du site ou de l’application pourront être optimisées pour répondre précisément à leurs attentes.</p>   
                 </article>
-            </div>
         </section>
         <section className='content__block'>
             <h3>Comprendre les objectifs des utilisateurs cibles et les retranscrire</h3>

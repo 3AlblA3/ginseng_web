@@ -5,12 +5,14 @@ import './temoignages.css'
 function Temoignages() {
     return(
         <>
-        <section className='banner'>
-            <h4>Merci à vous</h4>
-            <h2>Témoignages clients : Pourquoi choisir notre agence Ginseng Web</h2>
+       <section className='banner__intro'>
+            <div className='banner__intro__container'>
+                <h4>Merci à vous</h4>
+                <h2>Témoignages clients : Pourquoi choisir notre agence Ginseng Web</h2>
+            </div>
         </section>
-        <section className='content'>
-            <article className='content__article'>
+        <section className='content__block__row'>
+            <article className='content__block__row__container__text'>
                 <h3>Une approche collaborative : vous et nous</h3>
                 <p>Notre approche repose sur une conviction simple : la collaboration est la clé de la réussite. En travaillant étroitement avec vos équipes, nous visons à optimiser votre projet et à obtenir des résultats concrets. Notre motivation ? Votre satisfaction et l'aboutissement de ce projet.</p>
                 <p>En nous associant à vos équipes, nous visons un seul objectif : faire de votre projet un succès. Et, il faut le dire, le travail bien fait !</p>
@@ -35,7 +37,7 @@ function Temoignages() {
                 <img className='banner__row__container__img' src="https://picsum.photos/500/400" alt="image" />
             </div>
         </section>
-        <section className='content'>
+        <section className='content__block__row'>
             <article className='content__temoignage'>
                 <h3>Témoignage</h3>
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti provident perferendis ratione ad illo dicta accusantium ducimus quam alias, deserunt explicabo exercitationem? Ea illo ad, perferendis praesentium iusto soluta?"</p>
