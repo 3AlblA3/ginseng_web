@@ -20,7 +20,7 @@ function AgencePresentation () {
                 <p>Nous sommes une agence à taille humaine : vos interlocuteurs sont fixes et vous connaissent bien. Nous constituons pour chaque projet une équipe dédiée (qui vous suivra du début à la fin du projet) avec un chef de projet qui sera votre contact privilégié.</p>
             </article>
             <div className='content__block__intro__img'>
-                <img className='content__article__img' src="https://picsum.photos/500/500" alt="image" />
+                <img className='content__block__img' src="https://picsum.photos/500/500" alt="image" />
             </div>
         </section>
         <section className='content__stats__row'>
@@ -47,7 +47,7 @@ function AgencePresentation () {
         </section>
         <section className='content__block__row'>
             <article className='content__content__block__container'>
-                <img className='content__content__block__container__img' src="https://picsum.photos/500/500" alt="image" />
+                <img className='content__block__img' src="https://picsum.photos/500/500" alt="image" />
             </article>
             <article className='content__block__row__container__text'>
                 <h3>Une équipe qui vous suit tout au long du projet</h3>
@@ -58,7 +58,7 @@ function AgencePresentation () {
         </section>
         <section className='content__block__row'>
             <article className='content__block__row__container__text'>
-                <h3>Du developpement au conseil</h3>
+                <h3>Du développement au conseil</h3>
                 <p>En tant que co-fondateur de l’agence Ginseng Web, j’ai pris la décision il y a quelques années de réorienter notre activité vers le conseil. Cette évolution s’est imposée à moi après plusieurs années passées à créer et à refondre des sites internet. J’ai alors constaté un décalage entre l’importance que nous accordions à la phase de conception et les attentes réelles de nos clients en termes de budget et de délai.</p>
                 <p>Ancien dirigeant dans les télécoms, je suis convaincu de l'importance de concilier vision commerciale et expertise technique. En effet, pour réussir dans le secteur du numérique, il est essentiel de comprendre les enjeux commerciaux de nos clients et d'adapter nos offres en conséquence.</p>
                 <p>Pour moi, il était donc impensable de faire l’impasse sur les fondamentaux du web : la définition des cibles, la construction d’interfaces intuitives et l’expérience utilisateur. C’est pourquoi j’ai souhaité consacrer l’ensemble de mon énergie à accompagner nos clients dans ces domaines.</p>

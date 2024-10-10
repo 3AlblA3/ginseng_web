@@ -83,8 +83,7 @@ function Accueil() {
           </div>
         </div>
       </section>
-      <section className='accueil__section__accompagnement'>
-        <div className='accueil__section__accompagnement__row'>
+        <section className='accueil__section__accompagnement__row'>
           <article className='accueil__section__accompagnement__container__white'>
             <h4>Avant le projet (AMOE)</h4>
             <h3>On vous aide à définir votre besoin</h3>
@@ -95,8 +94,8 @@ function Accueil() {
             </div>
             <div className='content__article__bubble'>
               <img src="https://picsum.photos/100/125" alt="img manu"/>
-              <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
-            </div>
+                    <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
+              </div>
           </article>
           <div className='accueil__section__accompagnement__black__wrapper'>
             <article class="accueil__section__accompagnement__container__black__content">
@@ -120,8 +119,8 @@ function Accueil() {
             <div className='accueil__section__accompagnement__container__black'>
             </div>
           </div>
-        </div>
-        <div className='accueil__section__accompagnement__row'>
+        </section>
+        <section className='accueil__section__accompagnement__row'>
           <div className='accueil__section__accompagnement__black__wrapper'>
             <div className='accueil__section__accompagnement__container__black'></div>
             <article class="accueil__section__accompagnement__container__black__content">
@@ -152,8 +151,7 @@ function Accueil() {
               <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
             </div>
           </article>
-        </div>
-      </section>
+        </section>
       <section className='accueil__section__casClient'>
       <h3>Découvrez nos cas clients</h3>
       <div className='accueil__section__casClient__menu'>

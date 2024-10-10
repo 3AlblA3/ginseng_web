@@ -1,16 +1,13 @@
-
-
 header{
     position: fixed;
-    background-color: white;
+    background-color: var(--blue);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 100%;
     top: 0rem;
     z-index: 5;
 }
@@ -41,19 +38,21 @@ header{
     flex-direction: row;
     align-items: center;
     text-decoration: none;
+    transition-duration: 0.2s;
     &:hover{
-      text-decoration: underline black;
+      text-decoration: underline white;
     }
 
     h1{
-      color: black;
+      color: white;
       text-decoration: none;
       font-weight: 300;
+      font-size: 1.5rem;
+      text-decoration: none;
       @media screen and (max-width: 1200px){
         display: none;   
        }
     }
-    
 }
 
 .header__logo{
@@ -63,7 +62,7 @@ header{
 
 .header__section__menu, .header__section__phone{
     position: relative;
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: medium;
     transition: transform 0.3s ease;
@@ -79,36 +78,39 @@ header{
     padding: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: black;
+    color: white;
     font-weight: 400;
     margin-left: 1rem;
+    font-size: 1rem;
     transition: transform 0.3s ease;
 }
 
 .contact:hover {
-    color: #000;
-    transform: scale(1.2);
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Gestion menu deroulant mobile */
 
 .header__section__menu__deroulant{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: relative;
     @media screen and (max-width: 1200px){
         display: none;
     }
 }
-  .header__section__menu__deroulant__p {
-    cursor: pointer;
-    font-weight: 400;
-    transition-duration: 0.2s;
-    color: black;
-    &:hover{
-        font-size: 1.4rem;
-    }
+
+.header__section__menu__deroulant__p {
+  cursor: pointer;
+  font-weight: 400;
+  transition-duration: 0.2s;
+  color: white;
+  font-size: 1rem;
+  &:hover{
+    font-size: 1.1rem;
   }
+}
 
   .header__section__menu__deroulant__p__sous {
     position: absolute;

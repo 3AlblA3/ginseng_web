@@ -28,13 +28,15 @@ function Temoignages() {
                 <button>Voir la référence</button>
             </article>
         </section>
-        <section className='banner__row'>
-            <div className='banner__row__container'>
-                <h3>Titre de la vidéo?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, incidunt accusantium dicta excepturi voluptas similique recusandae iure, numquam sapiente ullam neque ipsum? Autem blanditiis praesentium assumenda exercitationem, alias quaerat at?</p>
-            </div>
-            <div className='banner__row__container'>
-                <img className='banner__row__container__img' src="https://picsum.photos/500/400" alt="image" />
+        <section className='content__block__row'>
+            <div className='banner__row'>
+                <div className='banner__row__container'>
+                    <h3>Titre de la vidéo?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, incidunt accusantium dicta excepturi voluptas similique recusandae iure, numquam sapiente ullam neque ipsum? Autem blanditiis praesentium assumenda exercitationem, alias quaerat at?</p>
+                </div>
+                <div className='banner__row__container'>
+                    <img className='banner__row__container__img' src="https://picsum.photos/500/400" alt="image" />
+                </div>
             </div>
         </section>
         <section className='content__block__row'>
