@@ -268,7 +268,7 @@ li{
     font-size: 1rem;
     &:hover{
       color: #000;
-    text-decoration: underline;
+    text-decoration: underline
     }
   }
   

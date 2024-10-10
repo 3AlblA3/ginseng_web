@@ -46,12 +46,12 @@ function Header() {
   return (
         
         <header>
-          <section className="header__section">
+          <div className="header__section">
             <Link to="/" className="header__section__title"><img src="logo_blue_only.PNG" alt="logo ginseng web" className="header__logo"/>
             <h1>Ginseng Web</h1></Link>
-          </section>
+          </div>
           <div className="header__desktop">
-          <section className="header__section">
+          <div className="header__section">
             <div className={`header__section__menu__deroulant ${activeMenu === 'agency' ? 'open' : ''}`}>
               <h3 className="header__section__menu__deroulant__p" onClick={toggleAgencyMenu}>L'agence</h3>
               <ul className="header__section__menu__deroulant__p__sous">
@@ -115,14 +115,14 @@ function Header() {
             <div className="header__section__menu__deroulant">
             <Link to="/blog" className="header__section__menu__deroulant__p__sous__link" style={{textDecoration:"none"}}><h3 className="header__section__menu__deroulant__p">Blog</h3></Link>
             </div>
-          </section>
+          </div>
           </div>
           <div className="header__div__right">
-        <section className="header__section">
+        <div className="header__section">
           <h3 className="header__section__phone">01 86 52 22 99</h3>
           <Link to="/contact" style={{textDecoration:"none"}}><h3 className="contact">Contact</h3></Link>
-        </section>
-        <section className="header__section__mobile">
+        </div>
+        <div className="header__section__mobile">
           <img
             className="header__section__menu__mobile__img"
             src="menu.png"
@@ -204,7 +204,7 @@ function Header() {
               </div>
             )}
           </div>
-        </section>
+        </div>
       </div>
         </header>
   )

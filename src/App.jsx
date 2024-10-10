@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header'; 
@@ -14,13 +14,16 @@ import CadrageProjet from './pages/accompagnement/cadrageProjet';
 import CahierCharges from './pages/accompagnement/cahierCharges';
 import DefinitonCible from './pages/accompagnement/definitionCible';
 import SupportEquipe from './pages/accompagnement/supportEquipe';
+import AnimationWrapper from './utilities/AnimationWrapper';
+
+
 
 import './styles/App.css'
 
 function App() {
-  
+
   return (
-  <BrowserRouter basename="/ginseng_web/">
+    <AnimationWrapper>
     <Header />
     <main>
       <Routes>
@@ -39,7 +42,7 @@ function App() {
       </Routes>
     </main>
     <Footer />
-  </BrowserRouter>
+    </AnimationWrapper>
   );
 }
 

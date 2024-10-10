@@ -101,9 +101,11 @@ function Contact() {
 
     return (
         <>
-            <section className='banner'>
-                <h4>Contactez-nous</h4>
-                <h2>Les beaux projets commencent toujours par un échange</h2>
+            <section className='banner__intro'>
+                <div className='banner__intro__container'>
+                    <h4>Contactez-nous</h4>
+                    <h2>Les beaux projets commencent toujours par un échange</h2>
+                </div>
             </section>
             <section className='form__background'>
                 <div className='form__title'>
