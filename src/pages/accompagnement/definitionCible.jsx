@@ -12,25 +12,21 @@ function DefinitonCible () {
             </div>
         </section>
         <section className='content__block__column'>
-            <div className='content__block__row__container__text'>
-                <p>Avez-vous déjà entendu parler de l'UX (expérience utilisateur), d'ergonomie ou de conception centrée sur l'utilisateur ? Ces concepts, en réalité, reposent tous sur une idée simple mais puissante : un site web ou une application doit être pensé avant tout pour l'utilisateur final, celui qui va réellement s'en servir.</p>
-                <h3>Comprendre ses cibles grâce à la méthode des personae</h3>
-                <h5>Pourquoi est-il crucial de définir ses cibles ?</h5>
-                <p>Que ce soit pour consulter des informations, se documenter sur un sujet spécifique, trouver un guide pratique ou encore être accompagné dans une démarche, un projet numérique s’adresse à des publics aux besoins variés et aux attentes souvent très différentes.</p>
-                <p>En construisant des personae, on partage une vision claire et collective des objectifs des utilisateurs. Prenons un exemple concret : une personne cherchant une convention collective aura des attentes très différentes d'un passionné de sport automobile qui cherche à suivre une course en direct. C’est ce genre de nuances que la création des personae permet de saisir, afin d’offrir une expérience adaptée à chaque utilisateur.</p>
-            </div>
+            <p>Avez-vous déjà entendu parler de l'UX (expérience utilisateur), d'ergonomie ou de conception centrée sur l'utilisateur ? Ces concepts, en réalité, reposent tous sur une idée simple mais puissante : un site web ou une application doit être pensé avant tout pour l'utilisateur final, celui qui va réellement s'en servir.</p>
+            <h3>Comprendre ses cibles grâce à la méthode des personae</h3>
+            <h5>Pourquoi est-il crucial de définir ses cibles ?</h5>
+            <p>Que ce soit pour consulter des informations, se documenter sur un sujet spécifique, trouver un guide pratique ou encore être accompagné dans une démarche, un projet numérique s’adresse à des publics aux besoins variés et aux attentes souvent très différentes.</p>
+            <p>En construisant des personae, on partage une vision claire et collective des objectifs des utilisateurs. Prenons un exemple concret : une personne cherchant une convention collective aura des attentes très différentes d'un passionné de sport automobile qui cherche à suivre une course en direct. C’est ce genre de nuances que la création des personae permet de saisir, afin d’offrir une expérience adaptée à chaque utilisateur.</p>
             <div className='content__block__img'>
                 <img src="id_ph.png" alt="id placeholder" />
             </div>
-            <div className='content__block__row__container__text'>
                 <p>Il est essentiel que les cibles identifiées soient validées collectivement par l'équipe projet et les décideurs clés. Cette validation garantit que tout le monde partage une même vision des utilisateurs finaux.</p>
                 <p>Dès le début de nos missions, nous travaillons avec vous pour esquisser une première version de ces cibles. Puis, au fil des étapes de recueil des besoins et lors d’un atelier de co-conception, nous affinons cette ébauche. À partir de ces échanges, nous créons des fiches personae détaillées, synthétisant les profils des utilisateurs.</p>
                 <p>Pour concevoir ces personae, nous nous appuyons sur votre expertise terrain, l’analyse de l’existant et les résultats des phases de recueil des besoins et de l’analyse des statistiques. C’est cette combinaison d’informations qui permet de dessiner des profils utilisateurs pertinents et ancrés dans la réalité.</p>
-            </div>
         </section>
         <section className='content__block__row'>
                 <article className='content__block__row__container__sticky'>
-                    <h3>Qu’est-ce que les personae ?</h3>
+                    <h3>Qu’est-ce que les personae?</h3>
                     <div className='content__article__bubble'>
                         <img src="https://picsum.photos/100/150" alt="img manu"/>
                         <p>Vous voulez en savoir plus sur sur notre méthode de construction des personae ?</p>
@@ -44,7 +40,7 @@ function DefinitonCible () {
                     <p>Le cœur du travail autour des personae est de permettre à l’équipe de se glisser dans la peau de l’utilisateur final, dès les premières phases de conception et de développement. Cela permet de prioriser les cibles, de distinguer les besoins principaux des besoins secondaires, et de comprendre les objectifs des utilisateurs. De cette manière, l’arborescence et l’ergonomie du site ou de l’application pourront être optimisées pour répondre précisément à leurs attentes.</p>   
                 </article>
         </section>
-        <section className='content__block'>
+        <section className='content__block__column'>
             <h3>Comprendre les objectifs des utilisateurs cibles et les retranscrire</h3>
             <h5>Pourquoi est-il crucial de définir ses cibles ?</h5>
             <p>Pour réaliser les personae nous nous basons sur plusieurs éléments qui vont nous permettre de comprendre quels sont les objectifs de vos utilisateurs :</p>
@@ -55,20 +51,18 @@ function DefinitonCible () {
             </ul>
             <p>À l’issue d’ateliers de co-conception, nous formalisons les éléments recueillis en créant une fiche synthétique et mise en forme pour chaque persona, qui vous suivra tout au long du projet.</p>
         </section>
-        <section className='content'>
-            <div className='accueil__section__accompagnement__row'>
+        <section className='content__block__row'>
                 <article className='content__article'>
                     <img src="miro.png" alt="miro"/>
                 </article>
-                <article className='accueil__section__accompagnement__container__white'>
+                <article className='content__block__row__container__sticky'>
                     <h3>Un atelier de co-conception</h3>
                     <p>Une fois toutes les informations collectées, nous organisons un atelier dédié à la construction des personae.</p>
                     <p>Notre approche garantit que les personae que nous créons reflètent fidèlement les utilisateurs réels de votre site. Étape par étape, nous définissons les caractéristiques de chaque persona : leur état d’esprit, leur comportement face à votre application ou site (sont-ils stressés ? quel appareil utilisent-ils ? à quelle fréquence se connectent-ils ?). Nous dressons ensuite la liste de leurs besoins, en explorant leurs objectifs, le contexte dans lequel ils utilisent votre plateforme, et ce qu’ils espèrent accomplir. Enfin, nous mettons en lumière leurs craintes, leurs frustrations, ainsi que les fonctionnalités qui leur sont essentielles.</p>
                     <p>Pour finaliser les fiches personae, l'équipe projet affine les profils avec nous en leur attribuant un prénom, un âge, une situation familiale, un métier, et même un lieu de résidence. Cette personnalisation donne vie à vos utilisateurs et permet de mieux comprendre leurs attentes.</p>
                 </article>
-            </div>
         </section>
-        <section className='content__block'>
+        <section className='content__block__column'>
             <h3>Résultat : une fiche de personae que nous transmettons</h3>
             <p>À l’issue de toutes ces étapes, nous créons des <strong>fiches synthétiques</strong> et visuellement attrayantes qui vous accompagneront tout au long de votre projet. Ces fiches personae deviennent une véritable référence pour les étapes suivantes, en particulier lors du cadrage du projet.</p>
             <p>Les personae sont ensuite partagés avec l’ensemble de vos équipes afin que chacun, y compris les décideurs, soit parfaitement aligné sur l'identité et les besoins de l’utilisateur final. C’est souvent un moment clé où le projet prend forme de manière concrète, offrant à tous une vision claire et partagée de l’objectif à atteindre.</p>

@@ -3,7 +3,7 @@
 .banner__intro {
     background-color: var(--blue);
     padding-bottom: 5rem;
-    padding-left: 6rem;
+    padding-left: 4rem;
     padding-top: 8rem;
     position: relative;
     @media screen and (max-width: 1100px){
@@ -43,7 +43,7 @@
 .content__block__intro__container {
     width: 45%;
     padding-right: 2rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
     h3{
         font-size: 2rem;
         @media screen and (max-width: 1100px){
@@ -80,23 +80,42 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem;
+    gap: 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-top:2rem;
     padding-bottom: 2rem;
-    gap: 4rem;
     @media screen and (max-width: 1100px){
         padding: 3rem;
         flex-direction: column;
     }
 }
 
+
+.content__block__column{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: block;
+    h5{font-size: 1.5rem;};
+    h3{font-size: 2rem;
+    width: 50%;}
+}
+
+.content__block__img{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
 .content__block__row__container__text{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     position: relative;
     perspective: 1000px;
-    padding-bottom: 2rem;
     h3{
         font-size: 2rem;
     };
@@ -107,6 +126,21 @@
         }
     }
 }
+
+.content__block__row__container__sticky {
+    position: sticky;
+    top: 7rem; /* Adjust this value to set the distance from the top of the viewport */
+    width: 75%;
+    height: fit-content;
+    align-self: flex-start;
+    h3{
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 1100px){
+        position: static;    
+    }
+  }
+
 
 .content__block__row__container__percentage{
     width: 20%;

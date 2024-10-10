@@ -5,28 +5,30 @@ import './supportEquipe.css'
 function SupportEquipe () {
     return(
         <>
-        <section className='banner'>
-            <h4>Pendant le projet - AMOA</h4>
-            <h2>Support de l'équipe projet : accompagnement durant toutes les phases de réalisation</h2>
+        <section className='banner__intro'>
+            <div className='banner__intro__container'>
+                <h4>Pendant le projet - AMOA</h4>
+                <h2>Support de l'équipe projet : accompagnement durant toutes les phases de réalisation</h2>
+            </div>
         </section>
-        <section className='content__block'>
+        <section className='content__block__column'>
             <p>L’un des principes premier de l’AMOA est de pouvoir compter à tout moment sur l’accompagnement de notre équipe pour fluidifier au maximum le déroulement du projet et les échanges avec le prestataire que vous aurez sélectionné.</p>
             <h3>L’assistance à la maîtrise d’ouvrage (AMOA) pour vous accompagner pendant la réalisation du projet</h3>
         </section>
         <section>
-            <div className='accueil__section__accompagnement__row'>
-                <article className='accueil__section__accompagnement__container__white'>
+            <div className='content__block__row'>
+                <article className='content__block__row__container__sticky'>
                     <h3>Disposer d’une ressource experte supplémentaire au sein de votre équipe</h3>
                     <p>Pendant le projet, notre rôle d’Assistant à Maîtrise d’Ouvrage (AMOA) consiste à faire le lien fonctionnel entre le maître d’ouvrage (vous) et le maître d’œuvre (l’équipe de production du prestataire : chef de projet, graphistes, développeurs…).</p>
                     <p>Ainsi nous sommes un support de votre équipe projet dans toutes les phases de ce dernier, jusqu’à la mise en ligne du site Internet ou de l’application, et même au-delà, ce qui vous permet de disposer d’une ressource experte supplémentaire au sein de votre équipe.</p>
                     <p>Quand on parle de ressource supplémentaire, il faut avoir en tête que cette ressource sera dédiée à votre projet et n’aura donc pas d’autres tâches (plus urgentes) à accomplir. Et bien sûr cette ressource est présente lors de l’accompagnement opérationnel (développement et recette du site).</p>
                 </article>
-                <article className='content__article'>
+                <article className='content__block__img'>
                     <img src="miro.png" alt="" />
                 </article>
             </div>
         </section>  
-        <section className='content__block'>  
+        <section className='content__block__column'>  
             <h3>Porter avec vous un projet ambitieux</h3>
             <p>Les projets digitaux sont des projets ambitieux, tant sur le plan technique que sur le plan éditorial et graphique. Ils demandent un investissement important des équipes internes. Bénéficier d’une AMO sur le suivi du projet permet d’alléger la charge de l’équipe pilote, tout en leur faisant bénéficier de nos expertises : techniques / éditoriales / ergonomiques.</p>
             <h3>Continuer à vous accompagner à la suite de l’AMOE</h3>
@@ -50,52 +52,48 @@ function SupportEquipe () {
                 <img src="banner_ph.png" alt="banner placeholder"/>
             </div>
         </section>
-        <section className='content'>
-            <div className='accueil__section__accompagnement__row'>
-                <article className='content__article'>
-                    <img src="miro.png" alt="miro"/>
-                </article>
-                <article className='accueil__section__accompagnement__container__white'>
-                    <h3>Assurer des gabarits et des maquettes en conformité avec l’expression de besoin</h3>
-                </article>
-            </div>
+        <section className='content__block__row'>
+            <article className='content__block__row__container__sticky'>
+                <h3>Assurer des gabarits et des maquettes en conformité avec l’expression de besoin</h3>
+                <div className='content__article__bubble'>
+                    <img src="https://picsum.photos/100/125" alt="img bubble"/>
+                    <p>En savoir plus sur notre accompagnement lors de la phase de conception (expertise UX/UI)</p>
+                </div>
+            </article>
+            <article className='content__block__row__container__text'>
+                <p>Nous serons présents sur l’ensemble des ateliers de conception (notamment durant les ateliers UX/UI où les parcours utilisateurs sont concrétisés sous la forme d’un enchaînement de gabarits), au cours desquels nous nous assurons du respect de la prise en compte des demandes exposées dans le cahier des charges et des parcours utilisateurs.</p>
+                <p>Nous veillons lors de la création des gabarits et des maquettes, à ce que les pages soient ergonomiques et facilitent le parcours des utilisateurs en nous appuyant notamment des normes et critères heuristiques (Les critères de Bastien & Scapin – identification des difficultés d’ergonomie / Les heuristiques de Jacob Nielsen / Les lois de la Gestalt – principes de similarité et de proximité).</p>
+                <p>Des tests utilisateurs peuvent également être effectués à cette étape pour confirmer ou non les choix opérés.</p>
+                <p>Les objectifs des personae sont au cœur de cette phase. Nous prenons aussi en compte les problématiques d’accessibilité numérique même si elles ne sont pas centrales sur le projet car nous avons à cœur de faire en sorte que chaque site internet puisse délivrer la même information pour tous.</p>           
+            </article>
         </section>
-        <section className='content__block'>
-            <h3>Prévoir la gestion des contenus : un défi incontournable</h3>
-            <h5>Un gabarit de page c’est quoi ?</h5>
-            <p>Le gabarit ergonomique (ou wireframe) sert de fondation à la structure d'une page en définissant l'emplacement de tous les éléments qui y seront intégrés. À ce stade, aucune intention graphique n'intervient : l'ergonomie est le seul guide. Chaque décision est prise en fonction de la logique d’usage, avec pour objectif de rendre l’expérience intuitive pour vos personae. Les éléments doivent être placés de manière cohérente, afin d'offrir un accès simple, rapide et pertinent à l’information recherchée.</p>
+        <section className='content__block__column'>
+            <h3>Bénéficier de notre regard d’expert lors de la relecture des spécifications</h3>
+            <p>La phase de conception conduit à la rédaction des spécifications fonctionnelles du projet (qui peut aussi survenir après validation des maquettes). Ce document doit lister l’ensemble des éléments fonctionnels du site : les différents formulaires, l’administration du site, les départs de mails, les spécificités de l’espace adhérent, les connexions avec les services tiers, etc..</p>
+            <p>Ce document est essentiel et contient l’ensemble de points techniques (ou ergonomique) permettant de comprendre comment le site va fonctionner, il doit être validé par l’équipe projet avant la phase de développement.</p>
+            <p>Lors de nos accompagnements AMOA, nous prévoyons impérativement une phase de relecture de ces spécifications fonctionnelles et techniques après laquelle nous faisons part de nos remarques à l’équipe projet. Il peut même nous arriver dans certains projets de co-construire ces spéciations avec l’agence.</p>
+            <p>Nous vérifions notamment que les éléments exposés sont compréhensibles par tous et que le fonctionnement évoqué correspond aux besoins et aux contraintes mentionnées notamment lors de la phase de conception (par exemple concernant les contraintes liées à l’authentification utilisateur ou sur les étapes nécessaires à la création d’un compte).</p>
             <div className='content__block__img'>
                 <img src="banner_ph.png" alt="banner placeholder"/>
             </div>
-            <h5>Ça y est, le projet devient concret.</h5>
-            <p>Nous échangeons avec vous sur le placement stratégique de chaque élément, en pesant les avantages et les implications de ces choix. C’est également à ce moment que les éléments commencent à prendre forme visuellement, facilitant ainsi la projection de toute l’équipe vers ce que sera le futur site.</p>
-            <p>Durant cette étape, nous mettons à profit l’expertise que nous avons développée à travers la réalisation de nombreux sites et applications. Cela nous permet de vous conseiller sur certains principes essentiels, comme l’utilité d’un slider ou l’adoption de conventions ergonomiques reconnues. L’objectif reste toujours le même : offrir une expérience optimale à vos personae, qui sont au centre de toutes nos réflexions.</p>
+            <h3>Faciliter la communication avec l’équipe de développement</h3>
+            <p>Lors de nos différentes expériences, nous avons noté le rôle que nous avons joué dans la fluidification des échanges entre l’équipe projet et l’équipe de développement. D’une part parce que nous pouvons répondre aux questions et lever les blocages de l’équipe projet, d’autre part parce que nous pouvons leur partager notre méthodologie pour recueillir les éléments nécessaires à l’avancée du projet, par exemple, en encadrant la migration des données, en sollicitant les bons interlocuteurs, en produisant des notices explicatives… Nous sommes ainsi un véritable support opérationnel pour les équipes.</p>
+            <p>Plus trivialement, il nous arrive aussi d’arriver à parler le même langage que l’équipe de développement et donc de pouvoir intervenir en direct avec eux permettant ainsi de gagner un temps précieux.</p>
         </section>
-        <section className='banner__row'>
-            <div className='banner__row__container'>
-                <h4>À disposition de vos projets</h4>
-                <h3>Découvrez nos expertises</h3>
-                <p><strong>Combien de temps dure les audits ?</strong><br/>
-                Faire le point sur vos contenus et les préparer pour le futur site</p>
-                <p><strong>Test utilisateurs</strong><br/>
-                Vérifier l’expérience du site auprès d’un panel d’utilisateurs</p>
-                <p><strong>Gabarits ergonomiques</strong><br/>
-                Anticiper le travail des maquettes de votre site web</p>
-                <p><strong>Gestion de projet</strong><br/>
-                Vous aider à structurer votre projet en terme d’organisation</p>                    
-                </div>
+        <section className='content__block__row'>
+            <article className='content__block__row__container__sticky'>
+                <h3>Des forces vives pour le recettage du site</h3>
+                <p>La phase de recette est une étape cruciale avant la mise en ligne, qui sollicite beaucoup les équipes. Fort de notre connaissance du projet, nous aidons à tester le site pour vérifier la conformité graphique (notamment l’intégration html/css) et fonctionnelle sur plusieurs terminaux (mobile/desktop et navigateurs). Grâce à notre bonne connaissance des back-offices, nous pouvons aider à lever de nombreux freins pendant la contribution et prêter main-forte en cas de besoin.</p>
+                <p>Lors de cette étape nous encadrons aussi l’équipe projet pour faciliter le recueil des anomalies et permettre ainsi une résolution plus rapide des problèmes. Les différents outils de ticketing sont plus ou moins complexes et notre expertise sur ces derniers permet de mettre en place certaines routines pour faciliter le travail.</p>
+            </article>
+            <article className='content__block__img'>
+                <img src="miro.png" alt="" />
+            </article>        
         </section>
-        <section className='content__block'>
-            <h3>Soumettre les éléments aux futurs visiteurs : les tests utilisateurs</h3>
-            <h5>Quel intérêt pour des tests utilisateurs ?</h5>
-            <p>Nous apprécions particulièrement l’étape où nous sollicitons les retours des utilisateurs de votre site. Que ce soit lors de la définition des cibles pour comprendre leurs attentes et besoins, ou plus tard pour valider la structure des gabarits et l’arborescence, ces interactions sont cruciales pour s’assurer que le projet répond aux attentes des utilisateurs réels.</p>
-            <p>Les tests utilisateurs peuvent se dérouler de plusieurs manières :</p>
-            <ul>
-                <li>Via un panel interne à votre entreprise</li>
-                <li>Ou à travers un outil externe utilisant un panel représentatif de vos cibles</li>
-            </ul>
-            <p>Dans les deux cas, nous travaillons main dans la main avec vous pour concevoir plusieurs scénarios d’usage, chacun avec des objectifs précis à atteindre.</p>
-            <p>Ces tests nous permettent d’observer attentivement les réactions des utilisateurs face aux différents écrans, d’identifier les obstacles qu’ils rencontrent, et de comparer leurs comportements aux attentes initiales. C’est un moyen efficace de vérifier si les besoins des visiteurs ont été correctement anticipés et intégrés au projet. En outre, ces tests nous donnent des indications précieuses sur l’accès à l’information. Par exemple, nous pouvons détecter si un élément est correctement placé ou, à l’inverse, s’il passe inaperçu et nécessite un repositionnement pour optimiser l’expérience utilisateur.</p>
+        <section className='content__block__column'>
+            <h3>Continuer à vous accompagner après la mise en ligne</h3>
+            <p>Après la mise en ligne, nous pouvons continuer à vous accompagner sur toutes les problématiques numériques, notamment sur la phase d’accompagnement et de formation des équipes, ainsi que sur la phase d’évolution qui interviendra assurément une fois le site confronté à la réalité.</p>
+            <p>Ainsi certains clients souhaitent que nous puissions consacrer un temps donné par mois à leur projet afin de suivre l’ensemble des évolutions et permettre de continuer à cadrer les choses au mieux. C’est toujours un réel plaisir que de pouvoir ainsi suivre des projets sur le long terme et de les voir grandir.   </p>
         </section>
 
         </>
