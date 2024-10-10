@@ -603,7 +603,7 @@
 .accueil__section__blog__content__container{
     display: flex;
     flex-direction: column;
-    background-image: url("/ginseng_web/dossier.png");
+    background-image: url("dossier.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20rem;
@@ -613,7 +613,7 @@
     transition-duration: 0.3s ;
     &:hover{
         scale: 110%;
-        background-image: url("/ginseng_web/dossier_blue.png");
+        background-image: url("dossier_blue.png");
         p, h3 {
             color: white
         }
