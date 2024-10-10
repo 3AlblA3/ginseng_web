@@ -93,7 +93,8 @@ function Accueil() {
             <div className='accueil__section__accompagnement__container__white__row'>
               <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
             </div>
-            <div className='accueil__section__accompagnement__container__white__bubble'>
+            <div className='content__article__bubble'>
+              <img src="https://picsum.photos/100/125" alt="img manu"/>
               <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
             </div>
           </article>

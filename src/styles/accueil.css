@@ -458,11 +458,11 @@
   }
   
   .accueil__section__projet__container__imgs__hover-content {
-        position: absolute;
+        position: relative;
         transition-duration: 0.3s;
         opacity: 0;
         bottom: 15rem;
-        left: 10rem;
+        left: 5rem;
         width: 10rem;
         background-color: rgba(86, 86, 86);
         padding: 2rem;
