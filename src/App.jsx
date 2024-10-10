@@ -18,25 +18,7 @@ import SupportEquipe from './pages/accompagnement/supportEquipe';
 import './styles/App.css'
 
 function App() {
-
-document.addEventListener('DOMContentLoaded', function() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('section').forEach(section => {
-      observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-});
-
+  
   return (
   <BrowserRouter basename="/ginseng_web/">
     <Header />
