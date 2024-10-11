@@ -4,6 +4,7 @@ import '../styles/accueil.css'
 import AutoplayCarousel from '../components/AutoplayCarousel';
 
 function Accueil() {
+  
 
   const [selectedCategory, setSelectedCategory] = useState('Etat et organismes publics');
 
@@ -35,7 +36,7 @@ function Accueil() {
   const [activeQuestion, setActiveQuestion] = useState(null);
 
           
-  // Sample audit data
+  // Définition de notre tableau d'objets des questions à affichers
   const questions = [
     { title: "Combien de temps dure la phase d'immersion", content:(<>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas perspiciatis officiis vero, amet, earum iure inventore tempora fugiat dicta porro, perferendis est reiciendis corporis! Excepturi officia perferendis quia explicabo?</p>
@@ -48,6 +49,8 @@ function Accueil() {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates temporibus deleniti, aspernatur atque mollitia repellendus nihil minima. Magnam consectetur nemo voluptatibus aliquid in est et, cum, commodi officiis suscipit voluptatum.</p>
   </>) }
   ];
+
+  // affichage des questions par index
 
   const toggleQuestion= (index) => {
     setActiveQuestion(activeQuestion === index ? null : index);
@@ -152,37 +155,39 @@ function Accueil() {
             </div>
           </article>
         </section>
-      <section className='accueil__section__casClient'>
-      <h3>Découvrez nos cas clients</h3>
-      <div className='accueil__section__casClient__menu'>
-        {/* Gestion du menu */}
-        {categories.map((category) => (
-          <h3 
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={selectedCategory === category ? 'active' : ''}>
-            {category}
-          </h3>
-        ))}
-      </div>
-      <div className='accueil__section__casClient__container'>
-        {/* Affichage des cas clients dépendamments des contenus */}
-        {categories.map((category) => (
-          <div 
-            key={category} 
-            className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
-            <img 
-              src={casClients[category].image} 
-              className='accueil__section__casClient__container__img'
-              alt={category}/>
-            <div className='accueil__section__casClient__container__text'>
-              <p>{casClients[category].description}</p>
-              <Link to='/cas' className='accueil__section__casClient__container__text__link'>
-                Voir le cas client
-              </Link>
+      <section className='content__block__row'>
+        <div className='accueil__section__casClient'>
+          <h3>Découvrez nos cas clients</h3>
+          <div className='accueil__section__casClient__menu'>
+          {/* Gestion du menu */}
+          {categories.map((category) => (
+            <h3 
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={selectedCategory === category ? 'active' : ''}>
+              {category}
+            </h3>
+          ))}
+        </div>
+        <div className='accueil__section__casClient__container'>
+          {/* Affichage des cas clients dépendamments des contenus */}
+          {categories.map((category) => (
+            <div 
+              key={category} 
+              className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
+              <img 
+                src={casClients[category].image} 
+                className='accueil__section__casClient__container__img'
+                alt={category}/>
+              <div className='accueil__section__casClient__container__text'>
+                <p>{casClients[category].description}</p>
+                <Link to='/cas' className='accueil__section__casClient__container__text__link'>
+                  Voir le cas client
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
     <section className='accueil__section__projet'>
@@ -267,6 +272,7 @@ function Accueil() {
       <section className='content__question'>
         <div className="content__question__container">
           <h3>Vous avez d'autres questions?</h3>
+          {/* Affichage des questions par une fonction map */}
           {questions.map((question, index) => (
             <div key={index}>
               <div className="content__block__audits__row__title" onClick={() => toggleQuestion(index)}>

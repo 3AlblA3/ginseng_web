@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header'; 
 import Footer from './components/Footer';
 import Accueil from './pages/Accueil';
@@ -10,13 +9,12 @@ import Tarifs from './pages/agence/tarifs';
 import Contact from './pages/Contact';
 import AnalyseExistant from './pages/accompagnement/analyseExistant';
 import AccompagnementTechnique from './pages/accompagnement/accompagnementTechnique';
+import AccompagnementUX from './pages/accompagnement/accompagnementUX_UI';
 import CadrageProjet from './pages/accompagnement/cadrageProjet';
 import CahierCharges from './pages/accompagnement/cahierCharges';
 import DefinitonCible from './pages/accompagnement/definitionCible';
 import SupportEquipe from './pages/accompagnement/supportEquipe';
 import AnimationWrapper from './utilities/AnimationWrapper';
-
-
 
 import './styles/App.css'
 
@@ -37,6 +35,7 @@ function App() {
         <Route path="/accompagnement_cahierCharges" element={<CahierCharges />} />
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
         <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
+        <Route path="/accompagnement_accompagnementUX" element={<AccompagnementUX  />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>

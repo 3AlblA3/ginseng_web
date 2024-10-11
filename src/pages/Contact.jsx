@@ -41,7 +41,7 @@ function Contact() {
         const errors = {};
         const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ-]+$/;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const phoneRegex = /^[0-9]{10}$/;  // Assumes a 10-digit phone number
+        const phoneRegex = /^[0-9]{10}$/;  
       
         if (!nameRegex.test(nom)) errors.nom = 'Le nom ne doit contenir que des lettres et des tirets.';
         if (!nameRegex.test(prenom)) errors.prenom = 'Le prénom ne doit contenir que des lettres et des tirets.';
@@ -52,7 +52,8 @@ function Contact() {
         setFormErrors(errors);
         return Object.keys(errors).length === 0;
       };
-    //Envoie du formulaire par mail
+    
+      //Envoie du formulaire par mail
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -67,6 +68,8 @@ function Contact() {
         }
 
         setIsLoading(true);
+
+        //Envoie du mail via emailJS
 
         emailjs.sendForm(
             import.meta.env.VITE_SERVICE_ID,
@@ -181,11 +184,8 @@ function Contact() {
                             <input type="text" name='role' id='role' value={role} onChange={(e) => setRole(e.target.value)}/>
                         </div>
                     </div>
-                    <ReCAPTCHA 
-  ref={recaptchaRef} 
-  sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-  onChange={handleCaptchaChange}
-/>
+                    <ReCAPTCHA ref={recaptchaRef} sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                        onChange={handleCaptchaChange}/>
                     <button type='submit' disabled={isLoading}>
                         {isLoading ? 'Envoi en cours...' : 'Envoyez votre message à Ginseng Web'}
                     </button>
