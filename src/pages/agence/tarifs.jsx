@@ -11,34 +11,32 @@ function Tarifs() {
                 <h2>Une solution personnalisée selon vos besoins</h2>
             </div>
         </section>
-        <section className='content__block'>
-            <div className='content__header'>
-                <div className='content__header__text'>
-                    <h5>Un peu de méthodologie</h5>
-                    <h3>Notre approche, unique et performante</h3>
-                </div>
-                <Link to="/agence_presentation" className='content__header__button'>Découvrir notre méthodologie</Link>
+        <section className='content__block__row'>
+            <div className='content__header__text'>
+                <h5>Un peu de méthodologie</h5>
+                <h3>Notre approche, unique et performante</h3>
             </div>
-            <div className='content__header'>
-                <article className='content__article__small'>
-                    <h5>Construire le projet avec vous</h5>
-                    <p>Nous vous associons à chaque étape de notre méthodologie pour produire un projet à votre image qui pourra satisfaire toutes les parties prenantes.</p>
-                </article>
-                <article className='content__article__small'>
-                    <h5>Rigueur et convivialité</h5>
-                    <p>Nous pilotons la mission de manière à structurer efficacement votre projet, tout en veillant à instaurer un cadre de travail agréable.</p>
-                </article>
-                <article className='content__article__small'>
-                    <h5>Une prestation sur-mesure</h5>
-                    <p>Nous proposons pour chaque projet une méthodologie adaptée aux besoins et aux objectifs qui prend en compte les contraintes de budget et de planning.</p>
-                </article>
-            </div>
+            <Link to="/agence_presentation" className='content__header__button'>Découvrir notre méthodologie</Link>
+        </section>
+        <section className='content__block__row'>
+            <article className='content__article__small'>
+                <h5>Construire le projet avec vous</h5>
+                <p>Nous vous associons à chaque étape de notre méthodologie pour produire un projet à votre image qui pourra satisfaire toutes les parties prenantes.</p>
+            </article>
+            <article className='content__article__small'>
+                <h5>Rigueur et convivialité</h5>
+                <p>Nous pilotons la mission de manière à structurer efficacement votre projet, tout en veillant à instaurer un cadre de travail agréable.</p>
+            </article>
+            <article className='content__article__small'>
+                <h5>Une prestation sur-mesure</h5>
+                <p>Nous proposons pour chaque projet une méthodologie adaptée aux besoins et aux objectifs qui prend en compte les contraintes de budget et de planning.</p>
+            </article>
         </section>
         <section className='graph'>
             <img src="graph.png" alt="graph" />
         </section>
         <section className='content__block__row'>
-            <article className='content__block__row__container__text'>
+            <article className='content__block__row__container__sticky'>
                 <h3>Tarifs d’une agence web : les paramètres qui jouent</h3>
                 <p>Tout comme dans d'autres secteurs, le coût d'un service est directement lié à l'expertise et à la complexité de la tâche. Un artisan qualifié facturera plus cher qu'un apprenti, tout comme un développeur senior aura un tarif horaire supérieur à celui d'un junior. Nous proposons différentes formules pour s'adapter à tous les budgets.</p>
                 <p>Le coût d'un projet web ne se limite pas au nombre d'heures travaillées. Il reflète également la valeur ajoutée apportée par l'agence, notamment en termes de conception, d'expérience utilisateur et de référencement. Un développeur senior, grâce à son expertise, peut optimiser votre site web pour un meilleur référencement naturel et ainsi générer plus de trafic. Bien que son tarif horaire soit plus élevé, il représente un investissement sur le long terme : </p>

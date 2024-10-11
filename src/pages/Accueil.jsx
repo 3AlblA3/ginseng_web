@@ -101,7 +101,7 @@ function Accueil() {
               </div>
           </article>
           <div className='accueil__section__accompagnement__black__wrapper'>
-            <article class="accueil__section__accompagnement__container__black__content">
+            <article className="accueil__section__accompagnement__container__black__content">
               <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Analyse de l'existant</h3>
                 <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
@@ -126,7 +126,7 @@ function Accueil() {
         <section className='accueil__section__accompagnement__row'>
           <div className='accueil__section__accompagnement__black__wrapper'>
             <div className='accueil__section__accompagnement__container__black'></div>
-            <article class="accueil__section__accompagnement__container__black__content">
+            <article className="accueil__section__accompagnement__container__black__content">
               <Link to='/projet' className='accueil__section__accompagnement__container__black__link'>
                 <h3>Support de l'équipe projet</h3>
                 <span><p>Accompagnement durant toutes les phases de réalisation</p><img src="fleche_droite_white.png" alt="fleche white"/></span>

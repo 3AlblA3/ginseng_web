@@ -56,6 +56,47 @@ function AccompagnementUX () {
             <p>L’étape du design d’interface utilisateur est menée, côté agence, par un UI designer et éventuellement avec un directeur artistique, qui collaborent avec l’UX designer (garant de l’expérience utilisateur), pour élaborer une version graphique des interfaces validée lors de la phase UX.</p>
             <p>Les enjeux du graphisme lors de la conception d’un site internet sont multiples, en effet le site ne doit pas seulement être visuellement agréable, il doit aussi être intuitif et permettre une navigation fluide. Conçu de manière cohérente par rapport à votre image et vos valeurs, l’UI permet également d’améliorer les interactions avec vos utilisateurs, de leur donner envie de parcourir votre site et de remplir les objectifs que vous vous êtes fixés pour votre site internet. Ainsi, d’une interface agréable et facile à utiliser, découlera par nature une bonne expérience utilisateur sur le site et donc un engagement de vos utilisateurs.</p>
         </section>
+        <section className='content__block__row'>
+            <article className='content__block__row__container__sticky'>
+                <h3>Comment l’AMO intervient-elle dans les différentes étapes de la démarche UX ?</h3>
+                <h5>Comprendre qui sont les utilisateurs et ce qu’ils viennent chercher sur le site</h5>
+                <p>La première action de la démarche UX-UI consiste à déterminer qui sont les utilisateurs que vous souhaitez capter sur votre site, les raisons pour lesquelles ils s’y connectent, la situation dans laquelle ils se trouvent au moment où ils le consultent… C’est le travail que nous réalisons lors des ateliers peronae, au cours desquelles nous nous basons sur toutes les données collectées sur les utilisateurs pour formaliser des fiches qui vous accompagneront tout au long du projet.</p>
+                <p>Si cette phase n’a pas été réalisée en amont du projet, nous pouvons la mener en cours de projet suite à une phase de recueil des besoins qui peut prendre plusieurs formes : interview utilisateur UX ou interview des collaborateurs (qui ne peuvent pas nécessairement se rendre disponibles pour participer aux réunions), ateliers de travail avec les cibles, enquêtes et questionnaires auprès des utilisateurs, analyse des statistiques de consultation…</p>
+            </article>
+            <article className='content__block__img'>
+                <img src="miro.png" alt="" />
+            </article>
+        </section>
+        <section className='content__block__column'>
+            <h3>Relever les tendances et les bonnes pratiques chez les concurrents</h3>
+            <p>Cette pratique vise à étudier le contexte concurrentiel dans lequel le projet s’inscrit. À travers le benchmark UX (ou étude de la concurrence), nous allons évaluer la pertinence de l’expérience utilisateur sur les sites ayant la même cible que vous pour établir des recommandations concernant votre dispositif numérique. Les avantages du benchmark UX sont nombreux :</p>
+            <ul>
+                <li>relever les bonnes pratiques concernant les éléments précis d’une interface ou bien au contraire tirer des leçons des erreurs des concurrents. Le fil d’ariane d’un site internet est souvent sujet à débat par exemple mais il reste une bonne pratique à conserver.</li>
+                <li>se faire une idée sur les possibilités et sur les tendances, qu’elles soient graphiques, ergonomiques ou fonctionnelles, bref s’inspirer de ce qu’il y a sur le marché sans chercher à copier</li>
+                <li>permettre de se différencier des autres ou bien s’y aligner lorsque cela semble nécessaire (dans certains domaines des sites internet ont instauré des conventions ergonomiques qu’il convient de suivre)…</li>
+            </ul>
+            <p>Les conclusions tirées d’une étude des sites concurrents permettront donc d’améliorer la conception UX de vos interfaces, c’est d’ailleurs une étape que nous menons couramment lors des missions d’AMOE à travers les phases de l’audit des concurrents, mais également lors du benchmark graphique. Si vous ne l’avez pas réalisé en amont de votre projet, pas de panique, nous pouvons vous accompagner sur cette problématique lors de la phase de conception.</p>
+            <p>Il nous arrive aussi de réaliser un mini-audit de la concurrence centré sur une fonctionnalité donnée en cours de projet afin de pouvoir proposer des solutions ou de disposer d’arguments pour prendre une décision éclairée.</p>            
+        </section>
+        <section className='content__block__column'>
+            <h3>Ateliers de co-conception UX-UI : prototypage des pages clés puis mise en maquette</h3>
+            <p>Nous sommes lors de cette étape au cœur de la conception UX.</p>
+            <p>Design thinking, user stories… Différentes méthodes existent pour constituer le prototypage des pages clés, toutefois l’objectif reste le même : fixer les grands principes ergonomiques des pages, sans s’embarrasser des problématiques esthétiques. C’est après cette étape de prototypage que l’on procède à la mise en maquette des pages.</p>
+            <div className='content__block__img'>
+                <img src="banner_ph.png" alt="banner placeholder"/>
+            </div>
+            <p>Si nous concevons certains de ces gabarits ergonomique lors de la phase d’AMOE, nous préférons laisser la main à l’agence en charge du développement du projet lors de nos missions d’AMOA. Nous vous accompagnons néanmoins de manière active lors de cette phase cruciale :</p>
+            <ul>
+                <li>Nous sommes présents sur l’ensemble des ateliers de conception, au cours desquels nous nous assurons du respect de la prise en compte des demandes exposées dans le cahier des charges. Nous accompagnons vos équipes pour concevoir un site en conformité avec l’expression de besoins et contribuons efficacement à l’avancée du projet.</li>
+                <li>Nous veillons lors de la création des gabarits et des maquettes, à ce que les pages soient ergonomiques et facilitent le parcours des utilisateurs. Les objectifs des personae sont au cœur de cette phase. Nous prenons aussi en compte les problématiques d’accessibilité numérique car il est important de concevoir un internet inclusif.</li>
+                <li>Nous prévoyons des temps avec vous hors projet pour réunir l’ensemble des retours et les formaliser. Lors de ces temps de réunions interne nous analysons avec vous les pages transmises par l’agence et nous sommes force de proposition sur les détails et les points d’ergonomie. Nous vérifions les interactions entre les écrans et l’harmonisation du design sur l’ensemble des pages, nous nous assurons que les pages sont compatibles avec les contraintes techniques (certains plugins ne permettent pas ou encore certaines solutions imposent un design particulier), nous contrôlons également la déclinaison des pages dans leur format responsive…</li>
+            </ul>
+        </section>
+        <section className='content__block__column'>
+            <h3>Tester la solution auprès des utilisateurs : recueillir leurs retours concrets sur l’ergonomie et les parcours utilisateurs</h3>
+            <p>Même si elle n’est pas obligatoire, cette étape des tests utilisateurs est fortement recommandée pour évaluer l’utilisabilité et la qualité de l’UX et anticiper les éventuelles erreurs avant le développement de la solution. D’autant que 85 % des problèmes UX peuvent être résolus en testant 5 utilisateurs. (Source : Groupe Nielsen Norman) Cette métrique est cependant à prendre avec des réserves car un débat important à lieu entre experts autour de cette dernière.</p>
+            <p>Cette étape peut être réalisée dès la phase du prototypage, si les écrans sont construits de manière interactive et fonctionnelle et permettent une navigation (les logiciels comme Figma ou Adobe XD qui permettent cela sont maintenant la norme dans les agences web). La conception des pages ne doit pas non plus être trop avancée puisqu’une phase itérative est à prévoir pour intégrer les retours et faire à nouveau tester la solution jusqu’à validation par les utilisateurs.</p>
+        </section>
         </>
     )
 }

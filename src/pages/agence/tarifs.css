@@ -46,13 +46,15 @@
 
 .graph{display: flex;
 justify-content: center;
+padding-top: 2rem;
+padding-bottom: 2rem;
     img{
         width:75%
     }}
 
 .prices{
     display: block;
-    padding: 2rem;
+    padding: 4rem;
     div{
         padding-bottom: 2rem;
     };

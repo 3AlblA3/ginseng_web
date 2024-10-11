@@ -10,17 +10,19 @@ export default function AutoplayCarousel() {
         {Object.keys(cardDetails).map((detailKey) => {
           return (
             <CarouselItem
+              key={detailKey}  // Add key prop here
               imgUrl={cardDetails[detailKey].imgUrl}
               imgTitle={cardDetails[detailKey].title}
-            ></CarouselItem>
+            />
           );
         })}
-        {Object.keys(cardDetails).map((detailKey) => {
+        {Object.keys(cardDetails).map((detailKey, index) => {
           return (
             <CarouselItem
+              key={`${detailKey}-duplicate-${index}`}  // Add unique key for the second iteration
               imgUrl={cardDetails[detailKey].imgUrl}
               imgTitle={cardDetails[detailKey].title}
-            ></CarouselItem>
+            />
           );
         })}
       </div>
