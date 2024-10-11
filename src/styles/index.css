@@ -1,6 +1,5 @@
 :root {
   background-color: white;  
-  font-family: 'Comfortaa', sans-serif;
   margin: 0;
   padding: 0;
   --white: white;
@@ -9,7 +8,7 @@
   --grey: grey;
   --lightBlue: rgb(230, 240, 245);
   --cyan: rgb(0, 132, 255);
-  font-weight: 500
+  color: var(--blue);
   
 }
 

@@ -12,29 +12,28 @@ function Footer() {
               <img src="Ginseng_logo.png" alt="logo ginseng web" className="footer__up__section__title__logo"/> 
               <h3 className="footer__up__section__title__h3">Ginseng Web</h3>
             </div>
-            <p>43 rue de Beaubourg 75003 Paris <br/>
-            M° Rambuteau (ligne 11) ou Les Halles</p>
-            <p>01 88 99 56 05</p> 
-            <p>Contact</p>
+            <p>44 rue Jean Mermoz 78600 Maisons-Laffitte<br/>
+            RER A arrêt Maisons-Laffitte</p>
+            <p>01 84 79 06 60</p> 
+            <Link to="/contact">Contact</Link>
             <div className="footer__up__section__row">
-              <img src="linkedin.png" alt="logo linkedin" className="footer__up__section__row__img"/> 
-              <img src="gmail.png" alt="logo gmail" className="footer__up__section__row__img"/> 
+            <Link to="/contact"><img src="linkedin.png" alt="logo linkedin" className="footer__up__section__row__img"/></Link> 
+            <Link to="/contact"> <img src="gmail.png" alt="logo gmail" className="footer__up__section__row__img"/></Link>
             </div>
           </section>
           <section className="footer__up__section">
             <h3>Agence</h3>
-            <Link to ="/agence" className="footer__up__section__link">L'agence</Link>            
-            <Link to ="/nousChoisir" className="footer__up__section__link">Pourquoi nous choisir</Link> 
-            <Link to ="/methodologie" className="footer__up__section__link">Notre méthodologie</Link>
-            <Link to ="/blog" className="footer__up__section__link">Blog</Link>
+            <Link to ="/agence">L'agence</Link>            
+            <Link to ="/nousChoisir">Pourquoi nous choisir</Link> 
+            <Link to ="/methodologie" >Notre méthodologie</Link>
+            <Link to ="/blog">Blog</Link>
           </section>
           <section className="footer__up__section">
             <h3>Cas Clients</h3>
-            <Link to ="/" className="footer__up__section__link">Fédérations et interprofessions</Link>            
-            <Link to ="/" className="footer__up__section__link">Associations</Link> 
-            <Link to ="/" className="footer__up__section__link">Etat et organismes publics</Link>
-            <Link to ="/" className="footer__up__section__link">Edition</Link>
-            <Link to ="/" className="footer__up__section__link">Entreprises privées</Link>
+            <Link to ="/" >Télécom</Link>            
+            <Link to ="/" >Droit</Link> 
+            <Link to ="/" >Etat et organismes publics</Link>
+            <Link to ="/" >Commerce</Link>
           </section>
         </div>
         <div className="footer__down">

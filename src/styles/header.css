@@ -39,20 +39,28 @@ header{
     align-items: center;
     text-decoration: none;
     transition-duration: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    div{
+      color: white;
+      text-decoration: none;
+      h1{
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin: 0;
+        @media screen and (max-width: 1200px){
+          display: none;   
+         }
+      };
+      p{
+        margin: 0;
+      }
+    }
     &:hover{
       text-decoration: underline white;
     }
 
-    h1{
-      color: white;
-      text-decoration: none;
-      font-weight: 300;
-      font-size: 1.5rem;
-      text-decoration: none;
-      @media screen and (max-width: 1200px){
-        display: none;   
-       }
-    }
+
 }
 
 .header__logo{
@@ -102,6 +110,8 @@ header{
 }
 
 .header__section__menu__deroulant__p {
+  font-family: 'Poppins', sans-serif;
+
   cursor: pointer;
   font-weight: 400;
   transition-duration: 0.2s;
@@ -243,6 +253,12 @@ li{
     margin-bottom: 1rem;
     text-decoration: none;
     color: black;
+    a{
+      padding: 0;
+      color: black;
+      margin: 0;
+      text-decoration: none;
+    }
   }
   
   .mobile__menu__content__p__sous {
@@ -268,7 +284,7 @@ li{
     text-decoration: none;
     color: #000;
     font-size: 1rem;
-    &:hover{
+    &:hover{  
       color: #000;
     text-decoration: underline
     }

@@ -69,10 +69,19 @@ function Accueil() {
           </div>
           <div className='accueil__section__background__description'>
             <div className='accueil__section__background__description__container'>
-              <h3>
+              <p>
               Nous sommes une agence web à taille humaine, spécialisée dans l’accompagnement digital. Nous vous aidons à imaginer (amoe refonte de site) et réaliser (amoa) votre projet web.
-              </h3>
+              </p>
               <Link to="/accompagnement" className="accueil__section__background__descripton__link">Pourquoi nous choisir?</Link>
+            </div>
+            <div className='content__article__popup'>
+              <div className='content__article__popup__container'>
+                <img src="https://picsum.photos/100/125" alt="img manu"/>
+              </div>
+              <div className='content__article__popup__container'>
+                <p>Tel les icebergs, les projets ont toujours une partie émergente et une partie immergée…</p>
+                <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -86,75 +95,82 @@ function Accueil() {
           </div>
         </div>
       </section>
-        <section className='accueil__section__accompagnement__row'>
-          <article className='accueil__section__accompagnement__container__white'>
-            <h4>Avant le projet (AMOE)</h4>
-            <h3>On vous aide à définir votre besoin</h3>
-            <p>Pour rédiger un cahier des charges d’une refonte web (ou autre projet) plusieurs étapes d’échanges entre vous et nous sont nécessaires.
-            </p>
-            <div className='accueil__section__accompagnement__container__white__row'>
-              <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            </div>
-            <div className='content__article__bubble'>
+      <section className='accueil__section__accompagnement__row'>
+        <article className='accueil__section__accompagnement__container__white'>
+          <h4>Avant le projet (AMOE)</h4>
+          <h3>On vous aide à définir votre besoin</h3>
+          <p>Pour rédiger un cahier des charges d’une refonte web (ou autre projet) plusieurs étapes d’échanges entre vous et nous sont nécessaires.
+          </p>
+          <div className='accueil__section__accompagnement__container__white__row'>
+            <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
+            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
+          </div>
+          <div className='content__article__popup'>
+            <div className='content__article__popup__container'>
               <img src="https://picsum.photos/100/125" alt="img manu"/>
-                    <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
-              </div>
-          </article>
-          <div className='accueil__section__accompagnement__black__wrapper'>
-            <article className="accueil__section__accompagnement__container__black__content">
-              <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Analyse de l'existant</h3>
-                <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Accompagnement technique</h3>
-                <span><p>Initier les bases du cahier des charges fonctionnel</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Cadrage du projet</h3>
-                <span><p>De l'arborescence du site internet à la formation des utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Rédaction cahier des charges (CCTP) et lancement de l'appel d'offres</h3>
-                <span><p>Etablir le document clef de votre appel d'offres</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-            </article>
-            <div className='accueil__section__accompagnement__container__black'>
+            </div>
+            <div className='content__article__popup__container'>
+              <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
+              <Link to="/contact" className='content__article__popup__container__link'>Nous contacter</Link>
             </div>
           </div>
-        </section>
-        <section className='accueil__section__accompagnement__row'>
-          <div className='accueil__section__accompagnement__black__wrapper'>
-            <div className='accueil__section__accompagnement__container__black'></div>
-            <article className="accueil__section__accompagnement__container__black__content">
-              <Link to='/projet' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Support de l'équipe projet</h3>
-                <span><p>Accompagnement durant toutes les phases de réalisation</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Accompagnement UX-UI</h3>
-                <span><p>Matérialiser les parcours utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Accompagnement opérationnel</h3>
-                <span><p>Du développement du site web aux tests</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-              <Link to='/' className='accueil__section__accompagnement__container__black__link'>
-                <h3>Accompagnement TMA</h3>
-                <span><p>Etre présent durant la maintenance de votre site internet</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
-              </Link>
-            </article>
-          </div>
-          <article className='accueil__section__accompagnement__container__white'>
-            <h4>Pendant le projet (AMOA)</h4>
-            <h3>On vous accompagne tout au long du projet et même après</h3>
-            <p>Nous serons présents sur l’ensemble des réunions pour vous apporter nos conseils d’expert et veiller au respect du cahier des charges web ou CCTP
-            </p>
-            <div className='accueil__section__accompagnement__container__white__row'>
-              <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            </div>
+        </article>
+        <div className='accueil__section__accompagnement__black__wrapper'>
+          <article className="accueil__section__accompagnement__container__black__content">
+            <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
+              <h3>Analyse de l'existant</h3>
+              <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
+            </Link>
+            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
+              <h3>Audit technique</h3>
+              <span><p>Lister vos fonctionnalités et enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
+            </Link>
+            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
+              <h3>Définition de vos cibles</h3>
+              <span><p>Lister vos fonctionnalités et enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
+            </Link>
+            <Link to='/' className='accueil__section__accompagnement__container__black__link'>
+              <h3>Cadrage du projet</h3>
+              <span><p>De l'arborescence du site internet à la formation des utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
+            </Link>
+            <Link to='/' className='accueil__section__accompagnement__container__black__link'>
+              <h3>Rédaction cahier des charges (CCTP) et lancement de l'appel d'offres</h3>
+              <span><p>Etablir le document clef de votre appel d'offres</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
+            </Link>
           </article>
-        </section>
+          <div className='accueil__section__accompagnement__container__black'>
+          </div>
+        </div>
+      </section>
+      <section className='accueil__section__accompagnement__row'>
+        <div className='accueil__section__accompagnement__black__wrapper'>
+          <div className='accueil__section__accompagnement__container__black'></div>
+          <article className="accueil__section__accompagnement__container__black__content">
+            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link__2th'>
+              <h3>Création UX-UI</h3>
+              <span><p>Matérialiser les parcours utilisateurs</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
+            </Link>
+            <Link to='/' className='accueil__section__accompagnement__container__black__link__2th'>
+              <h3>Accompagnement opérationnel</h3>
+              <span><p>Du développement du site web aux tests</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
+            </Link>
+            <Link to='/' className='accueil__section__accompagnement__container__black__link__2th'>
+              <h3>Maintenance Evolutive</h3>
+              <span><p>Etre présent durant la maintenance de votre site internet</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
+            </Link>
+          </article>
+        </div>
+        <article className='accueil__section__accompagnement__container__white'>
+          <h4>Pendant le projet (AMOA)</h4>
+          <h3>Votre service web-marketing externalisé et même après</h3>
+          <p>Nous serons présents sur l’ensemble des réunions pour vous apporter nos conseils d’expert et veiller au respect du cahier des charges web ou CCTP
+          </p>
+          <div className='accueil__section__accompagnement__container__white__row'>
+            <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
+            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
+          </div>
+        </article>
+      </section>
       <section className='content__block__row'>
         <div className='accueil__section__casClient'>
           <h3>Découvrez nos cas clients</h3>
@@ -288,8 +304,11 @@ function Accueil() {
       </section>
     <section className='accueil__section__blog'> 
       <div className='accueil__section__blog__header'>
-        <h3>Découvrez nos articles de blog</h3>
-        <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
+        <div>
+          <h5>Avant le projet</h5>
+          <h3>Découvrez nos articles de blog</h3>
+        </div>
+        <Link to='/blog' className='accueil__section__blog__header__link'>Je lance mon projet</Link>
       </div>
       <div className='accueil__section__blog__content'>
         <div className='accueil__section__blog__content__container'>
@@ -314,8 +333,9 @@ function Accueil() {
     </section>
     <section className='accueil__section__contact'>   
       <div className='accueil__section__contact__container'>
-        <h3>Les beaux projets commencents toujours par un premier échange</h3>
-        <Link to='/contact' className='accueil__section__contact__container__link'>Nous contacter</Link>
+        <h3>Vous avez un projet?</h3>
+        <h4>Parlons-en maintenant.</h4>
+        <Link to='/contact' className='accueil__section__contact__container__link'>Planifier un rendez-vous</Link>
       </div>  
     </section >
     </>

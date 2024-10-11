@@ -49,7 +49,10 @@ function Header() {
           <div className="header__section">
             <Link to="/" className="header__section__title">
             <img src="logo_blue_only.PNG" alt="logo ginseng web" className="header__logo"/>
-            <h1>Ginseng Web</h1>
+            <div>
+              <h1>Ginseng Web</h1>
+              <p>Agence Web Marketing</p>
+            </div>
             </Link>
           </div>
           <div className="header__desktop">
@@ -201,10 +204,10 @@ function Header() {
                      <li><Link to="/tarifs">Exemple 3</Link></li>
                    </ul>
                  )}
-               </div>
-              <Link className="mobile__menu__content__p" to="/blog">Blog</Link>
+                </div>
+                  <h3 className="mobile__menu__content__p"><Link to="/blog">Blog</Link></h3>
               </div>
-            )}
+              )}
           </div>
         </div>
       </div>
