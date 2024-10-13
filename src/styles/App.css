@@ -20,6 +20,7 @@ section.animate-in {
 
 p{  
   line-height: 1.5;
+  font-weight: 800;
 }
 
 h3, h2, h4{font-family: 'Poppins', sans-serif;}

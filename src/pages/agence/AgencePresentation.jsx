@@ -65,7 +65,7 @@ function AgencePresentation () {
                 <p>Après avoir mené avec succès quelques missions d’accompagnement, notamment pour le groupement GASEL, j’ai décidé d’impliquer toute l’équipe Ginseng Web dans cette nouvelle orientation. Grâce à une méthodologie éprouvée et à une expertise solide acquises au fil des années, nous avons pu convaincre nos clients de nous faire confiance pour des projets de conseil plus stratégiques. Le soutien de ces premiers clients a été déterminant dans cette transition.</p>
             </article>
             <article className='content__block__row__container__sticky'>
-                <div className='content__article__bubble'>
+                <div className='content__article__popup'>
                     <div className='content__article__popup__container'>
                         <img src="https://picsum.photos/100/125" alt="img manu"/>
                     </div>
@@ -89,7 +89,7 @@ function AgencePresentation () {
             <div className='content__block__row__container__everest'>
                 <img src="everest.jpg" alt="everest" />
             </div>
-            <div className='content__block__row__container__text'>
+            <div className='content__block__row__container__everest__text'>
                 <div className='content__block__row__container__text__header'>
                     <h4>Notre conviction</h4>
                     <h3>Mais pourquoi l'Everest?</h3>
@@ -99,7 +99,7 @@ function AgencePresentation () {
                     <p>Vous êtes-vous déjà demandé ce qu’il se cache derrière le sommet enneigé de l’Everest ? Derrière cette image de victoire, il y a des mois, voire des années de préparation, des kilomètres parcourus, des obstacles surmontés, et une équipe soudée. Chez Ginseng Web, nous pensons qu’un projet web est comparable à l’ascension d’un tel sommet.</p>
                 </div>
                 <div className='content__block__row__container__text__row'>
-                    <h3>02</h3>
+                    <h3 >02</h3>
                     <p>Atteindre le sommet d’un projet web, c’est mettre en ligne un site fonctionnel et esthétique. Mais tout comme l’alpiniste qui contemple le paysage depuis le sommet de l’Everest, nous savons que ce résultat est le fruit d’un long cheminement. Il faut définir la stratégie, concevoir l’architecture, choisir les technologies, créer le design, développer, tester, et enfin déployer. Chaque étape est un défi à relever, une pente à gravir.</p> 
                 </div>
                 <div className='content__block__row__container__text__row'>
