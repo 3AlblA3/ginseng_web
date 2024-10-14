@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import './tarifs.css'
+import '../elements.css'
 
 function Tarifs() {
     return(
@@ -11,27 +11,7 @@ function Tarifs() {
                 <h2>Une solution personnalisée selon vos besoins</h2>
             </div>
         </section>
-        <section className='content__block__row'>
-            <div className='content__header__text'>
-                <h5>Un peu de méthodologie</h5>
-                <h3>Notre approche, unique et performante</h3>
-            </div>
-            <Link to="/agence_presentation" className='content__header__button'>Découvrir notre méthodologie</Link>
-        </section>
-        <section className='content__block__row'>
-            <article className='content__article__small'>
-                <h5>Construire le projet avec vous</h5>
-                <p>Nous vous associons à chaque étape de notre méthodologie pour produire un projet à votre image qui pourra satisfaire toutes les parties prenantes.</p>
-            </article>
-            <article className='content__article__small'>
-                <h5>Rigueur et convivialité</h5>
-                <p>Nous pilotons la mission de manière à structurer efficacement votre projet, tout en veillant à instaurer un cadre de travail agréable.</p>
-            </article>
-            <article className='content__article__small'>
-                <h5>Une prestation sur-mesure</h5>
-                <p>Nous proposons pour chaque projet une méthodologie adaptée aux besoins et aux objectifs qui prend en compte les contraintes de budget et de planning.</p>
-            </article>
-        </section>
+        
         <section className='graph'>
             <img src="graph.png" alt="graph" />
         </section>
@@ -64,27 +44,27 @@ function Tarifs() {
             <ul>
                 <li>
                     <p>Site monopage simple</p>
-                    <h5>200€ à 5000€</h5>
+                    <h5>200€ à 5.000€</h5>
                 </li>
                 <li>
                     <p>Site vitrine simple avec une dizaine de type de pages différentes</p>
-                    <h5>2000€ à 5000€</h5>
+                    <h5>2.000€ à 5.000€</h5>
                 </li>
                 <li>
                     <p>Site portail, avec un espace de connexion, une navigation interne etc…</p>
-                    <h5>5000€ à 20 000€</h5>
+                    <h5>5.000€ à 20.000€</h5>
                 </li>
                 <li>
                     <p>Site E-commerce assez simple avec des fonctionnalités classiques</p>
-                    <h5>5000€ à 30000 €</h5>
+                    <h5>5.000€ à 30.000€</h5>
                 </li>
                 <li>
                     <p>Site de génération de lead très optimisé pour être visible sur un secteur fortement concurrentiel</p>
-                    <h5>10000€ à 30000€</h5>
+                    <h5>10.000€ à 30.000€</h5>
                 </li>
                 <li>
                     <p>Site E-commerce avancé, très personnalisé avec des produits configurables complexes et un back-office sur mesure</p>
-                    <h5>Au moins 50000€</h5>
+                    <h5>Au moins 50.000€</h5>
                 </li>
             </ul>
         </section>

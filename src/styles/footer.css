@@ -47,10 +47,16 @@ footer{
     }
 }
 
+.footer__up{
+    width: 70%;
+
+}
+
 .footer__up__section{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+
     .footer__up__section__link{
         padding-top: 1rem;
         padding-bottom: 1rem;

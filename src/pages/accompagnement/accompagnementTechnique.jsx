@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import './accompagnementTechnique.css'
+import '../elements.css'
 
 function AccompagnementTechnique () {
     return(
@@ -12,6 +12,7 @@ function AccompagnementTechnique () {
             </div>
         </section>
         <section className='content__block__column'>
+            <div className='content__block__column__container__text'>
                 <p>Grâce à notre expérience en tant qu'agence web et notre expertise technique acquise lors de la création et refonte de sites, nous vous accompagnons dès le départ pour explorer toutes les questions techniques liées à votre projet.</p>
                 <h3>Concevoir le cahier des charges fonctionnel étape par étape en étant force de proposition</h3>
                 <h4>Tout le monde n’a pas le même bagage technique</h4>
@@ -21,6 +22,7 @@ function AccompagnementTechnique () {
                 <p>Parallèlement, vous avez probablement réfléchi à de nouvelles fonctionnalités pour mieux répondre aux besoins de vos utilisateurs.</p>
                 <p>Ginseng Web se base sur les audits et les analyses des personae pour passer en revue chaque fonctionnalité existante. Nous évaluerons ensemble leur pertinence et leur impact en termes de coût et de complexité de mise en œuvre.</p>
                 <p>Plusieurs <strong>fonctionnalités</strong>, allant des <strong>espaces personnels</strong> aux <strong>chatbots</strong> en passant par les formulaires et les <strong>cartes interactives</strong>, peuvent être intégrées en fonction de votre projet. Chez Ginseng Web, nous estimons les coûts de leur mise en place et de leur utilisation, et collaborons avec votre équipe pour examiner leur pertinence en fonction de la complexité technique et de l’adéquation avec les attentes de vos cibles.</p>
+            </div>
         </section>
         <section className='content__block__row'>
             <div className='banner__row'>
@@ -35,7 +37,7 @@ function AccompagnementTechnique () {
             </div>
         </section>
         <section className='content__block__column'>
-            <div className='content__block__row__container__text'>
+            <div className='content__block__column__container__text'>
                 <h3>Analyse de l’existant : les différents types d’analyses et audits</h3>
                 <p>Vous utilisez un logiciel métier spécifique ?<br/>
                 Une source de données externe ?<br/>
@@ -45,7 +47,7 @@ function AccompagnementTechnique () {
             <div className='content__block__img'>
                 <img src="banner_ph.png" alt="banner placeholder" />
             </div>
-            <div className='content__block__row__container__text'>
+            <div className='content__block__column__container__text'>
                 <h3>Prendre en compte tous les aspects techniques de votre projet – ne rien laisser au hasard</h3>
                 <p>En plus des ateliers dédiés aux fonctionnalités et aux outils tiers, nous complétons l'accompagnement technique web en définissant précisément le périmètre de votre projet à travers une série de questions ciblées.
                 Cet atelier, plus général, est essentiel pour aborder l’ensemble des aspects liés à la mise en place de votre futur site web, notamment :</p>

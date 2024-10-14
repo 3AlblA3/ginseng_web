@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import './agencePresentation.css'
+import '../elements.css'
 
 
 function AgencePresentation () {
@@ -19,7 +19,7 @@ function AgencePresentation () {
                 <p>Fondée en 2018, Ginseng Web est d’abord une agence de développement web puis, sous l’impulsion de clients toujours plus challenger et avec la validation de l’ensemble de l’équipe, l’agence a évolué au fil des années vers le conseil et l’accompagnement.</p>
                 <p>Nous sommes une agence à taille humaine : vos interlocuteurs sont fixes et vous connaissent bien. Nous constituons pour chaque projet une équipe dédiée (qui vous suivra du début à la fin du projet) avec un chef de projet qui sera votre contact privilégié.</p>
             </article>
-            <div className='content__block__intro__img'>
+            <div>
                 <img className='content__block__img' src="https://picsum.photos/500/500" alt="image" />
             </div>
         </section>
@@ -46,7 +46,7 @@ function AgencePresentation () {
             </div>
         </section>
         <section className='content__block__row'>
-            <article className='content__content__block__container'>
+            <article>
                 <img className='content__block__img' src="https://picsum.photos/500/500" alt="image" />
             </article>
             <article className='content__block__row__container__text'>
@@ -65,7 +65,7 @@ function AgencePresentation () {
                 <p>Après avoir mené avec succès quelques missions d’accompagnement, notamment pour le groupement GASEL, j’ai décidé d’impliquer toute l’équipe Ginseng Web dans cette nouvelle orientation. Grâce à une méthodologie éprouvée et à une expertise solide acquises au fil des années, nous avons pu convaincre nos clients de nous faire confiance pour des projets de conseil plus stratégiques. Le soutien de ces premiers clients a été déterminant dans cette transition.</p>
             </article>
             <article className='content__block__row__container__sticky'>
-                <div className='content__article__popup'>
+                <div className='popup__dial'>
                     <div className='content__article__popup__container'>
                         <img src="https://picsum.photos/100/125" alt="img manu"/>
                     </div>
@@ -142,6 +142,32 @@ function AgencePresentation () {
                     <p>Thomas est le créatif de A à Z. Il conçoit et réalise tous vos visuels, vos vidéos et assure la maquette de vos projets web. Il garantit une production de livrables de haute qualité, toujours en adéquation avec vos attentes.</p>
                 </div>       
             </div>
+        </section>
+        <section  className='content__block__row'>
+            <div className='quote'>
+                <h3>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</h3>
+            </div>
+        </section>
+        <section className='content__block__column__approche'>
+            <div className='content__block__column__approche__header'>
+                <h3>Notre approche, unique et performante</h3>
+                <Link to="/agence_presentation" className='button__blue'>Découvrir notre méthodologie</Link>
+            </div>
+            <h5>Un peu de méthodologie</h5>
+        </section>
+        <section className='content__block__row'>
+            <article className='content__block__row__article__small'>
+                <h3>Construire le projet avec vous</h3>
+                <p>Nous vous associons à chaque étape de notre méthodologie pour produire un projet à votre image qui pourra satisfaire toutes les parties prenantes.</p>
+            </article>
+            <article className='content__block__row__article__small'>
+                <h3>Rigueur et convivialité</h3>
+                <p>Nous pilotons la mission de manière à structurer efficacement votre projet, tout en veillant à instaurer un cadre de travail agréable.</p>
+            </article>
+            <article className='content__block__row__article__small'>
+                <h3>Une prestation sur-mesure</h3>
+                <p>Nous proposons pour chaque projet une méthodologie adaptée aux besoins et aux objectifs qui prend en compte les contraintes de budget et de planning.</p>
+            </article>
         </section>
         
         </>

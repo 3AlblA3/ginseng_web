@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';import { Link } from "react-router-dom";
-import './analyseExistant.css'
+import '../elements.css'
 
 function AnalyseExistant() {
 
@@ -162,10 +162,11 @@ function AnalyseExistant() {
     </section>
     <section className='accueil__section__contact'>   
       <div className='accueil__section__contact__container'>
-        <h3>Les beaux projets commencents toujours par un premier échange</h3>
-        <Link to='/contact' className='accueil__section__contact__container__link'>Nous contacter</Link>
+        <h3>Vous avez un projet?</h3>
+        <h4>Parlons-en maintenant.</h4>
+        <Link to='/contact' className='accueil__section__contact__container__link'>Planifier un rendez-vous</Link>
       </div>  
-    </section >
+    </section>
         </>
     )
 }

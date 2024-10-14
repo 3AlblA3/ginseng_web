@@ -39,7 +39,7 @@ header{
     align-items: center;
     text-decoration: none;
     transition-duration: 0.2s;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     div{
       color: white;
       text-decoration: none;
@@ -90,13 +90,15 @@ header{
     font-weight: 400;
     margin-left: 1rem;
     font-size: 1rem;
-    transition: transform 0.3s ease;
-}
+    transition-duration: 0.2s;
+  }
 
 .contact:hover {
-    color: white;
-    transform: scale(1.1);
+      background-color: var(--white);
+      color: var(--blue);
+      border: var(--white) solid;
 }
+
 
 /* Gestion menu deroulant mobile */
 

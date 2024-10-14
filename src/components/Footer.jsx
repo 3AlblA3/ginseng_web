@@ -15,10 +15,10 @@ function Footer() {
             <p>44 rue Jean Mermoz 78600 Maisons-Laffitte<br/>
             RER A arrêt Maisons-Laffitte</p>
             <p>01 84 79 06 60</p> 
-            <Link to="/contact">Contact</Link>
+            <p><Link to="/contact">Contact</Link></p>
             <div className="footer__up__section__row">
             <Link to="/contact"><img src="linkedin.png" alt="logo linkedin" className="footer__up__section__row__img"/></Link> 
-            <Link to="/contact"> <img src="gmail.png" alt="logo gmail" className="footer__up__section__row__img"/></Link>
+            <Link to="/contact"><img src="gmail.png" alt="logo gmail" className="footer__up__section__row__img"/></Link>
             </div>
           </section>
           <section className="footer__up__section">

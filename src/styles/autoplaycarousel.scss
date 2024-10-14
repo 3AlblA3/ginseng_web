@@ -13,7 +13,7 @@ $hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 15rem; // Adjust as needed
+  height: 10rem; // Adjust as needed
 }
 
 // Carousel track
@@ -21,7 +21,7 @@ $hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
   display: flex;
   position: absolute;
   left: 0;
-  height: 100%;
+  height: auto;
   width: 200%;
   gap: $card-gap;
   animation: slide $animation-duration linear infinite;

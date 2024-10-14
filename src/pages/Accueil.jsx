@@ -64,7 +64,7 @@ function Accueil() {
             <div className='accueil__section__background__title__container'>
               <h4>Pour répondre à tous vos objectifs</h4>
               <h2>Ginseng Web vous accompagne dans vos projets digitaux</h2>
-              <Link to="/agence_presentation" className="accueil__section__background__title__link">Notre agence</Link>
+              <Link to="/agence_presentation" className="button__blue">Notre agence</Link>
             </div>
           </div>
           <div className='accueil__section__background__description'>
@@ -72,15 +72,17 @@ function Accueil() {
               <p>
               Nous sommes une agence web à taille humaine, spécialisée dans l’accompagnement digital. Nous vous aidons à imaginer (amoe refonte de site) et réaliser (amoa) votre projet web.
               </p>
-              <Link to="/accompagnement" className="accueil__section__background__descripton__link">Pourquoi nous choisir?</Link>
+              <Link to="/accompagnement" className="button__blue">Pourquoi nous choisir?</Link>
             </div>
-            <div className='content__article__popup'>
-              <div className='content__article__popup__container'>
-                <img src="https://picsum.photos/100/125" alt="img manu"/>
-              </div>
-              <div className='content__article__popup__container'>
-                <p>Tel les icebergs, les projets ont toujours une partie émergente et une partie immergée…</p>
-                <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+            <div className='accueil__section__background__description__popup'>
+              <div className='content__article__popup'>
+                <div className='content__article__popup__container'>
+                  <img src="https://picsum.photos/100/125" alt="img manu"/>
+                </div>
+                <div className='content__article__popup__container'>
+                  <p>Tel les icebergs, les projets ont toujours une partie émergente et une partie immergée…</p>
+                  <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -102,16 +104,18 @@ function Accueil() {
           <p>Pour rédiger un cahier des charges d’une refonte web (ou autre projet) plusieurs étapes d’échanges entre vous et nous sont nécessaires.
           </p>
           <div className='accueil__section__accompagnement__container__white__row'>
-            <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
+            <Link to='/projet' className='button__white'>Vous avez un projet</Link>
+            <Link to='/methodologie' className='button__blue'>Voir notre méthodologie</Link>
           </div>
-          <div className='content__article__popup'>
-            <div className='content__article__popup__container'>
-              <img src="https://picsum.photos/100/125" alt="img manu"/>
-            </div>
-            <div className='content__article__popup__container'>
-              <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
-              <Link to="/contact" className='content__article__popup__container__link'>Nous contacter</Link>
+          <div className='accueil__section__accompagnement__container__white__popup'>
+            <div className='content__article__popup'>
+              <div className='content__article__popup__container'>
+                <img src="https://picsum.photos/100/125" alt="img manu"/>
+              </div>
+              <div className='content__article__popup__container'>
+                <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
+                <Link to="/contact" className='content__article__popup__container__link'>Nous contacter</Link>
+              </div>
             </div>
           </div>
         </article>
@@ -166,8 +170,8 @@ function Accueil() {
           <p>Nous serons présents sur l’ensemble des réunions pour vous apporter nos conseils d’expert et veiller au respect du cahier des charges web ou CCTP
           </p>
           <div className='accueil__section__accompagnement__container__white__row'>
-            <Link to='/projet' className='accueil__section__accompagnement__container__white__row__link__blue'>Vous avez un projet</Link>
-            <Link to='/methodologie' className='accueil__section__accompagnement__container__white__row__link__white'>Voir notre méthodologie</Link>
+            <Link to='/projet' className='button__white'>Vous avez un projet</Link>
+            <Link to='/methodologie' className='button__blue'>Voir notre méthodologie</Link>
           </div>
         </article>
       </section>
@@ -197,7 +201,7 @@ function Accueil() {
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>
                 <p>{casClients[category].description}</p>
-                <Link to='/cas' className='accueil__section__casClient__container__text__link'>
+                <Link to='/cas' className='button__blue'>
                   Voir le cas client
                 </Link>
               </div>
@@ -210,82 +214,89 @@ function Accueil() {
         <div className='accueil__section__projet__container'>
           <h3>Découvrez nos méthodes d'accompagnements</h3>
           <div className='accueil__section__projet__container__imgs'>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_analyseExistant" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="analyse_existant.png" alt="" />
-              </Link>  
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Analyse de l'existant</p>
+            <div className='accueil__section__projet__container__imgs__row'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_analyseExistant" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="analyse_existant.png" alt="" />
+                </Link>  
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Analyse de l'existant</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_accompagnementTechnique" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="accueil.png" alt=""/>
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Accompagnement technique</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_definitionCibles" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="equipe_presentation.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Definition des cibles</p>
+                </div>
               </div>
             </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_accompagnementTechnique" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="accueil.png" alt=""/>
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Accompagnement technique</p>
+            <div className='accueil__section__projet__container__imgs__row'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_cadrageProjet" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="graph.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Cadrage du projet</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_cahierCharge" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="ph_2.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Cahier des charges</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="ph_3.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Support de l'équipe projet</p>
+                </div>
               </div>
             </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_definitionCibles" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="equipe_presentation.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Definition des cibles</p>
+            <div className='accueil__section__projet__container__imgs__row'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="ph_4.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Accompagnement UX-UI</p>
+                </div>
               </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_cadrageProjet" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="graph.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Cadrage du projet</p>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="ph_4.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Accompagnement opérationnel</p>
+                </div>
               </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_cahierCharge" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="ph_2.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Cahier des charges</p>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="ph_3.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Support de l'équipe projet</p>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="ph_4.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Accompagnement UX-UI</p>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="ph_4.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Accompagnement opérationnel</p>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__content'>
-              <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                <img src="ph_4.png" alt="" />
-              </Link>
-              <div className='accueil__section__projet__container__imgs__hover-content'>
-                <p>Accompagnement post-projet</p>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
+                  <img src="ph_4.png" alt="" />
+                </Link>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Accompagnement post-projet</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='content__question'>
+
+      <section className='content__block__row'>
         <div className="content__question__container">
           <h3>Vous avez d'autres questions?</h3>
           {/* Affichage des questions par une fonction map */}
@@ -308,7 +319,7 @@ function Accueil() {
           <h5>Avant le projet</h5>
           <h3>Découvrez nos articles de blog</h3>
         </div>
-        <Link to='/blog' className='accueil__section__blog__header__link'>Je lance mon projet</Link>
+        <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
       </div>
       <div className='accueil__section__blog__content'>
         <div className='accueil__section__blog__content__container'>
@@ -335,9 +346,20 @@ function Accueil() {
       <div className='accueil__section__contact__container'>
         <h3>Vous avez un projet?</h3>
         <h4>Parlons-en maintenant.</h4>
-        <Link to='/contact' className='accueil__section__contact__container__link'>Planifier un rendez-vous</Link>
+        <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
       </div>  
-    </section >
+    </section>
+    <section className='last_popup'>
+    <div className='content__article__popup'>
+      <div className='content__article__popup__container'>
+        <img src="https://picsum.photos/100/125" alt="img manu"/>
+      </div>
+      <div className='content__article__popup__container'>
+        <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
+        <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+      </div>
+    </div>  
+    </section>
     </>
   );
 }

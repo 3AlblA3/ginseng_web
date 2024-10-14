@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import './definitionCible.jsx'
+import '../elements.css'
 
 function DefinitonCible () {
     return(
@@ -27,9 +27,13 @@ function DefinitonCible () {
         <section className='content__block__row'>
                 <article className='content__block__row__container__sticky'>
                     <h3>Qu’est-ce que les personae?</h3>
-                    <div className='content__article__bubble'>
-                        <img src="https://picsum.photos/100/150" alt="img manu"/>
-                        <p>Vous voulez en savoir plus sur sur notre méthode de construction des personae ?</p>
+                    <div className='popup__dial'>
+                        <div className='content__article__popup__container'>
+                            <img src="https://picsum.photos/100/125" alt="img manu"/>
+                        </div>
+                        <div className='content__article__popup__container'>
+                            <p>Vous voulez en savoir plus sur sur notre méthode de construction des personae ?</p>
+                        </div>
                     </div>
                 </article>
                 <article className='content__block__row__container__text'>
