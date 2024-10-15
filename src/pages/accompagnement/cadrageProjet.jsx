@@ -68,7 +68,7 @@ function CadrageProjet () {
             <p>Nous échangeons avec vous sur le placement stratégique de chaque élément, en pesant les avantages et les implications de ces choix. C’est également à ce moment que les éléments commencent à prendre forme visuellement, facilitant ainsi la projection de toute l’équipe vers ce que sera le futur site.</p>
             <p>Durant cette étape, nous mettons à profit l’expertise que nous avons développée à travers la réalisation de nombreux sites et applications. Cela nous permet de vous conseiller sur certains principes essentiels, comme l’utilité d’un slider ou l’adoption de conventions ergonomiques reconnues. L’objectif reste toujours le même : offrir une expérience optimale à vos personae, qui sont au centre de toutes nos réflexions.</p>
         </section>
-        <section className='content__question'>
+        <section className='content__block__row'>
         <div className="content__question__container">
           <p>A disposition de vos projets</p>
           <h3>Découvrez nos expertises</h3>

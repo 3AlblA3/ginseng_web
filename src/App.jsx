@@ -14,6 +14,7 @@ import CadrageProjet from './pages/accompagnement/cadrageProjet';
 import CahierCharges from './pages/accompagnement/cahierCharges';
 import DefinitonCible from './pages/accompagnement/definitionCible';
 import SupportEquipe from './pages/accompagnement/supportEquipe';
+import TestUtilisateur from './pages/expertises/testUtilisateur';
 import AnimationWrapper from './utilities/AnimationWrapper';
 
 import './styles/App.css'
@@ -36,6 +37,7 @@ function App() {
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
         <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
         <Route path="/accompagnement_accompagnementUX" element={<AccompagnementUX  />} />
+        <Route path="/expertise_testUtilisateur" element={<TestUtilisateur  />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>

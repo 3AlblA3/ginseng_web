@@ -6,6 +6,26 @@ footer{
     padding-top: 1rem;
 }
 
+.last_popup{
+    position: relative;
+    width: 0;
+    height: 0;
+    color: var(--blue);
+    bottom: 5rem;
+    left: 70%;
+    margin: 0;
+    .content__article__popup{
+        position: absolute;
+        width: 22rem;
+        height: auto;
+    }
+    @media screen and (max-width: 1100px){
+    .content__article__popup{
+        display: none;
+    }
+    }
+}
+
 .footer__up, .footer__down,
 .footer__down__section{
     display: flex;
@@ -56,6 +76,9 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    @media screen and (max-width: 1100px){
+    padding-left: 3rem;
+    }
 
     .footer__up__section__link{
         padding-top: 1rem;

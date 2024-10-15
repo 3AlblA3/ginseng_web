@@ -70,24 +70,24 @@ function AnalyseExistant() {
             </div>
             <div className='content__block__row__container__percentage'>
                 <h3>10%</h3>
-                <p>Temps investi dans la phase d'immersion.</p>
+                <h5>Temps investi dans la phase d'immersion.</h5>
+                <p>Pour un projet de 3 mois, cela correspond à environ 1 à 2 semaines.</p>
                 <h3>80%</h3>
-                <p>Taux de réussite des projets avec une immersion réussie, contre 50 % sans bonne phase d'immersion.</p>
+                <h5>Taux de réussite des projets avec une immersion réussie, contre 50 % sans bonne phase d'immersion.</h5>
             </div>
         </section>
         <section className='content__block__row'>
             <div className='content__block__insight__small__container'>
                 <div>
-                    <p>Qui participe?</p>
-                    <p>Qui valide?</p>
+                    <h3>Qui participe?</h3>
+                    <h3>Qui valide?</h3>
                 </div>
             </div>
             <div className='content__block__insight__small__container'>
                 <div>
-                    <p>Qui participe?</p>
-                    <p>Qui valide?</p>
+                    <h3>Y a-t-il des délais de validation àanticiper ?</h3>
                 </div>
-            </div>
+            </div> 
             <div className='content__block__insight__big__container'>
                 <div>
                     <h3>Comment communiquer entre les services concernés ?</h3>
@@ -133,11 +133,11 @@ function AnalyseExistant() {
       </section>
       <section className='accueil__section__blog'> 
       <div className='accueil__section__blog__header'>
-        <div className='accueil__section__blog__header__title'>
-          <h4>Avant le projet</h4>
+        <div>
+          <h5>Avant le projet</h5>
           <h3>Découvrez nos articles de blog</h3>
         </div>
-        <Link to='/blog' className='accueil__section__blog__header__link'>En lire d'avantage</Link>
+        <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
       </div>
       <div className='accueil__section__blog__content'>
         <div className='accueil__section__blog__content__container'>
@@ -164,10 +164,10 @@ function AnalyseExistant() {
       <div className='accueil__section__contact__container'>
         <h3>Vous avez un projet?</h3>
         <h4>Parlons-en maintenant.</h4>
-        <Link to='/contact' className='accueil__section__contact__container__link'>Planifier un rendez-vous</Link>
+        <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
       </div>  
     </section>
-        </>
+    </>
     )
 }
 

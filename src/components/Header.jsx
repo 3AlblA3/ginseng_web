@@ -103,7 +103,7 @@ function Header() {
                     <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
                     <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
                     <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
+                    <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                 </ul>
             </div>
@@ -190,7 +190,7 @@ function Header() {
                     <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
                     <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
                     <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
+                    <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                    </ul>
                  )}

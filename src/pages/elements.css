@@ -1,5 +1,3 @@
-
-
 .banner__intro {
     background-color: var(--blue);
     padding-bottom: 5rem;
@@ -11,7 +9,6 @@
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: 8rem;
-
     }
 }
 
@@ -80,11 +77,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    padding-top:2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     @media screen and (max-width: 1100px){
         padding: 3rem;
         flex-direction: column;
@@ -100,6 +96,9 @@
     h3{
         font-size: 2rem;
     };
+    h5{
+        font-size: 1.5rem;
+    }
     @media screen and (max-width: 1100px){
         width: 100%;
         h3{
@@ -113,7 +112,7 @@
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     display: block; 
     h5{
         font-size: 1.5rem;
@@ -151,6 +150,9 @@ h3{
     h3{
         font-size: 2rem;
     }
+    h5{
+        font-size: 1.5rem;
+    }
     @media screen and (max-width: 1100px){
         position: static;  
         padding: 2rem; 
@@ -159,13 +161,17 @@ h3{
   }
 
 .content__block__row__container__percentage{
-    width: 20%;
+    width: 40%;
+    h5{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem
+    };
     p{
         font-weight: 700
     };
     h3{
         font-size: 3rem;
-        color: palevioletred;        
+        color: rgb(128, 59, 138);        
     };
     @media screen and (max-width: 1100px){
         width: 100%;
@@ -174,7 +180,7 @@ h3{
 
 .content__block__row__container__percentage h3:nth-of-type(2) {
     color: white;
-    -webkit-text-stroke: 3px pink; 
+    -webkit-text-stroke: 2px rgb(128, 59, 138); 
 }
 
 .content__block__insight__small__container{
@@ -182,7 +188,7 @@ h3{
     padding: 2rem;
     border-radius: 2rem;
     color: black;
-    width: 15%;
+    width: 18%;
     height: 18rem;
     display: flex;
     align-items: flex-end;
@@ -211,16 +217,28 @@ h3{
     background-color: var(--lightBlue);
     border-radius: 2rem;
     color: black;
-    padding: 2rem;
+    padding: 6rem;
     h3{
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 60%;
+    }
+    h5{
+        font-size: 1.5rem;
     }
     @media screen and (max-width: 1100px){
         h3{
             font-size: 1.1rem;
             width: 100%;
         }
+        padding: 2rem;
+    }
+  }
+
+  .content__block__audits{
+    h3{
+        width: 60%;
+        padding-left: 25rem;
+        font-weight: 500;
     }
   }
 
@@ -243,6 +261,9 @@ h3{
     font-size: 1.2rem;
     font-weight: 600;
     transition-duration: 0.3s;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
     &:hover{
         font-size: 1.3rem;
         .content__block__audits__row__number{
@@ -317,8 +338,8 @@ h3{
         padding-left: 0;
         padding-right: 0;
     }
-
   }  
+
   .banner__column__img__sticky {
     position: sticky;
     top: 6rem;
@@ -397,8 +418,8 @@ h3{
 .content__stats__row{
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -407,11 +428,13 @@ h3{
         flex-direction: column;
         align-items: center;
         padding-right: 3rem;    
-        padding-bottom: 1rem;
-        border-right: solid rgb(165, 165, 165, 0.5);
+        padding-bottom: 0;
+        margin: 0;
+        border-right: solid rgb(165, 165, 165, 0.2);
         h3{
             font-weight: 700;
             font-size: 2rem;
+            margin: 0
         };
         p{
             margin: 0;
@@ -425,6 +448,8 @@ h3{
         flex-direction: column;
         div{
             padding-right: 1rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
             border-right: none;
             border-bottom: solid rgb(165, 165, 165, 0.5);
         }      
@@ -609,7 +634,6 @@ h3{
 .content__block__row__article__small{
     display: block;
     padding: 1rem;
-    padding-bottom: 2rem;
     height: 15rem;
     width: 25%;
     @media screen and (max-width: 1100px){
@@ -652,7 +676,6 @@ padding-bottom: 2rem;
             @media screen and (max-width: 1100px){
                 width: 50%;
             }
-
         }
         h5{
             font-size: 1.1rem;
@@ -684,7 +707,7 @@ padding-bottom: 2rem;
         &:nth-child(odd){
         background-color: rgb(201, 138, 149);
     }
-    button {
+    button{
         color: white;
         background-color: transparent;
         padding: 1rem;

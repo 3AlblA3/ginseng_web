@@ -170,8 +170,8 @@ function Accueil() {
           <p>Nous serons présents sur l’ensemble des réunions pour vous apporter nos conseils d’expert et veiller au respect du cahier des charges web ou CCTP
           </p>
           <div className='accueil__section__accompagnement__container__white__row'>
-            <Link to='/projet' className='button__white'>Vous avez un projet</Link>
-            <Link to='/methodologie' className='button__blue'>Voir notre méthodologie</Link>
+            <Link to='/projet' className='button__blue'>Vous avez un projet</Link>
+            <Link to='/methodologie' className='button__white'>Voir notre méthodologie</Link>
           </div>
         </article>
       </section>
@@ -295,7 +295,6 @@ function Accueil() {
           </div>
         </div>
       </section>
-
       <section className='content__block__row'>
         <div className="content__question__container">
           <h3>Vous avez d'autres questions?</h3>
@@ -348,17 +347,6 @@ function Accueil() {
         <h4>Parlons-en maintenant.</h4>
         <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
       </div>  
-    </section>
-    <section className='last_popup'>
-    <div className='content__article__popup'>
-      <div className='content__article__popup__container'>
-        <img src="https://picsum.photos/100/125" alt="img manu"/>
-      </div>
-      <div className='content__article__popup__container'>
-        <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
-        <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
-      </div>
-    </div>  
     </section>
     </>
   );

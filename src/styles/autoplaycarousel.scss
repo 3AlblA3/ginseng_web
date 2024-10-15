@@ -2,9 +2,6 @@
 $card-size: 10rem;
 $card-gap: 2rem;
 $animation-duration: 30s;
-$hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
-               10px 10px 8px rgba(152, 133, 133, 0.392),
-               15px 15px 8px rgba(139, 154, 139, 0.303);
 
 
 
@@ -25,7 +22,7 @@ $hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
   width: 200%;
   gap: $card-gap;
   animation: slide $animation-duration linear infinite;
-
+  padding-bottom: 1rem;
   &:hover {
     animation-play-state: paused;
   }
@@ -41,15 +38,12 @@ $hover-shadow: 5px 5px 8px rgba(222, 222, 222, 0.362),
   flex-shrink: 0;
   border-radius: 20%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
   @media screen and (max-width: 1100px){
     width: 8rem;
     height: 8rem;
 }
-
   &:hover {
     transform: scale(0.9);
-    box-shadow: $hover-shadow;
   }
 
   > img {

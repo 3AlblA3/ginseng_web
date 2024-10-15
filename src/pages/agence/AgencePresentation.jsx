@@ -169,7 +169,13 @@ function AgencePresentation () {
                 <p>Nous proposons pour chaque projet une méthodologie adaptée aux besoins et aux objectifs qui prend en compte les contraintes de budget et de planning.</p>
             </article>
         </section>
-        
+        <section className='accueil__section__contact'>   
+            <div className='accueil__section__contact__container'>
+                <h3>Vous avez un projet?</h3>
+                <h4>Parlons-en maintenant.</h4>
+                <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
+            </div>  
+        </section>        
         </>
     )
 

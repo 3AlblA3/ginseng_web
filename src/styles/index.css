@@ -8,6 +8,7 @@
   --grey: grey;
   --lightBlue: rgb(230, 240, 245);
   --cyan: rgb(0, 132, 255);
+  --ginsengBlue: #5A8BFF;
   color: var(--blue);
   
 }
