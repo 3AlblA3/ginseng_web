@@ -81,7 +81,7 @@ function Accueil() {
             <div className='accueil__section__background__description__popup'>
               <div className='content__article__popup'>
                 <div className='content__article__popup__container'>
-                  <img src="public/emmanuel_camara.png" alt="img emmanuel"/>
+                  <img src="emmanuel_camara.png" alt="img emmanuel"/>
                 </div>
                 <div className='content__article__popup__container'>
                   <p>Tel les icebergs, les projets ont toujours une partie émergente et une partie immergée…</p>
@@ -114,7 +114,7 @@ function Accueil() {
           <div className='accueil__section__accompagnement__container__white__popup'>
             <div className='content__article__popup'>
               <div className='content__article__popup__container'>
-                <img src="public/emmanuel_camara.png" alt="img manu"/>
+                <img src="emmanuel_camara.png" alt="img manu"/>
               </div>
               <div className='content__article__popup__container'>
                 <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>

@@ -9,7 +9,7 @@ function Footer() {
         <section className='last_popup'>
           <div className='content__article__popup'>
             <div className='content__article__popup__container'>
-              <img src="public/emmanuel_camara.png" alt="img manu"/>
+              <img src="emmanuel_camara.png" alt="img manu"/>
             </div>
             <div className='content__article__popup__container'>
               <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
