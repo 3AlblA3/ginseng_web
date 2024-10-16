@@ -6,30 +6,34 @@ import AutoplayCarousel from '../components/AutoplayCarousel';
 function Accueil() {
   
 
-  const [selectedCategory, setSelectedCategory] = useState('Etat et organismes publics');
+  const [selectedCategory, setSelectedCategory] = useState('Droitico');
 
   // définitions des variables des menus
 
   const categories = [
-    'Etat et organismes publics',
-    'Fédérations ou interprofession',
-    'Edition'
+    'Droitico',
+    'DIFCAA',
+    'MLS Communication'
   ];
 
   // Définition des variables des cas clients
 
   const casClients = {
-    'Etat et organismes publics': {
-      image: 'ph_300_200.jpg',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    'Droitico': {
+      image: '8.png',
+      description: "Tout au long des ateliers collaborateurs organisés par Ginseng Web, nous avons été impressionnés par leur écoute attentive et leur compréhension fine de nos enjeux et contraintes. Cela a permis de bâtir une relation de confiance solide, bénéfique pour la réussite du projet à chaque étape. Leur expertise technique et éditoriale, combinée à des conseils toujours pertinents, nous a grandement aidés. Leur réactivité et leur capacité à proposer des solutions adaptées ont été des atouts majeurs.",
+      author:"Célestin TOWANOU, directeur général SANCFIS"
     },
-    'Fédérations ou interprofession': {
-      image: 'ph_300_200_1.jpg',
-      description: 'Nam quod beatae nihil voluptatum debitis cupiditate magnam...',
+    'DIFCAA': {
+      image: '9.png',
+      description: "La refonte de notre site e-commerce avec Ginseng Web a été d'une qualité exemplaire. Leur équipe a su s'adapter aux défis spécifiques de notre plateforme B2B et B2C, en proposant des solutions sur mesure et en intégrant des fonctionnalités techniques avancées pour nos éclatés techniques. Leur écoute attentive et leur expertise nous ont permis d'obtenir un résultat parfaitement aligné avec nos attentes. Nous avons pu nous désolidariser d'une solution qui ne répondait plus du tout à nos attentes et nous allons clairement travailler sur de futurs projets avec eux, en toute confiance.",
+      author:"M. Manoukian, Directeur Général de DIFCAA"
+
     },
-    'Edition': {
-      image: 'ph_300_200_2.jpg',
-      description: 'Exercitationem distinctio assumenda placeat ut dolores illo est...',
+    'MLS Communication': {
+      image: '10.png',
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel nisi rutrum, ultricies tellus vitae, ullamcorper dolor. Aenean pellentesque arcu vel turpis dignissim blandit. Mauris varius lorem eget massa elementum iaculis. In venenatis erat a dolor facilisis ultricies. Aliquam eu tellus a ex aliquet maximus. Nullam vitae porttitor dui, id tristique mauris. Phasellus euismod orci mollis, hendrerit orci eu, tristique elit.",
+      author:"Fernando Ecclesia, dirigeant de MLS Communications SARL"
     },
   };
 
@@ -72,16 +76,16 @@ function Accueil() {
               <p>
               Nous sommes une agence web à taille humaine, spécialisée dans l’accompagnement digital. Nous vous aidons à imaginer (amoe refonte de site) et réaliser (amoa) votre projet web.
               </p>
-              <Link to="/accompagnement" className="button__blue">Pourquoi nous choisir?</Link>
+              <Link to="/agence_temoignages" className="button__blue">Pourquoi nous choisir?</Link>
             </div>
             <div className='accueil__section__background__description__popup'>
               <div className='content__article__popup'>
                 <div className='content__article__popup__container'>
-                  <img src="https://picsum.photos/100/125" alt="img manu"/>
+                  <img src="public/emmanuel_camara.png" alt="img emmanuel"/>
                 </div>
                 <div className='content__article__popup__container'>
                   <p>Tel les icebergs, les projets ont toujours une partie émergente et une partie immergée…</p>
-                  <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+                  <Link to="/accompagnement_analyseExistant" className='content__article__popup__container__link'>En savoir plus</Link>
                 </div>
               </div>
             </div>
@@ -110,7 +114,7 @@ function Accueil() {
           <div className='accueil__section__accompagnement__container__white__popup'>
             <div className='content__article__popup'>
               <div className='content__article__popup__container'>
-                <img src="https://picsum.photos/100/125" alt="img manu"/>
+                <img src="public/emmanuel_camara.png" alt="img manu"/>
               </div>
               <div className='content__article__popup__container'>
                 <p>Des questions ? Appelez-nous au 01 86 52 11 06 ou contactez-nous via le formulaire !</p>
@@ -201,6 +205,7 @@ function Accueil() {
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>
                 <p>{casClients[category].description}</p>
+                <p>{casClients[category].author}</p>
                 <Link to='/cas' className='button__blue'>
                   Voir le cas client
                 </Link>
@@ -214,81 +219,75 @@ function Accueil() {
         <div className='accueil__section__projet__container'>
           <h3>Découvrez nos méthodes d'accompagnements</h3>
           <div className='accueil__section__projet__container__imgs'>
-            <div className='accueil__section__projet__container__imgs__row'>
+          <div className='accueil__section__projet__container__imgs__row'>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_analyseExistant" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="analyse_existant.png" alt="" />
-                </Link>  
+                <img src="Agence_MO2_Site_architecte.jpg" alt="Agence_MO2_Site_architecte" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Analyse de l'existant</p>
+                  <p>Agence MO2</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_accompagnementTechnique" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="accueil.png" alt=""/>
-                </Link>
+                <img src="Celine_Loudet_Landing.jpg" alt="Celine_Loudet_Landing" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Accompagnement technique</p>
+                  <p>Agence Céline Loudet</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_definitionCibles" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="equipe_presentation.png" alt="" />
-                </Link>
+                <img src="DMH_page_propriete.jpg" alt="DMH_page_propriete"/>
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Definition des cibles</p>
-                </div>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__row'>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_cadrageProjet" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="graph.png" alt="" />
-                </Link>
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Cadrage du projet</p>
+                  <p>DMH</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_cahierCharge" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="ph_2.png" alt="" />
-                </Link>
+                <img src="Dubai_Muslim_Homes_Site_immo.jpg" alt="Dubai_Muslim_Homes_Site_immo" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Cahier des charges</p>
-                </div>
-              </div>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="ph_3.png" alt="" />
-                </Link>
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Support de l'équipe projet</p>
+                  <p>Dubaï Muslim Homes</p>
                 </div>
               </div>
             </div>
             <div className='accueil__section__projet__container__imgs__row'>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="ph_4.png" alt="" />
-                </Link>
+                <img src="Ets_Paumier.jpg" alt="Ets_Paumier" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Accompagnement UX-UI</p>
+                  <p>ETS Paumier</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="ph_4.png" alt="" />
-                </Link>
+                <img src="Ipnoze_site.jpg" alt="Ipnoze_site" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Accompagnement opérationnel</p>
+                  <p>Ipnoze</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <Link to="/accompagnement_supportEquipe" className='accueil__section__projet__container__imgs__content__link'>
-                  <img src="ph_4.png" alt="" />
-                </Link>
+                <img src="Le_Cactus_Francais_Site_ecommerce.jpg" alt="Le_Cactus_Francais_Site_ecommerce"/>
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Accompagnement post-projet</p>
+                  <p>Le Cactus Français</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Multipresse.jpg" alt="Multipresse" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Multipresse</p>
+                </div>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__row'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="NKS_Beauty_site_ecommerce.jpg" alt="NKS_Beauty_site_ecommerce" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>NKS</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Stores_Plaisance_pop_up.jpg" alt="Stores_Plaisance_pop_up" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Stores Plaisance PopUp</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Stores_Plaisance_Site_vitrine_complet.jpg" alt="Stores_Plaisance_Site_vitrine_complet"/>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Stores Plaisance site</p>
                 </div>
               </div>
             </div>
@@ -314,11 +313,11 @@ function Accueil() {
       </section>
     <section className='accueil__section__blog'> 
       <div className='accueil__section__blog__header'>
+        <h5>Avant le projet</h5>
         <div>
-          <h5>Avant le projet</h5>
           <h3>Découvrez nos articles de blog</h3>
-        </div>
-        <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
+          <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
+        </div>      
       </div>
       <div className='accueil__section__blog__content'>
         <div className='accueil__section__blog__content__container'>

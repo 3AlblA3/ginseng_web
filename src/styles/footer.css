@@ -16,7 +16,6 @@ footer{
     margin: 0;
     .content__article__popup{
         position: absolute;
-        width: 22rem;
         height: auto;
     }
     @media screen and (max-width: 1100px){

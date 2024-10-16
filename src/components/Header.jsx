@@ -111,9 +111,9 @@ function Header() {
                 <h3 className="header__section__menu__deroulant__p" onClick={toggleCasClientsMenu}>Cas Clients</h3>
                 <ul className="header__section__menu__deroulant__p__sous">
                 <div className="header__section__menu__deroulant__p__sous__div">
-                <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Exemple 1</Link></li>
-                <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Exemple 2</Link></li>
-                <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Exemple 3</Link></li>
+                <li><Link to="/casClient_droitico" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Droitico</Link></li>
+                <li><Link to="/casClient_difcaa" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">DIFCAA</Link></li>
+                <li><Link to="/casClient_mls" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">MLS Communication</Link></li>
                 </div>
                 </ul>
             </div>

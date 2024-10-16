@@ -9,7 +9,7 @@ function Footer() {
         <section className='last_popup'>
           <div className='content__article__popup'>
             <div className='content__article__popup__container'>
-              <img src="https://picsum.photos/100/125" alt="img manu"/>
+              <img src="public/emmanuel_camara.png" alt="img manu"/>
             </div>
             <div className='content__article__popup__container'>
               <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer__up">
           <section className="footer__up__section">
             <div className="footer__up__section__row">
-              <img src="Ginseng_logo.png" alt="logo ginseng web" className="footer__up__section__title__logo"/> 
+              <img src="logo_blue_only.PNG" alt="logo ginseng web" className="footer__up__section__title__logo"/> 
               <h3 className="footer__up__section__title__h3">Ginseng Web</h3>
             </div>
             <p>44 rue Jean Mermoz 78600 Maisons-Laffitte<br/>
@@ -59,7 +59,6 @@ function Footer() {
             <Link to ='/mentions' className="footer__down__section__link">Plan du site</Link>
           </section>
         </div>
-        
       </footer>
     )
   }
