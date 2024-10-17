@@ -17,16 +17,16 @@ function Temoignages() {
                 <p>Notre approche repose sur une conviction simple : la collaboration est la clé de la réussite. En travaillant étroitement avec vos équipes, nous visons à optimiser votre projet et à obtenir des résultats concrets. Notre motivation ? Votre satisfaction et l'aboutissement de ce projet.</p>
                 <p>En nous associant à vos équipes, nous visons un seul objectif : faire de votre projet un succès. Et, il faut le dire, le travail bien fait !</p>
                 <div className='accueil__section__accompagnement__container__white__popup'>
-            <div className='content__article__popup'>
-              <div className='content__article__popup__container'>
-                <img src="https://picsum.photos/100/125" alt="img manu"/>
-              </div>
-              <div className='content__article__popup__container'>
-                <p>Les promesses d'un accompagnement personnalisé sont légion dans notre secteur. Nous préférons vous laisser juger par vous-même, à travers les retours de nos clients.</p>
-                <Link to="/accompagnement_accompagnementTechnique" className='content__article__popup__container__link'>En savoir plus</Link>
-              </div>
-            </div>
-          </div>
+                    <div className='content__article__popup'>
+                        <div className='content__article__popup__container'>
+                            <img src="emmanuel_camara.png" alt="img manu"/>
+                        </div>
+                        <div className='content__article__popup__container'>
+                            <p>Nous pouvons réaliser ce type d'audit dans le cadre d'un accompagnement TMA</p>
+                            <Link to="/contact" className='content__article__popup__container__link'>Nous contacter</Link>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article className='content__temoignage'>
                 <h3>Témoignage</h3>

@@ -93,7 +93,7 @@ function Header() {
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
                     <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
-                    <li><Link to="/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
+                    <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
                     <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
                     <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>
@@ -180,7 +180,7 @@ function Header() {
                <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
                     <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
-                    <li><Link to="/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
+                    <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
                     <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
                     <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>

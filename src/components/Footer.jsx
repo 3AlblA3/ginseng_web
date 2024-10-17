@@ -6,17 +6,6 @@ function Footer() {
 
     return (
       <footer>
-        <section className='last_popup'>
-          <div className='content__article__popup'>
-            <div className='content__article__popup__container'>
-              <img src="emmanuel_camara.png" alt="img manu"/>
-            </div>
-            <div className='content__article__popup__container'>
-              <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
-              <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
-            </div>
-          </div>  
-        </section>
         <div className="footer__up">
           <section className="footer__up__section">
             <div className="footer__up__section__row">

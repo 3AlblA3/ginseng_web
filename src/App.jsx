@@ -9,11 +9,14 @@ import Tarifs from './pages/agence/tarifs';
 import Contact from './pages/Contact';
 import AnalyseExistant from './pages/accompagnement/analyseExistant';
 import AccompagnementTechnique from './pages/accompagnement/accompagnementTechnique';
+import AccompagnementOperationnel from './pages/accompagnement/accompagnementOperationnel';
 import AccompagnementUX from './pages/accompagnement/accompagnementUX_UI';
+import AccompagnementPostProjet from './pages/accompagnement/accompagnementPostProjet';
 import CadrageProjet from './pages/accompagnement/cadrageProjet';
 import CahierCharges from './pages/accompagnement/cahierCharges';
 import DefinitonCible from './pages/accompagnement/definitionCible';
 import SupportEquipe from './pages/accompagnement/supportEquipe';
+import AuditConcurrentiel from './pages/expertises/auditConcurrentiel';
 import TestUtilisateur from './pages/expertises/testUtilisateur';
 import AnimationWrapper from './utilities/AnimationWrapper';
 
@@ -37,6 +40,9 @@ function App() {
         <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
         <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
         <Route path="/accompagnement_accompagnementUX" element={<AccompagnementUX  />} />
+        <Route path="/accompagnement_accompagnementOperationnel" element={<AccompagnementOperationnel  />} />
+        <Route path="/accompagnement_accompagnementPostProjet" element={<AccompagnementPostProjet  />} />
+        <Route path="/expertise_auditConcurrentiel" element={<AuditConcurrentiel  />} />
         <Route path="/expertise_testUtilisateur" element={<TestUtilisateur  />} />
         <Route path="/contact" element={<Contact />} />
 

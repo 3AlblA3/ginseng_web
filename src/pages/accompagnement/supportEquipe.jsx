@@ -18,7 +18,7 @@ function SupportEquipe () {
         <section>
             <div className='content__block__row'>
                 <article className='content__block__row__container__sticky'>
-                    <h3>Disposer d’une ressource experte supplémentaire au sein de votre équipe</h3>
+                    <h5>Disposer d’une ressource experte supplémentaire au sein de votre équipe</h5>
                     <p>Pendant le projet, notre rôle d’Assistant à Maîtrise d’Ouvrage (AMOA) consiste à faire le lien fonctionnel entre le maître d’ouvrage (vous) et le maître d’œuvre (l’équipe de production du prestataire : chef de projet, graphistes, développeurs…).</p>
                     <p>Ainsi nous sommes un support de votre équipe projet dans toutes les phases de ce dernier, jusqu’à la mise en ligne du site Internet ou de l’application, et même au-delà, ce qui vous permet de disposer d’une ressource experte supplémentaire au sein de votre équipe.</p>
                     <p>Quand on parle de ressource supplémentaire, il faut avoir en tête que cette ressource sera dédiée à votre projet et n’aura donc pas d’autres tâches (plus urgentes) à accomplir. Et bien sûr cette ressource est présente lors de l’accompagnement opérationnel (développement et recette du site).</p>
@@ -31,7 +31,7 @@ function SupportEquipe () {
         <section className='content__block__column'>  
             <h3>Porter avec vous un projet ambitieux</h3>
             <p>Les projets digitaux sont des projets ambitieux, tant sur le plan technique que sur le plan éditorial et graphique. Ils demandent un investissement important des équipes internes. Bénéficier d’une AMO sur le suivi du projet permet d’alléger la charge de l’équipe pilote, tout en leur faisant bénéficier de nos expertises : techniques / éditoriales / ergonomiques.</p>
-            <h3>Continuer à vous accompagner à la suite de l’AMOE</h3>
+            <h5>Continuer à vous accompagner à la suite de l’AMOE</h5>
             <p>Souvent nous continuons d’accompagner en AMOA des clients que nous avons eu le plaisir d’accompagner en AMOE (lors de la phase amont du projet – recueil des besoins et rédaction du cahier des charges technique et fonctionnel). Cet accompagnement de l’équipe pilote du projet sur les différentes étapes en amont (ateliers, rédaction du cahier des charges…) nous a permis d’acquérir une bonne connaissance des différents acteurs et une perception fine du projet souhaité et de développer une relation de confiance, basée sur la coopération et la communication, des valeurs clés dans la réussite d’un projet.</p>
             <p>Nous sommes présents à l’ensemble des réunions et partageons avec vous les bonnes pratiques, notamment lors de la conception de gabarit UX et des maquettes, mais sommes également la pour avertir sur les potentiels risques de débordement du projet.</p>
             <p>Et c’est aussi pour nous une immense source de fierté et de joie que de pouvoir suivre un projet que l’on a conçu avec vous. C’est ce qui nous fait vibrer et nous donne envie de nous investir : voir un jour le site en ligne ou l’application lancée sur les stores.</p>
@@ -55,8 +55,7 @@ function SupportEquipe () {
         <section className='content__block__row'>
             <article className='content__block__row__container__sticky'>
                 <h3>Assurer des gabarits et des maquettes en conformité avec l’expression de besoin</h3>
-                <div className='content__article__bubble'>
-                    <img src="https://picsum.photos/100/125" alt="img bubble"/>
+                <div className='popup__dial'>
                     <p>En savoir plus sur notre accompagnement lors de la phase de conception (expertise UX/UI)</p>
                 </div>
             </article>

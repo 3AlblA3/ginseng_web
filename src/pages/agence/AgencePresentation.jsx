@@ -67,7 +67,7 @@ function AgencePresentation () {
             <article className='content__block__row__container__sticky'>
                 <div className='popup__dial'>
                     <div className='content__article__popup__container'>
-                        <img src="https://picsum.photos/100/125" alt="img manu"/>
+                        <img src="emmanuel_camara.png" alt="img manu"/>
                     </div>
                     <div className='content__article__popup__container'>
                         <p>Hello, moi c’est Emmanuel Camara, le co-fondateur de Ginseng Web, je vous parle ici de notre histoire.</p>

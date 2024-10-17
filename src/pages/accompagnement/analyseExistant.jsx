@@ -133,11 +133,11 @@ function AnalyseExistant() {
       </section>
       <section className='accueil__section__blog'> 
       <div className='accueil__section__blog__header'>
+        <h5>Avant le projet</h5>
         <div>
-          <h5>Avant le projet</h5>
           <h3>Découvrez nos articles de blog</h3>
-        </div>
-        <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
+          <Link to='/blog' className='button__blue'>Je lance mon projet</Link>
+        </div>      
       </div>
       <div className='accueil__section__blog__content'>
         <div className='accueil__section__blog__content__container'>

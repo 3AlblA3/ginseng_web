@@ -83,7 +83,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 1rem;
     align-items: center;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -122,17 +123,22 @@
     padding-top: 2rem;
     padding-bottom: 4rem;
     display: block; 
+
     h5{
         font-size: 1.5rem;
     };
     h3{
         font-size: 2rem;
+        width: 70%;
     }
 }
 
 .content__block__column__container__text{
 h3{
     width: 50%;
+    @media screen and (max-width: 1100px){
+        width: 100%;
+    }
 }
 }
 
@@ -142,19 +148,18 @@ h3{
     display: flex;
     justify-content: center;
     @media screen and (max-width: 1100px){
-        width: 100%;
+        display: none;
     }
 }
 
 
 .content__block__row__container__sticky {
+
     position: sticky;
     top: 7rem; /* Adjust this value to set the distance from the top of the viewport */
-    width: 50%;
+    width: 40%;
     height: fit-content;
     align-self: flex-start;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     h3{
         font-size: 2rem;
     }
@@ -162,8 +167,10 @@ h3{
         font-size: 1.5rem;
     }
     @media screen and (max-width: 1100px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: static;  
-        padding: 2rem; 
         width: auto;
     }
   }
@@ -201,8 +208,10 @@ h3{
     display: flex;
     align-items: flex-end;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
-    @media screen and (max-width: 1100px){
+    @media screen and (max-width: 700px){
+        width: 80%;
+    }
+    @media screen and (min-width:701px) and (max-width: 1100px){
         width: 50%;
     }  
 }
@@ -230,6 +239,7 @@ h3{
     border-radius: 2rem;
     color: black;
     padding: 6rem;
+    padding-top: 4rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     margin-bottom: 2rem;
     h3{
@@ -253,17 +263,14 @@ h3{
         width: 60%;
         padding-left: 25rem;
         font-weight: 500;
+        @media screen and (max-width: 1100px){
+            padding-left: 0;
+            font-weight: 600;
+            width: 100%;
+        }
+
     }
   }
-
-  .content__question__container{
-    background-color: var(--blue);
-    color: white;
-
-    .content__block__audits__row__title{
-        border-bottom: solid white;
-    }
-}
 
   .content__block__audits__row__title{
     display: flex;
@@ -323,15 +330,18 @@ h3{
     transform: translateY(0);
   }
 
-.banner__column{
+.banner__column, .banner__row{
     position: relative;
     background-color: var(--blue);
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 4rem;
+    .content__article__popup{
+        color: var(--blue);
+    }
     h3{
         font-size: 2rem;
     }
@@ -340,6 +350,30 @@ h3{
         width: 80%;
         h3{
             font-size: 1.5rem
+        }
+    }
+}
+
+.banner__row{
+    display: flex;
+    flex-direction: row;
+}
+
+.banner__row__container__link{
+    h5{
+        font-size: 1.5rem;
+        margin: 0
+    }
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        img{ 
+            height: 2rem;
+        }
+        p{
+            margin: 0
         }
     }
 }
@@ -506,7 +540,7 @@ h3{
     font-size: 1rem;
     padding: 2rem;
     height: auto;
-        @media screen and (max-width: 1100px){
+    @media screen and (max-width: 1100px){
         width: 100%;    
         font-size: 1rem;   
         text-align: center;
@@ -516,6 +550,13 @@ h3{
         @media screen and (max-width: 1100px){
             padding-right: 1rem;
         }
+    }
+}
+
+.banner__row__container__link{
+    transition-duration: 0.2s;
+    &:hover{
+        scale: 110%;
     }
 }
 
@@ -580,6 +621,8 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
     h5{
         color: var(--cyan);
     }
@@ -588,7 +631,7 @@ h3{
         width: 50%;
         text-align: center;
         @media screen and (max-width: 1100px){
-            width: auto;    
+            width: 100%; 
         }
     }
 }
@@ -596,14 +639,18 @@ h3{
 .equipe__container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 3rem;
+    @media screen and (max-width: 1100px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .equipe__container__content{
     width: 11rem;
     padding: 1rem;
+    text-align: center;
     @media screen and (max-width: 1100px){
         text-align: center;            
     }
@@ -722,7 +769,9 @@ padding-bottom: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-
+    @media screen and (max-width: 1100px){
+        width: 14rem;
+    }
     p{
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -765,12 +814,24 @@ padding-bottom: 2rem;
     background-color: rgb(133, 169, 235);
     padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 80%;
+    margin-left: 6rem;
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 1100px){
+        margin-left: 1rem;
+        padding: 1rem;    
+        h3{
+            font-size: 1.5rem;
+        }   
+    }
+    
     button {
         color: white;
         background-color: transparent;
@@ -785,4 +846,35 @@ padding-bottom: 2rem;
         }
     }
 }
+
+.content__block__insight{
+    background-color: var(--cyan);
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+
+.last_popup{
+    position: relative;
+    width: 0;
+    height: 0;
+    color: var(--blue);
+    bottom: 5rem;
+    left: 65%;
+    margin: 0;
+    .content__article__popup{
+        position: absolute;
+        height: auto;
+    }
+    @media screen and (max-width: 1100px){
+    .content__article__popup{
+        display: none;
+    }
+    }
+}
+
 

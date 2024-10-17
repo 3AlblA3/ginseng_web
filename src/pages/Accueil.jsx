@@ -206,7 +206,7 @@ function Accueil() {
               <div className='accueil__section__casClient__container__text'>
                 <p>{casClients[category].description}</p>
                 <p>{casClients[category].author}</p>
-                <Link to='/cas' className='button__blue'>
+                <Link to='/cas' className='button__white'>
                   Voir le cas client
                 </Link>
               </div>
@@ -219,7 +219,47 @@ function Accueil() {
         <div className='accueil__section__projet__container'>
           <h3>Explorez nos derniers projets</h3>
           <div className='accueil__section__projet__container__imgs'>
-            <div className='accueil__section__projet__container__imgs__row'>
+            <div className='accueil__section__projet__container__imgs__column'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Le_Cactus_Francais_Site_ecommerce.jpg" alt="Le_Cactus_Francais_Site_ecommerce"/>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Le Cactus Français</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Stores_Plaisance_Site_vitrine_complet.jpg" alt="Stores_Plaisance_Site_vitrine_complet"/>
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Stores Plaisance site</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Stores_Plaisance_pop_up.jpg" alt="Stores_Plaisance_pop_up" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Stores Plaisance PopUp</p>
+                </div>
+              </div>
+            </div>
+            <div className='accueil__section__projet__container__imgs__column'>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="NKS_Beauty_site_ecommerce.jpg" alt="NKS_Beauty_site_ecommerce" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>NKS</p>
+                </div>
+              </div>
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Dubai_Muslim_Homes_Site_immo.jpg" alt="Dubai_Muslim_Homes_Site_immo" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Dubaï Muslim Homes</p>
+                </div>
+              </div>   
+              <div className='accueil__section__projet__container__imgs__content'>
+                <img src="Ipnoze_site.jpg" alt="Ipnoze_site" />
+                <div className='accueil__section__projet__container__imgs__hover-content'>
+                  <p>Ipnoze</p>
+                </div>
+              </div>           
+            </div>
+            <div className='accueil__section__projet__container__imgs__column'>
               <div className='accueil__section__projet__container__imgs__content'>
                 <img src="Agence_MO2_Site_architecte.jpg" alt="Agence_MO2_Site_architecte" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
@@ -233,55 +273,23 @@ function Accueil() {
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <img src="DMH_page_propriete.jpg" alt="DMH_page_propriete"/>
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>DMH</p>
-                </div>
-              </div>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Dubai_Muslim_Homes_Site_immo.jpg" alt="Dubai_Muslim_Homes_Site_immo" />
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Dubaï Muslim Homes</p>
-                </div>
-              </div>
-            </div>
-            <div className='accueil__section__projet__container__imgs__row'>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Ets_Paumier.jpg" alt="Ets_Paumier" />
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>ETS Paumier</p>
-                </div>
-              </div>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Ipnoze_site.jpg" alt="Ipnoze_site" />
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Ipnoze</p>
-                </div>
-              </div>
-              <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Le_Cactus_Francais_Site_ecommerce.jpg" alt="Le_Cactus_Francais_Site_ecommerce"/>
-                <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Le Cactus Français</p>
-                </div>
-              </div>
-              <div className='accueil__section__projet__container__imgs__content'>
                 <img src="Multipresse.jpg" alt="Multipresse" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
                   <p>Multipresse</p>
                 </div>
               </div>
             </div>
-            <div className='accueil__section__projet__container__imgs__row'>
+            <div className='accueil__section__projet__container__imgs__column'>
               <div className='accueil__section__projet__container__imgs__content'>
-                <img src="NKS_Beauty_site_ecommerce.jpg" alt="NKS_Beauty_site_ecommerce" />
+                <img src="DMH_page_propriete.jpg" alt="DMH_page_propriete"/>
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>NKS</p>
+                  <p>Dubaï Muslim Homes</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Stores_Plaisance_pop_up.jpg" alt="Stores_Plaisance_pop_up" />
+                <img src="Ets_Paumier.jpg" alt="Ets_Paumier" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
-                  <p>Stores Plaisance PopUp</p>
+                  <p>ETS Paumier</p>
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
@@ -348,6 +356,17 @@ function Accueil() {
         <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
       </div>  
     </section>
+    <section className='last_popup'>
+          <div className='content__article__popup'>
+            <div className='content__article__popup__container'>
+              <img src="emmanuel_camara.png" alt="img manu"/>
+            </div>
+            <div className='content__article__popup__container'>
+              <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
+              <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+            </div>
+          </div>  
+        </section>
     </>
   );
 }
