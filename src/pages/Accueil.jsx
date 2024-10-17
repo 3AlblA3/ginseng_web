@@ -217,9 +217,9 @@ function Accueil() {
     </section>
     <section className='accueil__section__projet'>
         <div className='accueil__section__projet__container'>
-          <h3>Découvrez nos méthodes d'accompagnements</h3>
+          <h3>Explorez nos derniers projets</h3>
           <div className='accueil__section__projet__container__imgs'>
-          <div className='accueil__section__projet__container__imgs__row'>
+            <div className='accueil__section__projet__container__imgs__row'>
               <div className='accueil__section__projet__container__imgs__content'>
                 <img src="Agence_MO2_Site_architecte.jpg" alt="Agence_MO2_Site_architecte" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
@@ -293,10 +293,11 @@ function Accueil() {
             </div>
           </div>
         </div>
+        <h3 className='accueil__section__projet__container__bottom__text'>Maîtrise des fonctionnalités BtoB pour une expérience e-commerce sur mesure</h3>
       </section>
       <section className='content__block__row'>
         <div className="content__question__container">
-          <h3>Vous avez d'autres questions?</h3>
+          <h3 >Vous avez d'autres questions?</h3>
           {/* Affichage des questions par une fonction map */}
           {questions.map((question, index) => (
             <div key={index}>
