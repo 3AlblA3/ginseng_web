@@ -17,6 +17,13 @@ import CahierCharges from './pages/accompagnement/cahierCharges';
 import DefinitonCible from './pages/accompagnement/definitionCible';
 import SupportEquipe from './pages/accompagnement/supportEquipe';
 import AuditConcurrentiel from './pages/expertises/auditConcurrentiel';
+import AuditErgonomique from './pages/expertises/auditErgonomique';
+import AuditTechnique from './pages/expertises/auditTechnique';
+import AuditReferencement from './pages/expertises/auditReferencement';
+import GabaritsErgonomiques from './pages/expertises/gabaritsErgonomiques';
+import GestionProjet from './pages/expertises/gestionProjet';
+import RecueilBesoin from './pages/expertises/recueilBesoin';
+import CreationPersonae from './pages/expertises/creationPersonae';
 import TestUtilisateur from './pages/expertises/testUtilisateur';
 import AnimationWrapper from './utilities/AnimationWrapper';
 
@@ -42,7 +49,14 @@ function App() {
         <Route path="/accompagnement_accompagnementUX" element={<AccompagnementUX  />} />
         <Route path="/accompagnement_accompagnementOperationnel" element={<AccompagnementOperationnel  />} />
         <Route path="/accompagnement_accompagnementPostProjet" element={<AccompagnementPostProjet  />} />
+        <Route path="/expertise_auditErgonomique" element={<AuditErgonomique  />} />
         <Route path="/expertise_auditConcurrentiel" element={<AuditConcurrentiel  />} />
+        <Route path="/expertise_auditTechnique" element={<AuditTechnique  />} />
+        <Route path="/expertise_auditReferencement" element={<AuditReferencement  />} />
+        <Route path="/expertise_gabaritsErgonomiques" element={<GabaritsErgonomiques  />} />
+        <Route path="/expertise_gestionProjet" element={<GestionProjet  />} />
+        <Route path="/expertise_recueilBesoin" element={<RecueilBesoin  />} />
+        <Route path="/expertise_creationPersonae" element={<CreationPersonae  />} />
         <Route path="/expertise_testUtilisateur" element={<TestUtilisateur  />} />
         <Route path="/contact" element={<Contact />} />
 

@@ -2,11 +2,18 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1100px){
+        align-items: center;
+        padding: 3rem;
+    };
 }
 
 .form__title{
     font-size: 1.5rem;
     width: 65%;
+    @media screen and (max-width: 1100px){
+        width: 100%;
+    }
     h5{
         font-weight: 400;
     }
@@ -20,21 +27,16 @@
     gap: 1rem;
     padding: 3rem;
     width: 65%;
-    button{
-        background-color: var(--blue);
-        color: var(--white);
-        border-radius: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border: solid var(--blue);
-        transition-duration: 0.2s;
-        margin-top:1rem;
+    @media screen and (max-width: 1100px){
+        align-items: center;
+        width: 80%;
+    };
+    .button__blue{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        &:hover{
-            background-color: transparent;
-            border: solid black;
-            color: black;
-        }
+        height: auto;
     }
 }
 
@@ -44,6 +46,11 @@
     justify-content: space-around;
     gap: 2rem;
     width: 100%;
+    @media screen and (max-width: 1100px){
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    };
 }
 
 .form__row__group{
@@ -53,20 +60,33 @@
     label{
         padding-bottom: 1rem;
     }
+    @media screen and (max-width: 1100px){
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 input, select, textarea {
     border-radius: 2rem;
     border: solid var(--grey);
     font-family: 'Roboto', sans-serif;
-
+    @media screen and (max-width: 1100px){
+        width: 100%;
+    }
 }
 
 textarea{
     height: 4rem;
     border-radius: 1rem;
     padding: 1rem;
+    @media screen and (min-width: 701px) and (max-width: 1000px){
+        width: 95%;
+    }
 
+    @media screen and (max-width: 700px){
+        width: 90%;
+    }
 }
 
 input, select{

@@ -185,12 +185,18 @@ function Contact() {
                         </div>
                     </div>
                     <ReCAPTCHA ref={recaptchaRef} sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                        onChange={handleCaptchaChange}/>
-                    <button type='submit' disabled={isLoading}>
+                        onChange={handleCaptchaChange} className='recaptcha-container'/>
+                    <button type='submit' disabled={isLoading}  className="button__blue">
                         {isLoading ? 'Envoi en cours...' : 'Envoyez votre message à Ginseng Web'}
                     </button>
                 </form>
             </section>
+            <section className='accueil__section__contact'>   
+      <div className='accueil__section__contact__container'>
+        <h3>Prévoir un rendez-vous!</h3>
+        <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
+      </div>  
+    </section>
         </>
     );
 }

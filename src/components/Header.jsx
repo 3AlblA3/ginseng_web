@@ -92,17 +92,17 @@ function Header() {
                 <ul className="header__section__menu__deroulant__p__sous">
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
-                    <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
+                    <li><Link to="/expertise_auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
                     <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
-                    <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
-                    <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
+                    <li><Link to="/expertise_auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
+                    <li><Link to="/expertise_auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Production</h3>
-                    <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
-                    <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
+                    <li><Link to="/expertise_gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
+                    <li><Link to="/expertise_recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
+                    <li><Link to="/expertise_creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
+                    <li><Link to="/expertise_gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
                     <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                 </ul>
@@ -179,17 +179,17 @@ function Header() {
                    <ul className="mobile__menu__content__p__sous">
                <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
-                    <li><Link to="/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
+                    <li><Link to="/expertise_auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
                     <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
-                    <li><Link to="/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
-                    <li><Link to="/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
+                    <li><Link to="/expertise_auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
+                    <li><Link to="/expertise_auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Production</h3>
-                    <li><Link to="/agence" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
-                    <li><Link to="/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
-                    <li><Link to="/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
+                    <li><Link to="/expertise_gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
+                    <li><Link to="/expertise_recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
+                    <li><Link to="/expertise_creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
+                    <li><Link to="/expertise_gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
                     <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                    </ul>

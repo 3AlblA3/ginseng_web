@@ -353,20 +353,20 @@ function Accueil() {
       <div className='accueil__section__contact__container'>
         <h3>Vous avez un projet?</h3>
         <h4>Parlons-en maintenant.</h4>
-        <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
+        <Link to='/contact' className='button__blue'>Prendre contact avec nous</Link>
       </div>  
     </section>
     <section className='last_popup'>
-          <div className='content__article__popup'>
-            <div className='content__article__popup__container'>
-              <img src="emmanuel_camara.png" alt="img manu"/>
-            </div>
-            <div className='content__article__popup__container'>
-              <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
-              <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
-            </div>
-          </div>  
-        </section>
+      <div className='content__article__popup'>
+        <div className='content__article__popup__container'>
+          <img src="emmanuel_camara.png" alt="img manu"/>
+        </div>
+        <div className='content__article__popup__container'>
+          <p>Combien de leads vous rapportent votre profil Linkedin chaque semaine actuellement ?</p>
+          <Link to="/contact" className='content__article__popup__container__link'>En savoir plus</Link>
+        </div>
+      </div>  
+    </section>
     </>
   );
 }
