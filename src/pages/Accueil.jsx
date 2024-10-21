@@ -125,23 +125,23 @@ function Accueil() {
         </article>
         <div className='accueil__section__accompagnement__black__wrapper'>
           <article className="accueil__section__accompagnement__container__black__content">
-            <Link to='/analyse' className='accueil__section__accompagnement__container__black__link'>
+            <Link to='/accompagnement/analyseExistant' className='accueil__section__accompagnement__container__black__link'>
               <h3>Analyse de l'existant</h3>
               <span><p>Recenser les fonctionnalités et les enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
             </Link>
-            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
+            <Link to='/expertise/auditTechnique' className='accueil__section__accompagnement__container__black__link'>
               <h3>Audit technique</h3>
               <span><p>Lister vos fonctionnalités et enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
             </Link>
-            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link'>
+            <Link to='/accompagnement/definitionCible' className='accueil__section__accompagnement__container__black__link'>
               <h3>Définition de vos cibles</h3>
               <span><p>Lister vos fonctionnalités et enjeux techniques</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
             </Link>
-            <Link to='/' className='accueil__section__accompagnement__container__black__link'>
+            <Link to='/accompagnement/cadrageProjet' className='accueil__section__accompagnement__container__black__link'>
               <h3>Cadrage du projet</h3>
               <span><p>De l'arborescence du site internet à la formation des utilisateurs</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
             </Link>
-            <Link to='/' className='accueil__section__accompagnement__container__black__link'>
+            <Link to='/accompagnement/cahierCharges' className='accueil__section__accompagnement__container__black__link'>
               <h3>Rédaction cahier des charges (CCTP) et lancement de l'appel d'offres</h3>
               <span><p>Etablir le document clef de votre appel d'offres</p><img src="fleche_droite_white.png" alt="fleche white"/></span>
             </Link>
@@ -154,15 +154,15 @@ function Accueil() {
         <div className='accueil__section__accompagnement__black__wrapper'>
           <div className='accueil__section__accompagnement__container__black'></div>
           <article className="accueil__section__accompagnement__container__black__content">
-            <Link to='/accompagnement' className='accueil__section__accompagnement__container__black__link__2th'>
+            <Link to='/accompagnement/accompagnementUX_UI' className='accueil__section__accompagnement__container__black__link__2th'>
               <h3>Création UX-UI</h3>
               <span><p>Matérialiser les parcours utilisateurs</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
             </Link>
-            <Link to='/' className='accueil__section__accompagnement__container__black__link__2th'>
+            <Link to='/accompagnement/accompagnementOperationnel' className='accueil__section__accompagnement__container__black__link__2th'>
               <h3>Accompagnement opérationnel</h3>
               <span><p>Du développement du site web aux tests</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
             </Link>
-            <Link to='/' className='accueil__section__accompagnement__container__black__link__2th'>
+            <Link to='/accompagnement/accompagnementPostProjet' className='accueil__section__accompagnement__container__black__link__2th'>
               <h3>Maintenance Evolutive</h3>
               <span><p>Etre présent durant la maintenance de votre site internet</p><img src="fleche_droite_black.png" alt="fleche black"/></span>
             </Link>
@@ -329,24 +329,24 @@ function Accueil() {
         </div>      
       </div>
       <div className='accueil__section__blog__content'>
-        <div className='accueil__section__blog__content__container'>
+        <Link to='/blog' className='accueil__section__blog__content__container'>
           <div className='accueil__section__blog__content__container__text'>
             <p>Questions sur le web</p>
             <h3>Refonte de site web: pourquoi faire un cahier des charges?</h3>
           </div>
-        </div>
-        <div className='accueil__section__blog__content__container'>
+        </Link>
+        <Link to='/blog' className='accueil__section__blog__content__container'>
           <div className='accueil__section__blog__content__container__text'>
             <p>Questions sur le web</p>
             <h3>Quelles technologie pour votre projet?</h3>
           </div>
-        </div>
-        <div className='accueil__section__blog__content__container'>
+        </Link>
+        <Link to='/blog' className='accueil__section__blog__content__container'>
           <div className='accueil__section__blog__content__container__text'>
             <p>Questions sur le web</p>
             <h3>Quel prix pour un site web?</h3>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
     <section className='accueil__section__contact'>   

@@ -50,6 +50,7 @@ section.animate-in {
   padding: 0;
   img{
     position: relative;
+    top: 0.1rem;
     height: 12rem;
     border-radius: 0rem 0rem 0rem 1rem;
     @media screen and (max-width: 1100px){
@@ -104,8 +105,11 @@ section.animate-in {
 }
 
 p, li{  
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 800;
+}
+li{
+    padding-bottom: 0.5rem;
 }
 
 h3, h2, h4{font-family: 'Poppins', sans-serif;}

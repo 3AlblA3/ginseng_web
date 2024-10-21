@@ -26,7 +26,11 @@ import RecueilBesoin from './pages/expertises/recueilBesoin';
 import CreationPersonae from './pages/expertises/creationPersonae';
 import TestUtilisateur from './pages/expertises/testUtilisateur';
 import AnimationWrapper from './utilities/AnimationWrapper';
-
+import BlogAccueil from './pages/blog/blogAccueil';
+import ChoixMots from './pages/blog/choixMots';
+import CoutSite from './pages/blog/coutSite';
+import TestErgonomie from './pages/blog/testErgonomie';
+import SiteCree from './pages/blog/siteCree';
 import './styles/App.css'
 
 function App() {
@@ -37,27 +41,32 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/agence_presentation" element={<AgencePresentation />} />
-        <Route path="/agence_temoignages" element={<Temoignages />} />
-        <Route path="/agence_tarifs" element={<Tarifs />} />
-        <Route path="/accompagnement_accompagnementTechnique" element={<AccompagnementTechnique />} />
-        <Route path="/accompagnement_analyseExistant" element={<AnalyseExistant />} />
-        <Route path="/accompagnement_cadrageProjet" element={<CadrageProjet />} />
-        <Route path="/accompagnement_cahierCharges" element={<CahierCharges />} />
-        <Route path="/accompagnement_definitionCible" element={<DefinitonCible />} />
-        <Route path="/accompagnement_supportEquipe" element={<SupportEquipe />} />
-        <Route path="/accompagnement_accompagnementUX" element={<AccompagnementUX  />} />
-        <Route path="/accompagnement_accompagnementOperationnel" element={<AccompagnementOperationnel  />} />
-        <Route path="/accompagnement_accompagnementPostProjet" element={<AccompagnementPostProjet  />} />
-        <Route path="/expertise_auditErgonomique" element={<AuditErgonomique  />} />
-        <Route path="/expertise_auditConcurrentiel" element={<AuditConcurrentiel  />} />
-        <Route path="/expertise_auditTechnique" element={<AuditTechnique  />} />
-        <Route path="/expertise_auditReferencement" element={<AuditReferencement  />} />
-        <Route path="/expertise_gabaritsErgonomiques" element={<GabaritsErgonomiques  />} />
-        <Route path="/expertise_gestionProjet" element={<GestionProjet  />} />
-        <Route path="/expertise_recueilBesoin" element={<RecueilBesoin  />} />
-        <Route path="/expertise_creationPersonae" element={<CreationPersonae  />} />
-        <Route path="/expertise_testUtilisateur" element={<TestUtilisateur  />} />
+        <Route path="/agence/presentation" element={<AgencePresentation />} />
+        <Route path="/agence/temoignages" element={<Temoignages />} />
+        <Route path="/agence/tarifs" element={<Tarifs />} />
+        <Route path="/accompagnement/accompagnementTechnique" element={<AccompagnementTechnique />} />
+        <Route path="/accompagnement/analyseExistant" element={<AnalyseExistant />} />
+        <Route path="/accompagnement/cadrageProjet" element={<CadrageProjet />} />
+        <Route path="/accompagnement/cahierCharges" element={<CahierCharges />} />
+        <Route path="/accompagnement/definitionCible" element={<DefinitonCible />} />
+        <Route path="/accompagnement/supportEquipe" element={<SupportEquipe />} />
+        <Route path="/accompagnement/accompagnementUX" element={<AccompagnementUX  />} />
+        <Route path="/accompagnement/accompagnementOperationnel" element={<AccompagnementOperationnel  />} />
+        <Route path="/accompagnement/accompagnementPostProjet" element={<AccompagnementPostProjet  />} />
+        <Route path="/expertise/auditErgonomique" element={<AuditErgonomique  />} />
+        <Route path="/expertise/auditConcurrentiel" element={<AuditConcurrentiel  />} />
+        <Route path="/expertise/auditTechnique" element={<AuditTechnique  />} />
+        <Route path="/expertise/auditReferencement" element={<AuditReferencement  />} />
+        <Route path="/expertise/gabaritsErgonomiques" element={<GabaritsErgonomiques  />} />
+        <Route path="/expertisegestionProjet" element={<GestionProjet  />} />
+        <Route path="/expertise/recueilBesoin" element={<RecueilBesoin  />} />
+        <Route path="/expertise/creationPersonae" element={<CreationPersonae  />} />
+        <Route path="/expertise/testUtilisateur" element={<TestUtilisateur  />} />
+        <Route path="/blog" element={<BlogAccueil  />} />
+        <Route path="/blog/coutSite" element={<CoutSite  />} />
+        <Route path="/blog/choixMots" element={<ChoixMots  />} />
+        <Route path="/blog/testErgonomie" element={<TestErgonomie  />} />
+        <Route path="/blog/siteCree" element={<SiteCree  />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>

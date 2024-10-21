@@ -44,7 +44,6 @@ function Header() {
 
 
   return (
-        
         <header>
           <div className="header__section">
             <Link to="/" className="header__section__title">
@@ -61,9 +60,9 @@ function Header() {
               <h3 className="header__section__menu__deroulant__p" onClick={toggleAgencyMenu}>L'agence</h3>
               <ul className="header__section__menu__deroulant__p__sous">
                 <div className="header__section__menu__deroulant__p__sous__div">
-                  <li><Link to="/agence_presentation" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">L'agence - présentations</Link></li>
-                  <li><Link to="/agence_temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Les témoignages</Link></li>
-                  <li><Link to="/agence_tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tarifs</Link></li>
+                  <li><Link to="/agence/presentation" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">L'agence - présentations</Link></li>
+                  <li><Link to="/agence/temoignages" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Les témoignages</Link></li>
+                  <li><Link to="/agence/tarifs" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tarifs</Link></li>
                 </div>
               </ul>
             </div>
@@ -72,18 +71,18 @@ function Header() {
                 <ul className="header__section__menu__deroulant__p__sous">
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Avant le projet</h3>
-                    <li><Link to="/accompagnement_analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
-                    <li><Link to="/accompagnement_accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
-                    <li><Link to="/accompagnement_definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
-                    <li><Link to="/accompagnement_cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
-                    <li><Link to="/accompagnement_cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
+                    <li><Link to="/accompagnement/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
+                    <li><Link to="/accompagnement/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
+                    <li><Link to="/accompagnement/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
+                    <li><Link to="/accompagnement/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
+                    <li><Link to="/accompagnement/cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Pendant le Projet</h3>
-                    <li><Link to="/accompagnement_supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
-                    <li><Link to="/accompagnement_AccompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
-                    <li><Link to="/accompagnement_accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
-                    <li><Link to="/accompagnement_accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
+                    <li><Link to="/accompagnement/supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
+                    <li><Link to="/accompagnement/AccompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
+                    <li><Link to="/accompagnement/accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
+                    <li><Link to="/accompagnement/accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
                   </div>
                 </ul>
             </div>
@@ -92,18 +91,18 @@ function Header() {
                 <ul className="header__section__menu__deroulant__p__sous">
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
-                    <li><Link to="/expertise_auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
-                    <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
-                    <li><Link to="/expertise_auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
-                    <li><Link to="/expertise_auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
+                    <li><Link to="/expertise/auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
+                    <li><Link to="/expertise/auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
+                    <li><Link to="/expertise/auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
+                    <li><Link to="/expertise/auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Production</h3>
-                    <li><Link to="/expertise_gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
-                    <li><Link to="/expertise_recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
-                    <li><Link to="/expertise_creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
-                    <li><Link to="/expertise_gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
-                    <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
+                    <li><Link to="/expertise/gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
+                    <li><Link to="/expertise/recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
+                    <li><Link to="/expertise/creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
+                    <li><Link to="/expertise/gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
+                    <li><Link to="/expertise/testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                 </ul>
             </div>
@@ -111,9 +110,9 @@ function Header() {
                 <h3 className="header__section__menu__deroulant__p" onClick={toggleCasClientsMenu}>Cas Clients</h3>
                 <ul className="header__section__menu__deroulant__p__sous">
                 <div className="header__section__menu__deroulant__p__sous__div">
-                <li><Link to="/casClient_droitico" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Droitico</Link></li>
-                <li><Link to="/casClient_difcaa" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">DIFCAA</Link></li>
-                <li><Link to="/casClient_mls" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">MLS Communication</Link></li>
+                <li><Link to="/casClient/droitico" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Droitico</Link></li>
+                <li><Link to="/casClient/difcaa" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">DIFCAA</Link></li>
+                <li><Link to="/casClient/mls" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">MLS Communication</Link></li>
                 </div>
                 </ul>
             </div>
@@ -145,9 +144,9 @@ function Header() {
                  <h3 className="mobile__menu__content__p" onClick={() => toggleMenu('agency')}>L'agence</h3>
                  {activeMenu === 'agency' && (
                    <ul className="mobile__menu__content__p__sous">
-                     <li><Link to="/agence_presentation">L'agence - présentations</Link></li>
-                     <li><Link to="/agence_temoignages"> Les témoignages</Link></li>
-                     <li><Link to="/agence_tarifs">tarifs</Link></li>
+                     <li><Link to="/agence/presentation">L'agence - présentations</Link></li>
+                     <li><Link to="/agence/temoignages"> Les témoignages</Link></li>
+                     <li><Link to="/agence/tarifs">tarifs</Link></li>
                    </ul>
                  )}
                </div>
@@ -157,18 +156,18 @@ function Header() {
                    <ul className="mobile__menu__content__p__sous">
                      <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Avant le projet</h3>
-                    <li><Link to="/accompagnement_analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
-                    <li><Link to="/accompagnement_accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
-                    <li><Link to="/accompagnement_definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
-                    <li><Link to="/accompagnement_cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
-                    <li><Link to="/accompagnement_cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
+                    <li><Link to="/accompagnement/analyseExistant" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Analyse de l'existant</Link></li>
+                    <li><Link to="/accompagnement/accompagnementTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement technique</Link></li>
+                    <li><Link to="/accompagnement/definitionCible" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Définition des cibles</Link></li>
+                    <li><Link to="/accompagnement/cadrageProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Cadrage du projet</Link></li>
+                    <li><Link to="/accompagnement/cahierCharges" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Rédaction du cahier des charges ainsi qu’un planificateur de projet</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Pendant le Projet</h3>
-                    <li><Link to="/accompagnement_supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
-                    <li><Link to="/accompagnement_accompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
-                    <li><Link to="/accompagnement_accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
-                    <li><Link to="/accompagnement_accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
+                    <li><Link to="/accompagnement/supportEquipe" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Support de l'équipe projet</Link></li>
+                    <li><Link to="/accompagnement/accompagnementUX" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement UX-UI</Link></li>
+                    <li><Link to="/accompagnement/accompagnementOperationnel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement opérationnel</Link></li>
+                    <li><Link to="/accompagnement/accompagnementPostProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Accompagnement post-projet</Link></li>
                   </div>
                    </ul>
                  )}
@@ -179,18 +178,18 @@ function Header() {
                    <ul className="mobile__menu__content__p__sous">
                <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Audit</h3>
-                    <li><Link to="/expertise_auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
-                    <li><Link to="/expertise_auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
-                    <li><Link to="/expertise_auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
-                    <li><Link to="/expertise_auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
+                    <li><Link to="/expertise/auditErgonomique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit ergonomique</Link></li>
+                    <li><Link to="/expertise/auditConcurrentiel" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit concurrentiel</Link></li>
+                    <li><Link to="/expertise/auditTechnique" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit technique</Link></li>
+                    <li><Link to="/expertise/auditReferencement" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Audit referencement naturel</Link></li>
                   </div>
                   <div className="header__section__menu__deroulant__p__sous__div">
                     <h3 className="header__section__menu__deroulant__p__sous__div__title">Production</h3>
-                    <li><Link to="/expertise_gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
-                    <li><Link to="/expertise_recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
-                    <li><Link to="/expertise_creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
-                    <li><Link to="/expertise_gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
-                    <li><Link to="/expertise_testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
+                    <li><Link to="/expertise/gestionProjet" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gestion de projet</Link></li>
+                    <li><Link to="/expertise/recueilBesoin" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Recueil de besoins </Link></li>
+                    <li><Link to="/expertise/creationPersonae" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Création des personae</Link></li>
+                    <li><Link to="/expertise/gabaritsErgonomiques" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Gabarits ergonomiques</Link></li>
+                    <li><Link to="/expertise/testUtilisateur" style={{textDecoration:"none"}} className="header__section__menu__deroulant__p__sous__link">Tests utilisateurs</Link></li>
                   </div>
                    </ul>
                  )}
@@ -199,9 +198,9 @@ function Header() {
                  <h3 className="mobile__menu__content__p" onClick={() => toggleMenu('casClients')}>Cas clients</h3>
                  {activeMenu === 'casClients' && (
                    <ul className="mobile__menu__content__p__sous">
-                     <li><Link to="/agence">Exemple 1</Link></li>
-                     <li><Link to="/temoignages">Exemple 2</Link></li>
-                     <li><Link to="/tarifs">Exemple 3</Link></li>
+                     <li><Link to="/casClient/droitico">Droitico</Link></li>
+                     <li><Link to="/casClient/difcaa">DIFCAA</Link></li>
+                     <li><Link to="/casClient/mls">MLS</Link></li>
                    </ul>
                  )}
                 </div>
