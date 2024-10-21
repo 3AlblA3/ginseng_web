@@ -49,12 +49,12 @@ function creationPersonae () {
                 <p>En effet, il nous parait impensable aujourd’hui de construire un projet digital qui ne prendrait pas en considération les besoins et les objectifs des utilisateurs finaux. C’est pourquoi lors de nos missions, nous nous assurons que le travail de conception respecte les parcours utilisateurs et leur permette d’accomplir ce qu’ils étaient venus faire sur le site. Et pour cela, notre arme infaillible est la création des personae qui est un des outils en ergonomie web que nous déployons.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+            <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
             <article className='content__block__row__container__sticky'>
                 <h5>Les personae sont des archétypes d’utilisateurs</h5>
@@ -86,7 +86,7 @@ function creationPersonae () {
             <p>En support des ateliers (car il faut généralement deux ateliers pour pouvoir définir précisément l’ensemble des personae d’un projet) nous avons constitué un tableau blanc MIRO spécifique. Nous avons fait évoluer ce tableau MIRO, au fil du temps, pour le rendre le plus efficace possible afin d’établir des personae précis selon des étapes faisant évoluer la réflexion de manière fluide et ludique (autant que possible, tout du moins).</p>
             <p>Lors de nos missions d’AMOE, nous nous assurons que les personae réalisés sont réalistes et prennent bien en compte les différents éléments clés que nous allons vous exposer à présent. Ils seront en effet à la base des réflexions pour construire l’arborescence du site et cadrer le projet.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Répertorier l’ensemble des cibles du site et les regrouper</h5>
             <p>La première question à se poser lors de la création des personae est : qui va utiliser le site ?</p>
@@ -97,14 +97,14 @@ function creationPersonae () {
             <p>L’un des bénéfices de la méthode des personae est de hiérarchiser les cibles et ainsi pouvoir déterminer lors de la phase de conception, quelle résolution des besoins sera prioritaire.</p>
             <p>Par exemple, pour une Fédération dont la cible principale est l’adhérent et la cible secondaire est l’adhérent potentiel. La page d’accueil du site devra donc s’adresser aux deux cibles : permettre à l’adhérent de trouver rapidement le document qu’il recherche, et à l’adhérent potentiel d’en savoir plus sur l’organisme pour valider ou non son envie d’adhérer. Toutefois, le personae principal étant l’adhérent, c’est à son besoin que l’on cherche à répondre en priorité et ainsi pourquoi pas, lui proposer un champ de recherche dès son entrée sur le site. Un encart réservé à la présentation de la Fédération pourra être affiché dans un second temps, pour répondre aux besoins d’informations de l’adhérent potentiel.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Dans un temps deux, nous cherchons donc à déterminer, avec vous, à quelle cible le site s’adresse en priorité. Puis pour chaque cible nous déterminons quels sont leurs niveaux de compétences et de connaissance. Si l’on reprend l’exemple précédent, sur la fédération, nous pourrons par exemple évaluer leur niveau de connaissance concernant la Fédération (élevée pour le persona primaire, plutôt bas pour le persona secondaire). L’évaluation de ce critère permettra notamment de déterminer dans quelle mesure il sera nécessaire d’adapter le contenu et l’accès aux informations.</p>
             <h5>Donner vie aux personae</h5>
             <p>C’est généralement l’étape la plus appréciée de l’atelier : rédiger le roman de vie des personae.</p>
             <p>Elle demande à faire preuve d’imagination, sans oublier toutefois qu’elle se base sur des données réelles. Ainsi, si les analytics du site existant révèlent que vos utilisateurs principaux sont des femmes de plus de 55 ans, la cible ne pourra pas être incarnée par le personae de Cédric, 35 ans.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Pour donner vie aux personae, il nous semble important de leur donner un nom, un prénom et un âge. Nous apprécions également leur attribuer une photo, ce qui donne des personae plus incarné et permet de mieux se projeter. Les notions de professions et de lieux géographiques sont plus ou moins importantes selon le projet mais donnent des informations importantes. Si des entretiens et des questionnaires ont été menés en amont, il est intéressant d’y intégrer des verbatim donnant à voir ce que le personae dit sur l’organisme, le produit ou le service. Enfin, nous recommandons d’installer le personae dans une histoire, sans entrer trop dans le descriptif, mais en donnant quelques indications sur sa situation familiale et ses hobbies.</p>
             <p>Une étape importante également consiste à évaluer l’état d’esprit du personae lors de sa visite sur le site (s’il est sans une attitude positive ou non, s’il a du temps à consacrer à sa visite ou s’il est pressé, s’il se trouve dans un environnement plutôt stressant ou au contraire relaxant…)</p>
@@ -115,7 +115,7 @@ function creationPersonae () {
             <h5>Des fiches qui vont suivront tout au long du projet</h5>
             <p>À l’issue des ateliers nous formaliserons les éléments en créant une fiche synthétique et mise en forme pour chaque persona, pour une consultation agréable et simplifiée pendant toute la durée du projet.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
         </section>
         <section className='content__block__row'>
@@ -139,7 +139,7 @@ function creationPersonae () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

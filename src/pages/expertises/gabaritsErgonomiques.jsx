@@ -48,12 +48,12 @@ function GabaritsErgonomiques () {
                 <p>L’objectif principal lors de la réalisation d’un gabarit ergonomique est la mise en place d’un agencement idéal des fonctions au sein de chaque page, selon les attentes des internautes et des contenus, sans prendre en considération le design. On est donc ici pleinement dans le cadre d’une démarche UX qui vise à construire les pages du site en prenant en compte les besoins des utilisateurs. Démarche que nous mettons en place lors de l’accompagnement opérationnel de nos clients en AMOA.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
             <article className='content__block__row__container__sticky'>
                 <h3>Une étape préparatoire aux maquettes de votre site web</h3>
@@ -87,13 +87,13 @@ function GabaritsErgonomiques () {
             <p>Nous intégrons ensuite les pages réalisées en annexe du cahier des charges lors des appels d’offres afin que les agences répondantes puissent en prendre connaissance également.</p>
             <p>Lors des ateliers de co-construction des gabarits, nous travaillons sur la base d’un tableau blanc interactif Miro qui facilite le travail collaboratif. C’est un outil qui permet de schématiser facilement les contenus des pages d’un site ou d’une application, et qui intègre des systèmes d’annotation et d’intégration de commentaires.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+            <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>En amont de l’atelier, nous listons et nous faisons une ébauche des différents éléments et fonctionnalités susceptibles de composer les pages qui seront prototypées afin d’interroger l’équipe projet sur leur pertinence.</p>
             <p>Durant les ateliers, nous faisons évoluer ces différentes briques fonctionnelles en prenant en compte les contraintes, les cas particuliers, les besoins, les envies… qui nous sont communiquées par l’équipe projet puis nous les agençons sur des fonds de page, en veillant à la hiérarchie de l’information, au bon enchaînement des éléments et à la cohérence globale de la page. Nous appliquons notre expertise pour assurer le respect des grands principes ergonomiques, la prise en compte des parcours utilisateurs mais également pour informer sur les possibilités techniques.</p>
             <p>Après les ateliers, nous retranscrivons les gabarits sur le logiciel Figma. Nous produisons ainsi des documents mis en forme représentant les pages clés travaillées, au format desktop et/ou mobile, afin de disposer d’une version finalisée permettant de se projeter dans le projet que cela soit une application, la refonte d’un intranet ou la création d’un extranet.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+            <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Suivant le type de projet, nous pouvons réaliser des prototypes animés, sur la base des gabarits. À l’aide de Figma, nous simulons les transitions entre les différents écrans pour permettre de naviguer aisément dans le prototype du site web ou de l’application. Nous prévoyons un temps de formation pour permettre à l’équipe projet de manipuler le prototype aisément.</p>
         </section>
@@ -118,7 +118,7 @@ function GabaritsErgonomiques () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

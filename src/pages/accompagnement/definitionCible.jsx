@@ -18,7 +18,7 @@ function DefinitonCible () {
             <p>Que ce soit pour consulter des informations, se documenter sur un sujet spécifique, trouver un guide pratique ou encore être accompagné dans une démarche, un projet numérique s’adresse à des publics aux besoins variés et aux attentes souvent très différentes.</p>
             <p>En construisant des personae, on partage une vision claire et collective des objectifs des utilisateurs. Prenons un exemple concret : une personne cherchant une convention collective aura des attentes très différentes d'un passionné de sport automobile qui cherche à suivre une course en direct. C’est ce genre de nuances que la création des personae permet de saisir, afin d’offrir une expérience adaptée à chaque utilisateur.</p>
             <div className='content__block__img'>
-                <img src="id_ph.png" alt="id placeholder" />
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/id_ph.png`} alt="id placeholder" />
             </div>
                 <p>Il est essentiel que les cibles identifiées soient validées collectivement par l'équipe projet et les décideurs clés. Cette validation garantit que tout le monde partage une même vision des utilisateurs finaux.</p>
                 <p>Dès le début de nos missions, nous travaillons avec vous pour esquisser une première version de ces cibles. Puis, au fil des étapes de recueil des besoins et lors d’un atelier de co-conception, nous affinons cette ébauche. À partir de ces échanges, nous créons des fiches personae détaillées, synthétisant les profils des utilisateurs.</p>
@@ -29,7 +29,7 @@ function DefinitonCible () {
                     <h3>Qu’est-ce que les personae?</h3>
                     <div className='content__article__popup'>
                         <div className='content__article__popup__container'>
-                            <img src="emmanuel_camara.png" alt="img manu"/>
+                            <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                         </div>
                         <div className='content__article__popup__container'>
                             <p>Vous voulez en savoir plus sur sur notre méthode de construction des personae ?</p>
@@ -57,7 +57,7 @@ function DefinitonCible () {
         </section>
         <section className='content__block__row'>
                 <article className='content__article'>
-                    <img src="miro.png" alt="miro"/>
+                    <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
                 </article>
                 <article className='content__block__row__container__sticky'>
                     <h3>Un atelier de co-conception</h3>
@@ -71,7 +71,7 @@ function DefinitonCible () {
             <p>À l’issue de toutes ces étapes, nous créons des <strong>fiches synthétiques</strong> et visuellement attrayantes qui vous accompagneront tout au long de votre projet. Ces fiches personae deviennent une véritable référence pour les étapes suivantes, en particulier lors du cadrage du projet.</p>
             <p>Les personae sont ensuite partagés avec l’ensemble de vos équipes afin que chacun, y compris les décideurs, soit parfaitement aligné sur l'identité et les besoins de l’utilisateur final. C’est souvent un moment clé où le projet prend forme de manière concrète, offrant à tous une vision claire et partagée de l’objectif à atteindre.</p>
             <div className='content__block__img'>
-                <img src="adobe_ph.png" alt="adobe placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/adobe_ph.png`} alt="adobe placeholder"/>
             </div>
             <h3>Tests utilisateurs : confronter votre site à la réalité</h3>
             <p>Au-delà de la création des personae, des enquêtes, questionnaires et interviews qui permettent de mieux cerner vos utilisateurs, il est possible d’aller encore plus loin en réalisant des tests utilisateurs.</p>

@@ -46,13 +46,13 @@ function TestUtilisateur () {
                 <p>Il est important de ne pas confondre les tests utilisateurs avec d'autres types de tests. Par exemple, le test A/B consiste à présenter deux versions différentes d'une même page à des groupes distincts d'utilisateurs afin de déterminer laquelle est la plus performante. Les tests de charge, quant à eux, mesurent la capacité d'un site à gérer simultanément un grand nombre de visiteurs, tandis que les tests de navigation vérifient la fluidité du parcours utilisateur à travers le site. Chacun de ces tests a sa propre spécificité, mais les tests utilisateurs se concentrent sur l'expérience réelle de l'utilisateur et les ajustements nécessaires pour répondre à ses besoins.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
         <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
-            </article>
+          <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
+        </article>
             <div className='content__block__row__container__text'>
                 <h3>Soumettre votre projet à l’épreuve de ces cibles</h3>
                 <p>L'objectif principal est d'évaluer l'interface numérique à travers les yeux des utilisateurs finaux. C'est comme si nous réalisions un "diagnostic médical" de votre site, où le patient serait l'utilisateur lui-même. Cela nous permet de recueillir des informations précieuses sur ce qui fonctionne bien et sur les points de blocage. Ces observations nous permettent ensuite d'affiner l'ergonomie et d'optimiser les fonctionnalités pour une expérience utilisateur fluide et satisfaisante.</p>
@@ -95,7 +95,7 @@ function TestUtilisateur () {
                 <p>Notre mission est de trouver les solutions les plus efficaces aux problèmes rencontrés par vos utilisateurs. Cela peut se traduire par une réorganisation de l'arborescence, un repositionnement stratégique de certains éléments clés de l'interface, ou même une refonte complète du gabarit de certaines pages. Chaque action est pensée pour rendre l'expérience utilisateur plus intuitive, fluide et en adéquation avec les attentes de vos clients. Chez Ginseng Web, nous nous engageons à optimiser votre dispositif numérique afin d'améliorer son efficacité et sa performance globale.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>

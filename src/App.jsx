@@ -58,7 +58,7 @@ function App() {
         <Route path="/expertise/auditTechnique" element={<AuditTechnique  />} />
         <Route path="/expertise/auditReferencement" element={<AuditReferencement  />} />
         <Route path="/expertise/gabaritsErgonomiques" element={<GabaritsErgonomiques  />} />
-        <Route path="/expertisegestionProjet" element={<GestionProjet  />} />
+        <Route path="/expertise/gestionProjet" element={<GestionProjet  />} />
         <Route path="/expertise/recueilBesoin" element={<RecueilBesoin  />} />
         <Route path="/expertise/creationPersonae" element={<CreationPersonae  />} />
         <Route path="/expertise/testUtilisateur" element={<TestUtilisateur  />} />

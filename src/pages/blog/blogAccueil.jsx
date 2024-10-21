@@ -14,7 +14,7 @@ function BlogAccueil () {
         </section>
         <section className='content__block__row'>
             <Link to="/blog/coutSite" className='blogLink'>
-                <h3> Combien coûte vraiment un site internet en 2023 ? Un budget sur mesure pour vos projets web</h3>
+                <h3> Combien coûte vraiment un site internet en 2024 ? Un budget sur mesure pour vos projets web</h3>
                 <img src="fleche_droite_black.png" alt="fleche" />
             </Link>
             <Link to="/blog/choixMots" className='blogLink'>

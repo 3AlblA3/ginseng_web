@@ -18,7 +18,7 @@ function AccompagnementUX () {
             <p>L’UX (Acronyme de User Expérience), l’expérience utilisateur en français, correspond à la perception qu’un internaute a d’un site web. Ainsi, le Design d’expérience utilisateur (le fameux UX design) est une méthode de conception des interfaces web qui s’applique à placer l’utilisateur au centre de la démarche de création.</p>
             <p>Cette approche tournée vers l’utilisateur final est devenue incontournable dans le secteur digital/numérique. Elle consiste à adapter l’interface aux attentes de l’internaute (qu’il soit client, prospect ou collaborateur) en assurant un travail de conception et de développement qui respectent le parcour utilisateur sur le site web permettant ainsi aux utilisateurs d’atteindre leurs objectifs sur le site internet (ou l’application / intranet / extranet).</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Pour être efficace, cette méthodologie UX nécessite la collaboration de l’ensemble des services, c’est pourquoi le dialogue est la clé d’une conception UX réussie. Nous sommes présent à l’ensemble des ateliers pour faciliter cette communication et engager le dialogue. En effet, il faut permettre aux différents membres de l’équipe de s’exprimer pour créer de la valeur. Cela sous-entend également qu’un travail de fond a été mené en amont pour connaître vos utilisateurs et leurs besoins, que les parties prenantes sont en accord sur les objectifs de votre organisation et du site internet (ou application, intranet, extranet ou encore logiciel métier). Cela suppose également une bonne disponibilité des équipes en interne pour travailler de manière collaborative autour du projet. Cela commence souvent par la réalisation d’une arborescence UX (centrée utilisateur) c’est à dire qui s’adresse directement à la cible : termes utilisés, ordre des éléments, densité de l’arborescence…</p>
         </section>
@@ -31,7 +31,7 @@ function AccompagnementUX () {
                     <p>Quand on parle de ressource supplémentaire, il faut avoir en tête que cette ressource sera dédiée à votre projet et n’aura donc pas d’autres tâches (plus urgentes) à accomplir. Et bien sûr cette ressource est présente lors de l’accompagnement opérationnel (développement et recette du site).</p>
                 </article>
                 <article className='content__block__img'>
-                    <img src="miro.png" alt="" />
+                    <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="" />
                 </article>
             </div>
         </section>
@@ -51,7 +51,7 @@ function AccompagnementUX () {
             <p>L’étape de l’UI design intervient après l’UX design, elle entre également dans le cadre global de l’UX c’est-à-dire la prise en compte de l’expérience utilisateur dans la conception des différentes interfaces (pages) du site.</p>
             <p>UI design est l’acronyme de User Interface et désigne cette fois si tout ce qui s’apparente au graphisme : design, agencement des éléments, choix typographiques, couleurs, mise en application de votre charte graphique… c’est l’étape de la mise en maquette des différents écrans, la face visible de l’iceberg.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>L’étape du design d’interface utilisateur est menée, côté agence, par un UI designer et éventuellement avec un directeur artistique, qui collaborent avec l’UX designer (garant de l’expérience utilisateur), pour élaborer une version graphique des interfaces validée lors de la phase UX.</p>
             <p>Les enjeux du graphisme lors de la conception d’un site internet sont multiples, en effet le site ne doit pas seulement être visuellement agréable, il doit aussi être intuitif et permettre une navigation fluide. Conçu de manière cohérente par rapport à votre image et vos valeurs, l’UI permet également d’améliorer les interactions avec vos utilisateurs, de leur donner envie de parcourir votre site et de remplir les objectifs que vous vous êtes fixés pour votre site internet. Ainsi, d’une interface agréable et facile à utiliser, découlera par nature une bonne expérience utilisateur sur le site et donc un engagement de vos utilisateurs.</p>
@@ -64,7 +64,7 @@ function AccompagnementUX () {
                 <p>Si cette phase n’a pas été réalisée en amont du projet, nous pouvons la mener en cours de projet suite à une phase de recueil des besoins qui peut prendre plusieurs formes : interview utilisateur UX ou interview des collaborateurs (qui ne peuvent pas nécessairement se rendre disponibles pour participer aux réunions), ateliers de travail avec les cibles, enquêtes et questionnaires auprès des utilisateurs, analyse des statistiques de consultation…</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="" />
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="" />
             </article>
         </section>
         <section className='content__block__column'>
@@ -83,7 +83,7 @@ function AccompagnementUX () {
             <p>Nous sommes lors de cette étape au cœur de la conception UX.</p>
             <p>Design thinking, user stories… Différentes méthodes existent pour constituer le prototypage des pages clés, toutefois l’objectif reste le même : fixer les grands principes ergonomiques des pages, sans s’embarrasser des problématiques esthétiques. C’est après cette étape de prototypage que l’on procède à la mise en maquette des pages.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Si nous concevons certains de ces gabarits ergonomique lors de la phase d’AMOE, nous préférons laisser la main à l’agence en charge du développement du projet lors de nos missions d’AMOA. Nous vous accompagnons néanmoins de manière active lors de cette phase cruciale :</p>
             <ul>

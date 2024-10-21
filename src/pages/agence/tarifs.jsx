@@ -13,7 +13,7 @@ function Tarifs() {
         </section>
         
         <section className='graph'>
-            <img src="graph.png" alt="graph" />
+            <img src={`${import.meta.env.VITE_IMAGE_PATH}/graph.png`} alt="graph" />
         </section>
         <section className='content__block__row'>
             <article className='content__block__row__container__sticky'>

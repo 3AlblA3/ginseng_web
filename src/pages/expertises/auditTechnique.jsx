@@ -50,7 +50,7 @@ function AuditTechnique () {
                 <p>Dans la pratique, nous effectuons assez peu d’expertises techniques de sites en amélioration continue car ce n’est pas notre cœur de métier. Ce type d’expertise peut durer plusieurs jours à plusieurs semaines et convoquer de nombreuses compétences.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -77,7 +77,7 @@ function AuditTechnique () {
             <p>Nous pouvons donc le constater il y a souvent plusieurs couches de codes qui doivent interagir entre elles. À cela s’ajoute dans certains cas le non-respect des bonnes pratiques recommandées lors de l’usage d’un CMS. L’audit de code va donc avoir pour objectif de déterminer si les bonnes pratiques sont respectées dans un premier temps, si d’un point de vue sécurité le code exécuté ne présente pas de risque majeur et si un conflit n’a pas lieu entre plusieurs codes (CMS, plugins et développé).</p>
             <p>Des outils comme Balckfire ou NewRelic vont permettre d’analyser les flux d’exécutions et de détecter les problèmes. Couplé à une analyse du code source cela permet de remédier à des situations problématiques et permet ainsi au site de continuer son existence pendant la durée du projet.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Quand nous intervenons dans le cadre d’un accompagnement digital l’audit de code nous permet de comprendre ce qui est en place et de déterminer si certaines briques logicielles peuvent être réutilisées. Cela nous arrive fréquemment de pouvoir déterminer s’il convient ou non de garder l’existant. C’est une source d’économie qui peut être importante et c’est aussi la garantie de gagner un peu de temps. Cependant les agences sont très réticentes à reprendre du code dont elles ne sont pas à l’origine. C’est pourquoi nous mettons en œuvre cet audit en amont et qu’il est réalisé dans la phase d’analyse de l’existant. Cela va permettre aussi de rassurer les candidats.</p>
             <h3>Audit de performances</h3>
@@ -105,7 +105,7 @@ function AuditTechnique () {
             <p>Expert en évaluation de l’accessibilité numérique d’un site internet, Ginseng Web, a à cœur de défendre l’accessibilité dans l’ensemble des projets auxquels il participe. Cela implique de pouvoir faire respecter de la phase de conception d’un site internet les règles du RGAA. C’est un point que nous mettons en avant lorsque nous accompagnons des clients en AMOA car l’ergonomie et le graphisme d’un site vont jouer énormément dans l’accessibilité d’un site.</p>
             <p>Dans le cadre d’un projet en AMOE l’accessibilité numérique est souvent mentionnée car nous sommes en présence fréquemment d’association ou d’entités publiques. Pour ces clients c’est une obligation que de rendre accessible leur site internet.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>L’audit ou l’évaluation de l’accessibilité d’un site va faire appel à des compétences techniques (notamment pour vérifier que le code du site ne va pas à l’encontre des recommandations du RGAA en bloquant par exemple la navigation au clavier) mais aussi à des compétences éditoriales, graphiques ou encore ergonomiques. L’accessibilité est au croisement de plusieurs expertises et le contenu d’un site se doit aussi d’être accessible. Il en est ainsi des tableaux de données, des graphiques, des documents associés etc..</p>
             <p>Dans le cadre d’un accompagnement, nous mentionnons dans le CCTP ou le cahier des charges le souhait ou l’obligation du client à se faire auditer. Cela prévient les agences répondantes de ce besoin et permet de sélectionner les agences à même d’y répondre.</p>
@@ -136,7 +136,7 @@ function AuditTechnique () {
                 <p>Un référentiel d’éco-conception numérique des services est disponible en ligne.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -160,7 +160,7 @@ function AuditTechnique () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

@@ -19,7 +19,7 @@ function Temoignages() {
                 <div className='accueil__section__accompagnement__container__white__popup'>
                     <div className='content__article__popup'>
                         <div className='content__article__popup__container'>
-                            <img src="emmanuel_camara.png" alt="img manu"/>
+                            <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                         </div>
                         <div className='content__article__popup__container'>
                             <p>Nous pouvons réaliser ce type d'audit dans le cadre d'un accompagnement TMA</p>

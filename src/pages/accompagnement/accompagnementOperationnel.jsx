@@ -133,7 +133,7 @@ function AccompagnementOperationnel () {
                     <p>Nous les mettons à disposition de vos projets</p>
                     <div className='content__article__popup'>
                         <div className='content__article__popup__container'>
-                            <img src="emmanuel_camara.png" alt="img manu"/>
+                            <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                         </div>
                         <div className='content__article__popup__container'>
                             <p>Nous aimons aider nos clients par le biais d'expertises maitrisées. Les voici !</p>
@@ -143,21 +143,21 @@ function AccompagnementOperationnel () {
                 </div>
                 <div className='banner__row__container'>
                     <div className='banner__row__container__link'>
-                        <span><h5>Spécifications fonctionelles</h5><img src="fleche_droite_white.png" alt="fleche white"/></span>
+                        <span><h5>Spécifications fonctionelles</h5><img src={`${import.meta.env.VITE_IMAGE_PATH}/fleche_droite_white.png`} alt="fleche white"/></span>
                         <p>Décrire les exigences et les fonctionnalités d'un projet</p>
                     </div>
                     <div className='banner__row__container__link'>
-                        <span><h5>Gestion de projet</h5><img src="fleche_droite_white.png" alt="fleche white"/></span>
+                        <span><h5>Gestion de projet</h5><img src={`${import.meta.env.VITE_IMAGE_PATH}/fleche_droite_white.png`} alt="fleche white"/></span>
                         <p>Vous aider à organiser le déroulement du projet</p>
                     </div>
                 </div>
                 <div className='banner__row__container'>
                     <div className='banner__row__container__link'>
-                    <span><h5>Travail des contenus</h5><img src="fleche_droite_white.png" alt="fleche white"/></span>
+                    <span><h5>Travail des contenus</h5><img src={`${import.meta.env.VITE_IMAGE_PATH}/fleche_droite_white.png`} alt="fleche white"/></span>
                         <p>Faire le point sur vos contenus et les préparer pour le futur sites</p>
                     </div>
                     <div className='banner__row__container__link'>
-                    <span><h5>Test utilisateur</h5><img src="fleche_droite_white.png" alt="fleche white"/></span>
+                    <span><h5>Test utilisateur</h5><img src={`${import.meta.env.VITE_IMAGE_PATH}/fleche_droite_white.png`} alt="fleche white"/></span>
                         <p>Vérifier l'utilisabilité du site auprès d'un panel d'utilisateurs</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ function AccompagnementOperationnel () {
                 <li>Préparation à la mise en production. Une fois le fonctionnel validé un nouvel environnement est mis en place. Cet environnement de pre-production va recevoir les contenus validés et sera sans doute l’environnement final de production.</li>
             </ul>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Un accompagnement pour une phase de test efficace</h5>
             <p>Là aussi l’équipe Ginseng Web sera à vos côtés. Nous organiserons avec vos équipes la répartition des tâches et pouvons les conseiller pour améliorer leur productivité sur ce type de tache. Ginseng Web réalisera également toute une série de tests pour vérifier la conformité graphique (notamment l’intégration html/css) et fonctionnelle sur plusieurs terminaux (mobile/desktop et navigateurs). Plusieurs types de tests peuvent être réalisés à cette occasion : tests de réactivité, test de charge, test de sécurité, test d’accessibilité et de navigation etc.. Le périmètre est vaste et chronophage.</p>
@@ -209,7 +209,7 @@ function AccompagnementOperationnel () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

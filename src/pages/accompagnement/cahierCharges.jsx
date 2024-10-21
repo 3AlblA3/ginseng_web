@@ -40,14 +40,14 @@ function CahierCharges () {
             <p>La création d’un cahier des clauses techniques particulières (CCTP), ou cahier des charges, est un passage incontournable pour démarrer un projet de refonte/création de site web ou de développement d’une application mobile. Pourtant, cet exercice peut rapidement s'avérer complexe et exigeant.</p>
             <p>Parce que vos équipes se retrouvent souvent face à des aspects techniques et stratégiques qui dépassent leur domaine d’expertise, ou simplement parce qu’elles manquent de temps pour s’y consacrer pleinement. La rédaction d’un CCTP nécessite de consulter de nombreux départements, de recueillir les attentes de chacun, de comprendre les besoins des utilisateurs finaux, puis de traduire toutes ces informations en un document clair et cohérent. Cela demande une analyse approfondie, une synthèse rigoureuse, et beaucoup de temps, ce qui en fait une étape particulièrement chronophage.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Le placement de chaque élément, le choix des termes, et le nombre de rubriques sont autant de facteurs déterminants pour que vos utilisateurs, définis à travers vos personae, puissent naviguer aisément sur le site. Chaque décision, aussi subtile soit-elle, influence directement l’expérience de vos visiteurs.</p>
             <p>L’analyse de l’existant et l’audit de référencement web apportent également des éclairages précieux pour façonner une arborescence qui soit non seulement intuitive, mais aussi optimisée pour les moteurs de recherche. Un dispositif de navigation ne se limite pas au simple menu principal. Il inclut une série d’éléments qu’il faut soigneusement intégrer lors de la création de l’arborescence : le menu principal et ses sous-rubriques déroulantes, bien sûr, mais aussi un menu de navigation secondaire (souvent placé en haut de page), un menu contextuel (présent à l’intérieur des pages) et le footer, ce pied de page qui accompagne vos utilisateurs sur toutes les sections du site. Chacun de ces éléments joue un rôle crucial dans l’expérience utilisateur globale.</p>
         </section>
         <section className='content__block__row'>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
             <article className='content__block__row__container__sticky'>
                 <h3>Construire ensemble l’arborescence de votre projet</h3>
@@ -60,7 +60,7 @@ function CahierCharges () {
             <h5>Un gabarit de page c’est quoi ?</h5>
             <p>Le gabarit ergonomique (ou wireframe) sert de fondation à la structure d'une page en définissant l'emplacement de tous les éléments qui y seront intégrés. À ce stade, aucune intention graphique n'intervient : l'ergonomie est le seul guide. Chaque décision est prise en fonction de la logique d’usage, avec pour objectif de rendre l’expérience intuitive pour vos personae. Les éléments doivent être placés de manière cohérente, afin d'offrir un accès simple, rapide et pertinent à l’information recherchée.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Ça y est, le projet devient concret.</h5>
             <p>Nous échangeons avec vous sur le placement stratégique de chaque élément, en pesant les avantages et les implications de ces choix. C’est également à ce moment que les éléments commencent à prendre forme visuellement, facilitant ainsi la projection de toute l’équipe vers ce que sera le futur site.</p>

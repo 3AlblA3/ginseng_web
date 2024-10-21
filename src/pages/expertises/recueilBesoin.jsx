@@ -49,7 +49,7 @@ function RecueilBesoin () {
                 <p>Ainsi nous proposons, et combinons, plusieurs méthodes pour organiser le recueil des besoins sur les différents éléments constitutifs du projet (tel que le contenu, les fonctionnalités, le graphisme, l’aspect technique…) par le biais d’ateliers collaboratifs, d’entretiens et de questionnaires.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -77,7 +77,7 @@ function RecueilBesoin () {
             <p>Nous analyserons ensuite l’ensemble des réponses afin d’en tirer les grands axes et les pistes à travailler.</p>
             <p>Pour aller plus loin dans le recueil des besoins utilisateurs il est souvent efficace de compléter le questionnaire avec des entretiens individuels auprès d’utilisateurs volontaires. Ces entretiens permettent en effet de creuser les réponses données lors du questionnaire, d’expliciter et de mieux comprendre. Un audit des statistiques de votre site permettra de compléter, confirmer les résultats.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Entretiens ou interview : obtenir des données qualitatives sur les utilisateurs</h5>
             <p>Il s’agit d’une méthode qualitative, fondamentale de l’UX design qui consiste en un dialogue avec l’utilisateur potentiel (cela peut être un visiteur externe, mais également un contributeur en interne). Les entretiens peuvent être plus ou moins guidés mais il est nécessaire d’influencer le moins possible l’interlocuteur pour que les réponses ne soient pas biaisées.</p>
@@ -93,7 +93,7 @@ function RecueilBesoin () {
             <p>Nous conduisons plusieurs types d’atelier de travail, en co-construction ou en itération, qui visent à rencontrer et à se faire rencontrer les différents acteurs impliqués dans le projet (spécialistes, référents, chefs de projet, utilisateurs…) pour leur permettre d’exprimer leur vision du projet digital.</p>
             <p>À distance, en présentiel, dans vos locaux ou dans un espace de coworking : nous adaptons le format de l’atelier en fonction de l’environnement, du nombre de participants, de leur niveau de maîtrise des outils informatiques…</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Quelques exemples d’atelier :</p>
             <ul>
@@ -124,7 +124,7 @@ function RecueilBesoin () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

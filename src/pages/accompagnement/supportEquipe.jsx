@@ -24,7 +24,7 @@ function SupportEquipe () {
                     <p>Quand on parle de ressource supplémentaire, il faut avoir en tête que cette ressource sera dédiée à votre projet et n’aura donc pas d’autres tâches (plus urgentes) à accomplir. Et bien sûr cette ressource est présente lors de l’accompagnement opérationnel (développement et recette du site).</p>
                 </article>
                 <article className='content__block__img'>
-                    <img src="miro.png" alt="" />
+                    <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="" />
                 </article>
             </div>
         </section>  
@@ -49,7 +49,7 @@ function SupportEquipe () {
                 <li>Nous traduisons l’expression de besoins et les contraintes techniques possibles afin d’assurer la qualité du site internet produit ou de l’application ou d’un intranet.</li>
             </ul>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
         </section>
         <section className='content__block__row'>
@@ -73,7 +73,7 @@ function SupportEquipe () {
             <p>Lors de nos accompagnements AMOA, nous prévoyons impérativement une phase de relecture de ces spécifications fonctionnelles et techniques après laquelle nous faisons part de nos remarques à l’équipe projet. Il peut même nous arriver dans certains projets de co-construire ces spéciations avec l’agence.</p>
             <p>Nous vérifions notamment que les éléments exposés sont compréhensibles par tous et que le fonctionnement évoqué correspond aux besoins et aux contraintes mentionnées notamment lors de la phase de conception (par exemple concernant les contraintes liées à l’authentification utilisateur ou sur les étapes nécessaires à la création d’un compte).</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h3>Faciliter la communication avec l’équipe de développement</h3>
             <p>Lors de nos différentes expériences, nous avons noté le rôle que nous avons joué dans la fluidification des échanges entre l’équipe projet et l’équipe de développement. D’une part parce que nous pouvons répondre aux questions et lever les blocages de l’équipe projet, d’autre part parce que nous pouvons leur partager notre méthodologie pour recueillir les éléments nécessaires à l’avancée du projet, par exemple, en encadrant la migration des données, en sollicitant les bons interlocuteurs, en produisant des notices explicatives… Nous sommes ainsi un véritable support opérationnel pour les équipes.</p>
@@ -86,7 +86,7 @@ function SupportEquipe () {
                 <p>Lors de cette étape nous encadrons aussi l’équipe projet pour faciliter le recueil des anomalies et permettre ainsi une résolution plus rapide des problèmes. Les différents outils de ticketing sont plus ou moins complexes et notre expertise sur ces derniers permet de mettre en place certaines routines pour faciliter le travail.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="" />
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="" />
             </article>        
         </section>
         <section className='content__block__column'>

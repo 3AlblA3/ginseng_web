@@ -58,7 +58,7 @@ function AccompagnementPostProjet () {
             <p>En effet la TMA, comme vu précédemment inclut la mise à jour du socle applicatif ce qui n’est pas le cas d’une période de garantie qui elle n’a que pour objectif de venir corriger des points qui étaient fonctionnels lors de la mise en production du site et ne le sont plus.</p>
             <p>Le commencement de votre TMA dépend de votre projet et de sa sensibilité. On peut la faire commencer après la période de garantie dans la plupart des cas.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Combien de temps dure-t-elle ?</h5> 
             <p>La durée du contrat de TMA va dépendre du type de contrat au départ. Dans le cadre d’un appel d’offres public la durée de la TMA va être celle du marché. Généralement on constate une durée de TMA de 12 à 16 mois dans le cadre des appels d’offres. La durée peut être augmentée mais cela va bien sûr augmenter le marché et donc le seuil budgétaire du marché.</p>
@@ -71,7 +71,7 @@ function AccompagnementPostProjet () {
             <p>Assez souvent nous intervenons aussi en facilitateur pour permettre de faire avancer certaines corrections en apportant notre expérience sur le sujet traité. À plusieurs reprises nous avons pu résoudre des problèmes importants car nous les avions déjà rencontrés et avons ainsi pu soumettre des hypothèses de travail et de résolution à l’agence en charge du projet.</p>
             <p>Une grande partie de la maintenance d’un projet numérique va reposer sur l’anticipation. Un site internet ou une application ou un intranet repose sur un applicatif (CMS, Framework etc..) qui évolue et il est important d’anticiper ces évolutions. Notre objectif est de pouvoir organiser au mieux les évolutions notamment de CMS en définissant avec l’agence et le client un processus de mise à jour dans ces cas-là. Nous nous assurons ainsi que le site Internet soit à jour en termes de sécurité et de fonctionnalité.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Analyser, comprendre et agir</h5>
             <p>Mais là où notre rôle est le plus important c’est lors des réunions stratégiques avec le client. En effet, comme nous intervenons pour des structures ne disposant pas nécessairement en interne de personne dédié aux problématiques du numérique nous jouons ce rôle-là pour vous.</p>
@@ -91,7 +91,7 @@ function AccompagnementPostProjet () {
                     <p>Il y a pour la MLP un énorme enjeu d’intégration du numérique dans la relation avec le jeune accompagné et nous avons donc pu y réfléchir avec les jeunes, les conseillers et la direction.</p>
                     <div className='content__article__popup'>
                         <div className='content__article__popup__container'>
-                            <img src="emmanuel_camara.png" alt="img manu"/>
+                            <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                         </div>
                         <div className='content__article__popup__container'>
                             <p>La mise en place des solutions se fera dans la durée et avec notre présence car la MLP nous renouvelle d’année en année sa confiance.</p>
@@ -126,7 +126,7 @@ function AccompagnementPostProjet () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

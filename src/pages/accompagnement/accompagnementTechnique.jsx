@@ -45,7 +45,7 @@ function AccompagnementTechnique () {
                 <p>Notre directrice de projet, Anaïs, accompagné de notre développeur si nécessaire, se chargera de collaborer avec les différents intervenants : service technique, prestataires, DSI (Direction des Systèmes d'Information), afin d'évaluer l'ensemble de votre écosystème. Nous identifierons ensemble les opportunités d'optimisation ainsi que les contraintes potentielles, pour assurer une intégration fluide et efficace de vos outils tiers.</p>
             </div>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder" />
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder" />
             </div>
             <div className='content__block__column__container__text'>
                 <h3>Prendre en compte tous les aspects techniques de votre projet – ne rien laisser au hasard</h3>

@@ -49,7 +49,7 @@ function AuditReferencement () {
                 <p>Cette expertise nous permet aussi de prendre en compte lors de nos projets d’accompagnement en stratégie numérique les aspects du référencement naturel très tôt ce qui est essentiel dans les projets de refonte notamment. C’est lors de la phase d’analyse de l’existant – première phase de notre méthodologie – que nous réalisons ce type d’audit de référencement web.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -72,7 +72,7 @@ function AuditReferencement () {
             <p>La liste des critères est multiple et fait l’objet d’évolutions régulières. Un site optimisé selon les critères de 2019 ne l’est plus forcément en 2023. Certains critères sont révélés par Google et il est recommandé de suivre à la lettre les directives du Maître du Web. D’autres critères sont découverts par des apprentis sorciers (autrement dit des professionnels du référencement web) qui tentent des expériences afin de démontrer que tel élément est pris en compte et que tel autre ne l’est pas. Là réside toute la difficulté du SEO : les acteurs sont en permanence en train d’essayer de comprendre comment Google fonctionne. Et ce dernier fait tout pour que cela soit difficile et brouille les pistes.</p>
             <p>Les critères sont généralement séparés dans deux catégories : la technique (le code du site et toute la partie serveur) et le contenu (davantage effectué par le client).</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h3>Optimiser le référencement naturel par rapport aux cibles</h3>
             <p>Voici quelques exemples de critères techniques : (que l’on peut aussi regarder lors d’un audit technique)</p>
@@ -144,7 +144,7 @@ function AuditReferencement () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

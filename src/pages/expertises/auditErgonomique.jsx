@@ -49,7 +49,7 @@ function AuditErgonomique () {
                 <p>L’audit de l’ergonomie d’un site consiste à analyser ce dernier pour en comprendre les points forts et les éléments qui peuvent bloquer la navigation. Intégrer les résultats de cet audit dans la rédaction du cahier des clauses techniques particulières (CCTP) permet de focaliser les objectifs d’une refonte sur des enjeux centrés utilisateur.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -109,7 +109,7 @@ function AuditErgonomique () {
                 <p>Cependant nous n’allons pas conduire l’audit de la même façon selon ce que vous souhaitez faire. Nous distinguons ainsi deux situations : un audit réalisé dans le cadre d’une amélioration continue ou un audit réalisé dans le cadre d’une refonte d’un site.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -129,7 +129,7 @@ function AuditErgonomique () {
                 <h3>Audit dans le cadre d’une amélioration continue</h3>
                 <div className='content__article__popup'>
                     <div className='content__article__popup__container'>
-                        <img src="emmanuel_camara.png" alt="img manu"/>
+                        <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                     </div>
                     <div className='content__article__popup__container'>
                         <p>Nous préférons vous laisser juger par vous-même, à travers les retours de nos clients.</p>
@@ -147,7 +147,7 @@ function AuditErgonomique () {
                 <h3>Audit dans le cadre d’une mission d’AMOE en vue d’une refonte</h3>
                 <div className='content__article__popup'>
                     <div className='content__article__popup__container'>
-                        <img src="emmanuel_camara.png" alt="img manu"/>
+                        <img src={`${import.meta.env.VITE_IMAGE_PATH}/emmanuel_camara.png`} alt="img manu"/>
                     </div>
                     <div className='content__article__popup__container'>
                         <p>Ce type d'audit fait pleinement partie de notre méthodologie de projet lors de nos accompagnements AMOE (avant le projet)</p>
@@ -190,7 +190,7 @@ function AuditErgonomique () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

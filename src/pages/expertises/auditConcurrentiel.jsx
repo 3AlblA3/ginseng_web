@@ -50,7 +50,7 @@ function AuditConcurrentiel () {
                 <p>Notre rôle sera d’identifier les moyens mis en œuvre pour répondre à leur problématique, d’évaluer la pertinence de l’expérience utilisateur, de relever les bonnes pratiques et de s’inspirer de ce qu’il y a sur le marché. A partir de ces constats il est aussi plus facile d’identifier votre différence et de la mettre en avant lors de la réalisation des gabarits.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -80,7 +80,7 @@ function AuditConcurrentiel () {
             <p>Durant la phase d’analyse, nous ne regarderons pas en détail l’ensemble des sites mais nous concentrons nos efforts sur les éléments et fonctionnalités clés qui pourront être utiles pour votre projet de refonte. Notre objectif ici n’est pas d’effectuer un audit complet du site concurrent qui pourra lui être plus utile qu’à vous, mais bien de déterminer les axes de réflexion pour votre projet de refonte.</p>
             <p>Il peut arriver sur certains projets d’analyser 3/4 sites et d’auditer en supplément 1 ou 2 sites sur une fonction en particulier. Dans ce cas-là notre attention se porte sur des sites plus éloignées de votre activité mais dont la notoriété ou l’usage en font des référents sur une fonctionnalité. Ainsi il peut être intéressant de regarder comment fonctionne par exemple la vente de billets sur une enseigne connu pour s’en inspirer lors de la refonte du système de billetterie d’un site événementiel.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+                <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>À l’issue de la phase d’analyse des sites concurrents, nous compilons les conclusions de l’audit dans un document de synthèse que nous vous présentons à l’occasion d’un atelier de restitution. Lors de cet atelier c’est l’occasion souvent de débattre de certains choix, de confirmer ou non certaines fonctionnalités souhaitées en un mot d’avancer dans le projet.</p>
             <p>Le livrable fourni fera état des bonnes pratiques concernant certaines fonctionnalités et des éléments à ne pas reproduire.</p>
@@ -107,7 +107,7 @@ function AuditConcurrentiel () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

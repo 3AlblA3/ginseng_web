@@ -52,7 +52,7 @@ function GestionProjet () {
                 <p>Nous pouvons poursuivre ce rôle après la mise en ligne pour accompagner sur les évolutions futures du site internat.</p>
             </article>
             <article className='content__block__img'>
-                <img src="miro.png" alt="miro"/>
+            <img src={`${import.meta.env.VITE_IMAGE_PATH}/miro.png`} alt="miro"/>
             </article>
         </section>
         <section className='content__block__row'>
@@ -74,7 +74,7 @@ function GestionProjet () {
             <p>C’est un élément incontournable de notre conduite de projet : nous nous assurons dès la réunion de lancement de notre mission d’AMOE que le cadre de la gouvernance a bien été fixé. En effet, pour assurer une bonne conduite de projet, il est important de définir dès le départ le rôle et les responsabilités de chacun et de déterminer les étapes de validation. </p>
             <p>Nous avons ainsi, dès le départ, une vision claire de qui participe au projet (les membres de l’équipe projet mais également les experts à solliciter sur les problématiques spécifiques) et qui sont les instances décisionnaires. Nous nous assurons de la manière dont vont s’établir les concertations avec les membres décisionnaires, des grandes étapes de validation qui jalonneront le projet et les délais qui seront à prévoir. En effet, il est indispensable que certains éléments soient validés par toutes les parties prenantes pour assurer le déroulé de notre méthodologie (c’est le cas notamment des personae). Nous voulons aussi nous assurer que nous produirons les livrables les plus à même de fluidifier les échanges entre les différents services. Nous pouvons par exemple mettre en œuvre dans certains projets des sessions de restitutions auprès d’instances spécifiques, mais c’est un élément qu’il faut pouvoir planifier le plus tôt possible. Chaque projet à sa particularité et nous mettons un point d’honneur à nous y adapter au mieux.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>La production de documents de suivi</h5>
             <p>Nous produisons tout au long du projet d’accompagnement des documents de comptes rendus des différentes réunions et ateliers et tenons à jour un fichier navette. Ce document recense les points en suspens, les questionnements et les décisions actées. L’objectif est de donner de la transparence au projet en veillant à ce que les parties prenantes partagent le même niveau d’information et soient en accord sur les décisions. Ce document est aussi un moyen pour les instances décisionnaires d’avoir une vision synthétique de l’avancement du projet.</p>
@@ -84,7 +84,7 @@ function GestionProjet () {
             <p>Les ateliers sont préparés en amont par nos soins afin d’établir une base de travail qui sera discuté et évoluera au fil de la réunion. Nous transmettons l’ordre du jour avant chaque réunion et nous prévenons le plus tôt possible si des éléments sont à fournir par le client. À l’issue de chaque atelier, nous vous remettons un compte rendu dans un délai de 5 jours.</p>
             <p>Nous prévoyons 2 heures par atelier. C’est la durée que nous jugeons optimale pour garder une implication maximale de l’ensemble des intervenants. En fonction des ateliers, des règles sanitaires et du lieu d’activité de nos bureaux respectifs, nous pourrons mener les ateliers à distance via visioconférence, ou bien en présentiel dans vos locaux.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <h5>Vous aider à cadrer votre futur projet</h5>
             <p>L’un des enjeux de la mission d’AMOE est de vous aider à cadrer votre futur projet avec votre prestataire. C’est pourquoi nous constituerons avec vous un budget estimatif réaliste suivant les fonctionnalités demandées et un planning prévisionnel (avec découpage par briques fonctionnelles) qui prennent également en compte vos contraintes. Ces éléments sont intégrés dans le CCTP pour que les agences répondantes vous apporte des réponses satisfaisantes sur ces éléments fondamentaux.</p>
@@ -93,14 +93,14 @@ function GestionProjet () {
             <h5>Vous accompagner sur le suivi du projet </h5>
             <p>Lors de l’AMOA, c’est le prestataire sélectionné pour la réalisation du projet qui aura la charge de sa planification, de sa gestion et de la mise en place d’un reporting régulier. Les agences web s’appuient généralement sur des logiciels de gestion de projet tel que Monday, Notion, Basecamp ou encore Trello pour rassembler l’ensemble des informations sur le projet. Ce sont des logiciels que nous connaissons bien et que nous pourrons vous aider à prendre en main.</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>Si l’agence a en charge la réalisation des comptes rendus, nous assurons de notre côté des relectures de ces documents pour y apporter des précisions lorsque nécessaire. Nous tenons également de notre côté un fichier navette, que nous partageons avec vous, qui nous suit tout au long du projet et que nous annotons à chaque réunion. Nous pouvons ainsi faire le point régulièrement sur les éléments qui sont en attentes, mettre en valeur des fonctionnements qu’il faudra penser à spécifier sur les fiches fonctionnelles, etc.</p>
             <h5>Partager notre expertise pour faire avancer le projet</h5>
             <p>Notre objectif en tant qu’agence de conseil est de rendre le projet le plus fluide possible. Lorsque cela est nécessaire, nous aidons à l’arbitrage des décisions (concernant une fonctionnalité, le budget, le planning…) en faisant bénéficier de notre expérience dans la réalisation de projets web.</p>
             <p>Nous provoquons des temps de réunion « internes » avec l’équipe projet pour permettre d’avancer plus rapidement. Par exemple, lors de la phase de conception, nous prévoyons des temps en dehors du projet pour réunir l’ensemble des retours et les formaliser sur les maquettes et les gabarits. Nous prévoyons aussi des sessions de travail avec l’équipe projet, lors de la phase de validation des spécifications fonctionnelles. Ces temps d’échange, nous permettent également de faire la démonstration de certains outils, conseiller sur une approche, aider à constituer un fichier de migration, rédiger des documents de synthèses, conduire des entretiens avec des interlocuteurs clefs, etc…</p>
             <div className='content__block__img'>
-                <img src="banner_ph.png" alt="banner placeholder"/>
+              <img src={`${import.meta.env.VITE_IMAGE_PATH}/banner_ph.png`} alt="banner placeholder"/>
             </div>
             <p>En phase de développement, nous proposons des solutions pour recueillir les éléments nécessaires à l’avancée du projet, par exemple, en encadrant la migration des données, en sollicitant les bons interlocuteurs, en produisant des notices explicatives… Nous vous conseillons également pour améliorer votre productivité lors de la phase de recette.</p>
             <p>Après la mise en ligne, nous pouvons continuer à vous accompagner sur toutes les problématiques numériques, notamment sur la phase d’accompagnement et de formation des équipes, ainsi que sur la phase d’évolution qui interviendra éventuellement une fois le site confronté à la réalité. Cette phase qui porte le nom de TMA ou Tierce Maintenance Applicative est souvent gérée en interne par vos équipes. Il arrive cependant que certains clients nous demande de participer à la TMA de manière ponctuelle ou quand certains sujets importants surviennent.</p>
@@ -126,7 +126,7 @@ function GestionProjet () {
               key={category} 
               className={`fade-section ${selectedCategory === category ? 'active' : ''}`}>
               <img 
-                src={casClients[category].image} 
+                src={`${import.meta.env.VITE_IMAGE_PATH}/${casClients[selectedCategory].image}`}
                 className='accueil__section__casClient__container__img'
                 alt={category}/>
               <div className='accueil__section__casClient__container__text'>

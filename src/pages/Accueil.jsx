@@ -247,7 +247,7 @@ function Accueil() {
                 </div>
               </div>
               <div className='accueil__section__projet__container__imgs__content'>
-                <img src="Dubai_Muslim_Homes_Site_immo.jpg" alt="Dubai_Muslim_Homes_Site_immo" />
+                <img src='Dubai_Muslim_Homes_Site_immo.jpg' alt="Dubai_Muslim_Homes_Site_immo" />
                 <div className='accueil__section__projet__container__imgs__hover-content'>
                   <p>Dubaï Muslim Homes</p>
                 </div>
