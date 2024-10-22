@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
+import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
-import '../styles/contact.css';
+import './elements.css'
 import ReCAPTCHA from 'react-google-recaptcha';
 
 function Contact() {
@@ -192,11 +193,12 @@ function Contact() {
                 </form>
             </section>
             <section className='accueil__section__contact'>   
-      <div className='accueil__section__contact__container'>
-        <h3>Prévoir un rendez-vous!</h3>
-        <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
-      </div>  
-    </section>
+                <div className='accueil__section__contact__container'>
+                    <h3>Prévoir un rendez-vous!</h3>
+                    <h4></h4>
+                    <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
+                </div>
+            </section>
         </>
     );
 }
