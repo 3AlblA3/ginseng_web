@@ -12,7 +12,7 @@ function BlogAccueil () {
                 <h2>Pour comprendre le web</h2>
             </div>
         </section>
-        <section className='content__block__row'>
+        <section className='content__block__blog'>
             <Link to="/blog/coutSite" className='blogLink'>
                 <h3> Combien coûte vraiment un site internet en 2024 ? Un budget sur mesure pour vos projets web</h3>
                 <img src="fleche_droite_black.png" alt="fleche" />
@@ -26,8 +26,6 @@ function BlogAccueil () {
                 <img src="fleche_droite_black.png" alt="fleche" />
 
             </Link>
-        </section>
-        <section className='content__block__row'>
             <Link to="/blog/siteCree" className='blogLink'>
                 <h3>Vous avez crée votre site web</h3>
                 <img src="fleche_droite_black.png" alt="fleche" />
@@ -40,8 +38,6 @@ function BlogAccueil () {
                 <h3>L’importance d’un site web bien conçu pour sensibiliser à des causes comme Octobre Rose</h3>
                 <img src="fleche_droite_black.png" alt="fleche" />
             </Link>
-        </section>
-        <section className='content__block__row'>
             <Link to="/blog/relationB2B" className='blogLink'>
                 <h3>Pourquoi et Comment Digitaliser la Relation Client B2B ?</h3>
                 <img src="fleche_droite_black.png" alt="fleche" />
