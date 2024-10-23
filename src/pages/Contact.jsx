@@ -194,7 +194,7 @@ function Contact() {
             </section>
             <section className='accueil__section__contact'>   
                 <div className='accueil__section__contact__container'>
-                    <h3>Prévoir un rendez-vous!</h3>
+                    <h3>Prévoir un rendez-vous!</h3> 
                     <h4></h4>
                     <Link to='/contact' className='button__blue'>Planifier un rendez-vous</Link>
                 </div>

@@ -31,6 +31,11 @@ import ChoixMots from './pages/blog/choixMots';
 import CoutSite from './pages/blog/coutSite';
 import TestErgonomie from './pages/blog/testErgonomie';
 import SiteCree from './pages/blog/siteCree';
+import BonnesPratiques from './pages/blog/bonnesPratiques';
+import Linkedin from './pages/blog/linkedin';
+import Sensibilisation from './pages/blog/sensibilisation';
+import Noel from './pages/blog/noel';
+import RelationB2B from './pages/blog/relationb2b';
 import './styles/App.css'
 
 function App() {
@@ -67,6 +72,11 @@ function App() {
         <Route path="/blog/choixMots" element={<ChoixMots  />} />
         <Route path="/blog/testErgonomie" element={<TestErgonomie  />} />
         <Route path="/blog/siteCree" element={<SiteCree  />} />
+        <Route path="/blog/bonnesPratiques" element={<BonnesPratiques  />} />
+        <Route path="/blog/linkedin" element={<Linkedin  />} />
+        <Route path="/blog/sensibilisation" element={<Sensibilisation  />} />
+        <Route path="/blog/noel" element={<Noel  />} />
+        <Route path="/blog/relationB2B" element={<RelationB2B  />} />
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
